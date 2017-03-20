@@ -75,4 +75,38 @@ view: summary {
     type: count
     drill_fields: []
   }
+
+  measure: sum_complete {
+    type: sum
+    sql: ${complete};;
+  }
+  measure: sum_total {
+    type: sum
+    sql: ${total};;
+  }
+  measure: sum_timely {
+    type: sum
+    sql: ${timely};;
+  }
+  measure: sum_conform {
+    type: sum
+    sql: ${conform};;
+  }
+  measure: sum_valid {
+    type: sum
+    sql: ${valid};;
+  }
+  measure: sum_consistent {
+    type: sum
+    sql: ${consistent};;
+  }
+  measure: sum_unique {
+    type: sum
+    sql: ${single};;
+  }
+  measure: sum_variant {
+    type: sum
+    sql: ${variant};;
+  }
+
 }
