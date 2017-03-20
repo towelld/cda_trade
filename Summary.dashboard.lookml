@@ -20,7 +20,7 @@
       left: 0
       top: 0
       height: 40
-      width: 12
+      width: 11
       type: looker_bar
       model: cda_trade
       explore: summary
@@ -67,7 +67,7 @@
 
     - name: cda_trade_summary_timely
       title: Timeliness
-      left: 12
+      left: 11
       top: 0
       height: 40
       width: 7
