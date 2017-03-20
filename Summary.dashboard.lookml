@@ -67,7 +67,7 @@
 
     - name: cda_trade_summary_timely
       title: Timeliness
-      left: 0
+      left: 11
       top: 0
       height: 40
       width: 10
