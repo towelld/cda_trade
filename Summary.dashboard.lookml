@@ -1,8 +1,8 @@
 - dashboard: summary
   title: Trade Summary
   layout: static
-  width: 1664
-  tile_size: 32
+  width: 1620
+  tile_size: 30
   auto_run: true
   embed_style:
     background_color: "#ffffff"
@@ -20,7 +20,7 @@
       left: 0
       top: 0
       height: 40
-      width: 10
+      width: 12
       type: looker_bar
       model: cda_trade
       explore: summary
@@ -67,7 +67,7 @@
 
     - name: cda_trade_summary_timely
       title: Timeliness
-      left: 11
+      left: 12
       top: 0
       height: 40
       width: 7
