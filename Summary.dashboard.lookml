@@ -109,7 +109,7 @@
       show_silhouette: false
       totals_color: "#808080"
       series_types: {}
-      hidden_fields: [summary.sum_complete]
+      hidden_fields: [summary.sum_timely]
       series_colors:
         calculation_1: "#646569"
         summary.sum_total: "#fa8d29"
