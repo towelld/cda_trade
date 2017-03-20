@@ -214,3 +214,154 @@
         calculation_1: "#646569"
         summary.sum_total: "#a9a8a9"
       hide_legend: true
+
+    - name: cda_trade_summary_valid
+      title: Validity
+      left: 32
+      top: 0
+      height: 40
+      width: 7
+      type: looker_bar
+      model: cda_trade
+      explore: summary
+      dimensions: [data_elements.feature_description]
+      measures: [summary.sum_valid, summary.sum_total]
+      dynamic_fields:
+      - table_calculation: calculation_1
+        label: Calculation 1
+        expression: "${summary.sum_total}-${summary.sum_valid}"
+        value_format:
+        value_format_name:
+      sorts: [data_elements.feature_description]
+      limit: '500'
+      column_limit: '50'
+      query_timezone: Europe/London
+      stacking: percent
+      show_value_labels: false
+      label_density: 25
+      legend_position: center
+      x_axis_gridlines: false
+      y_axis_gridlines: true
+      show_view_names: false
+      limit_displayed_rows: false
+      y_axis_combined: true
+      show_y_axis_labels: false
+      show_y_axis_ticks: false
+      y_axis_tick_density: default
+      y_axis_tick_density_custom: 5
+      show_x_axis_label: false
+      show_x_axis_ticks: false
+      x_axis_scale: auto
+      y_axis_scale_mode: linear
+      ordering: none
+      show_null_labels: false
+      show_totals_labels: false
+      show_silhouette: false
+      totals_color: "#808080"
+      series_types: {}
+      hidden_fields: [summary.sum_valid]
+      series_colors:
+        calculation_1: "#646569"
+        summary.sum_total: "#0c9e9e"
+      hide_legend: true
+
+    - name: cda_trade_summary_consistent
+      title: Consistency
+      left: 39
+      top: 0
+      height: 40
+      width: 7
+      type: looker_bar
+      model: cda_trade
+      explore: summary
+      dimensions: [data_elements.feature_description]
+      measures: [summary.sum_consistent, summary.sum_total]
+      dynamic_fields:
+      - table_calculation: calculation_1
+        label: Calculation 1
+        expression: "${summary.sum_total}-${summary.sum_consistent}"
+        value_format:
+        value_format_name:
+      sorts: [data_elements.feature_description]
+      limit: '500'
+      column_limit: '50'
+      query_timezone: Europe/London
+      stacking: percent
+      show_value_labels: false
+      label_density: 25
+      legend_position: center
+      x_axis_gridlines: false
+      y_axis_gridlines: true
+      show_view_names: false
+      limit_displayed_rows: false
+      y_axis_combined: true
+      show_y_axis_labels: false
+      show_y_axis_ticks: false
+      y_axis_tick_density: default
+      y_axis_tick_density_custom: 5
+      show_x_axis_label: false
+      show_x_axis_ticks: false
+      x_axis_scale: auto
+      y_axis_scale_mode: linear
+      ordering: none
+      show_null_labels: false
+      show_totals_labels: false
+      show_silhouette: false
+      totals_color: "#808080"
+      series_types: {}
+      hidden_fields: [summary.sum_consistent]
+      series_colors:
+        calculation_1: "#646569"
+        summary.sum_total: "#b34c59"
+      hide_legend: true
+
+
+    - name: cda_trade_summary_unique
+      title: Uniqueness
+      left: 46
+      top: 0
+      height: 40
+      width: 7
+      type: looker_bar
+      model: cda_trade
+      explore: summary
+      dimensions: [data_elements.feature_description]
+      measures: [summary.sum_unique, summary.sum_total]
+      dynamic_fields:
+      - table_calculation: calculation_1
+        label: Calculation 1
+        expression: "${summary.sum_total}-${summary.sum_unique}"
+        value_format:
+        value_format_name:
+      sorts: [data_elements.feature_description]
+      limit: '500'
+      column_limit: '50'
+      query_timezone: Europe/London
+      stacking: percent
+      show_value_labels: false
+      label_density: 25
+      legend_position: center
+      x_axis_gridlines: false
+      y_axis_gridlines: true
+      show_view_names: false
+      limit_displayed_rows: false
+      y_axis_combined: true
+      show_y_axis_labels: false
+      show_y_axis_ticks: false
+      y_axis_tick_density: default
+      y_axis_tick_density_custom: 5
+      show_x_axis_label: false
+      show_x_axis_ticks: false
+      x_axis_scale: auto
+      y_axis_scale_mode: linear
+      ordering: none
+      show_null_labels: false
+      show_totals_labels: false
+      show_silhouette: false
+      totals_color: "#808080"
+      series_types: {}
+      hidden_fields: [summary.sum_unique]
+      series_colors:
+        calculation_1: "#646569"
+        summary.sum_total: "#edc559"
+      hide_legend: true
