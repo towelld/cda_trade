@@ -70,7 +70,7 @@
       left: 11
       top: 0
       height: 40
-      width: 10
+      width: 7
       type: looker_bar
       model: cda_trade
       explore: summary
@@ -100,7 +100,7 @@
       y_axis_tick_density: default
       y_axis_tick_density_custom: 5
       show_x_axis_label: false
-      show_x_axis_ticks: true
+      show_x_axis_ticks: false
       x_axis_scale: auto
       y_axis_scale_mode: linear
       ordering: none
@@ -112,5 +112,5 @@
       hidden_fields: [summary.sum_timely]
       series_colors:
         calculation_1: "#646569"
-        summary.sum_total: "#fa8d29"
+        summary.sum_total: "#55565a"
       hide_legend: true
