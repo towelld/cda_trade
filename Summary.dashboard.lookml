@@ -19,7 +19,7 @@
       title: Complete
       left: 0
       top: 0
-      height: 100
+      height: 50
       width: 10
       type: looker_bar
       model: cda_trade
