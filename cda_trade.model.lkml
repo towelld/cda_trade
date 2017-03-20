@@ -110,7 +110,20 @@ explore: ref_tolerance {}
 
 explore: ref_trader {}
 
-explore: summary {}
+explore: summary {
+  join: data_elements {
+    sql_on: ${data_elements.element_id} = ${summary.element_id} ;;
+    relationship: one_to_one
+  }
+  join: data_elements_rules {
+    sql_on: ${data_elements_rules.element_id} = ${summary.element_id} ;;
+    relationship: one_to_many
+  }
+  join: data_elements_rule_types {
+    sql_on: ${data_elements_rule_types.rule_type_id} = ${data_elements_rules.rule_type_id} ;;
+    relationship: one_to_one
+  }
+}
 
 explore: user_audit {}
 
