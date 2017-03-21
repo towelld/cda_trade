@@ -187,7 +187,7 @@
       type: looker_area
       model: cda_trade
       explore: summary
-      dimensions: [summary.statement_date, data_elements.feature_description]
+      dimensions: [summary.statement_date]
       measures: [summary.sum_timely, summary.sum_total]
       dynamic_fields:
       - table_calculation: percentage
@@ -330,7 +330,7 @@
       type: looker_area
       model: cda_trade
       explore: summary
-      dimensions: [summary.statement_date, data_elements.feature_description]
+      dimensions: [summary.statement_date]
       measures: [summary.sum_variant, summary.sum_total]
       dynamic_fields:
       - table_calculation: percentage
@@ -473,7 +473,7 @@
       type: looker_area
       model: cda_trade
       explore: summary
-      dimensions: [summary.statement_date, data_elements.feature_description]
+      dimensions: [summary.statement_date]
       measures: [summary.sum_conform, summary.sum_total]
       dynamic_fields:
       - table_calculation: percentage
@@ -617,7 +617,7 @@
       type: looker_area
       model: cda_trade
       explore: summary
-      dimensions: [summary.statement_date, data_elements.feature_description]
+      dimensions: [summary.statement_date]
       measures: [summary.sum_valid, summary.sum_total]
       dynamic_fields:
       - table_calculation: percentage
@@ -760,7 +760,7 @@
       type: looker_area
       model: cda_trade
       explore: summary
-      dimensions: [summary.statement_date, data_elements.feature_description]
+      dimensions: [summary.statement_date]
       measures: [summary.sum_consistent, summary.sum_total]
       dynamic_fields:
       - table_calculation: percentage
@@ -903,7 +903,7 @@
       type: looker_area
       model: cda_trade
       explore: summary
-      dimensions: [summary.statement_date, data_elements.feature_description]
+      dimensions: [summary.statement_date]
       measures: [summary.sum_unique, summary.sum_total]
       dynamic_fields:
       - table_calculation: percentage
