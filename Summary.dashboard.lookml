@@ -253,7 +253,7 @@
       series_colors:
         percentage: "#55565a"
       label_color: ["#ffffff", "#a9a8a9"]
-      y_axis_unpin: false
+      y_axis_unpin: true
 
     - name: cda_trade_summary_timely
       title: Timeliness
