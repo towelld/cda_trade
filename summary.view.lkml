@@ -71,13 +71,6 @@ view: summary {
     sql: ${TABLE}.variant ;;
   }
 
-  dimension: feature_description {
-    type: string
-    sql: data_elements.feature_description ;;
-    drill_fields: [rules*]
-  }
-
-
   measure: count {
     type: count
     drill_fields: []
@@ -114,11 +107,6 @@ view: summary {
   measure: sum_variant {
     type: sum
     sql: ${variant};;
-  }
-
-
-  set: rules {
-    fields: [data_elements_rule_type.rule_type]
   }
 
 }
