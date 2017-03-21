@@ -111,6 +111,8 @@
         percentage: "#fa8d29"
       label_color: ["#ffffff", "#a9a8a9"]
       y_axis_unpin: true
+      y_axis_max: ['1']
+      y_axis_min: ['0.01']
 
     - name: cda_trade_summary_complete
       title: Completeness
@@ -253,7 +255,9 @@
       series_colors:
         percentage: "#55565a"
       label_color: ["#ffffff", "#a9a8a9"]
-      y_axis_unpin: false
+      y_axis_unpin: true
+      y_axis_max: ['1']
+      y_axis_min: ['0.01']
 
     - name: cda_trade_summary_timely
       title: Timeliness
@@ -397,6 +401,8 @@
         percentage: "#5e8ab4"
       label_color: ["#ffffff", "#a9a8a9"]
       y_axis_unpin: true
+      y_axis_max: ['1']
+      y_axis_min: ['0.01']
 
     - name: cda_trade_summary_variant
       title: Variation
@@ -540,6 +546,8 @@
         percentage: "#a9a8a9"
       label_color: ["#ffffff", "#a9a8a9"]
       y_axis_unpin: true
+      y_axis_max: ['1']
+      y_axis_min: ['0.01']
 
 
     - name: cda_trade_summary_conform
@@ -684,6 +692,8 @@
         percentage: "#0c9e9e"
       label_color: ["#ffffff", "#a9a8a9"]
       y_axis_unpin: true
+      y_axis_max: ['1']
+      y_axis_min: ['0.01']
 
     - name: cda_trade_summary_valid
       title: Validity
@@ -827,6 +837,8 @@
         percentage: "#b34c59"
       label_color: ["#ffffff", "#a9a8a9"]
       y_axis_unpin: true
+      y_axis_max: ['1']
+      y_axis_min: ['0.01']
 
     - name: cda_trade_summary_consistent
       title: Consistency
@@ -969,7 +981,9 @@
       series_colors:
         percentage: "#edc559"
       label_color: ["#ffffff", "#a9a8a9"]
-      y_axis_unpin: false
+      y_axis_unpin: true
+      y_axis_max: ['1']
+      y_axis_min: ['0.01']
 
     - name: cda_trade_summary_unique
       title: Uniqueness
