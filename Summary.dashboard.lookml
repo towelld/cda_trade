@@ -162,7 +162,7 @@
       series_types: {}
       hidden_fields: [summary.sum_complete]
       series_colors:
-        calculation_1: "#646569"
+        calculation_1: "#000000"
         summary.sum_total: "#fa8d29"
       hide_legend: true
       y_axis_min: ['0.75']
@@ -309,7 +309,7 @@
       series_types: {}
       hidden_fields: [summary.sum_timely]
       series_colors:
-        calculation_1: "#646569"
+        calculation_1: "#000000"
         summary.sum_total: "#55565a"
       hide_legend: true
       y_axis_min: ['0.75']
@@ -456,7 +456,7 @@
       series_types: {}
       hidden_fields: [summary.sum_variant]
       series_colors:
-        calculation_1: "#646569"
+        calculation_1: "#000000"
         summary.sum_total: "#5e8ab4"
       hide_legend: true
       y_axis_min: ['0.75']
@@ -604,7 +604,7 @@
       series_types: {}
       hidden_fields: [summary.sum_conform]
       series_colors:
-        calculation_1: "#646569"
+        calculation_1: "#000000"
         summary.sum_total: "#a9a8a9"
       hide_legend: true
       y_axis_min: ['0.75']
@@ -751,7 +751,7 @@
       series_types: {}
       hidden_fields: [summary.sum_valid]
       series_colors:
-        calculation_1: "#646569"
+        calculation_1: "#000000"
         summary.sum_total: "#0c9e9e"
       hide_legend: true
       y_axis_min: ['0.75']
@@ -898,7 +898,7 @@
       series_types: {}
       hidden_fields: [summary.sum_consistent]
       series_colors:
-        calculation_1: "#646569"
+        calculation_1: "#000000"
         summary.sum_total: "#b34c59"
       hide_legend: true
       y_axis_min: ['0.75']
@@ -1045,7 +1045,7 @@
       series_types: {}
       hidden_fields: [summary.sum_unique]
       series_colors:
-        calculation_1: "#646569"
+        calculation_1: "#000000"
         summary.sum_total: "#edc559"
       hide_legend: true
       y_axis_min: ['0.75']
