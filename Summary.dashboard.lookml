@@ -81,9 +81,6 @@
         num_rows: 0
       hidden_fields: []
       series_colors:
-        total_complete: "#646569"
-        summary.sum_total: "#5e8ab4"
-        total_timely: "#646569"
         summary.sum_complete: "#fa8d29"
       label_color: ["#ffffff", "#a9a8a9"]
       y_axis_unpin: true
@@ -137,6 +134,75 @@
         calculation_1: "#646569"
         summary.sum_total: "#fa8d29"
       hide_legend: true
+
+    - name: cda_trade_trend_timely
+      title:
+      left: 10
+      top: 0
+      height: 10
+      width: 10
+      type: looker_area
+      model: cda_trade
+      explore: summary
+      dimensions: [summary.statement_date, data_elements.feature_description]
+      measures: [summary.sum_timely]
+      filters:
+        data_elements.feature_description: ''
+        summary.statement_date: 2017/02/27 to 2017/03/10
+      sorts: [summary.statement_date]
+      limit: '500'
+      column_limit: '50'
+      query_timezone: Europe/London
+      stacking: ''
+      show_value_labels: false
+      label_density: 25
+      legend_position: center
+      x_axis_gridlines: false
+      y_axis_gridlines: true
+      show_view_names: true
+      limit_displayed_rows: false
+      y_axis_combined: true
+      show_y_axis_labels: false
+      show_y_axis_ticks: false
+      y_axis_tick_density: default
+      y_axis_tick_density_custom: 5
+      show_x_axis_label: false
+      show_x_axis_ticks: false
+      x_axis_scale: ordinal
+      y_axis_scale_mode: linear
+      show_null_points: true
+      point_style: none
+      interpolation: monotone
+      show_totals_labels: false
+      show_silhouette: false
+      totals_color: "#808080"
+      font_size: '12'
+      ordering: none
+      show_null_labels: false
+      show_row_numbers: true
+      truncate_column_names: false
+      hide_totals: false
+      hide_row_totals: false
+      table_theme: editable
+      enable_conditional_formatting: false
+      conditional_formatting_ignored_fields: []
+      conditional_formatting_include_totals: false
+      conditional_formatting_include_nulls: false
+      series_types: {}
+      focus_on_hover: false
+      column_spacing_ratio: ''
+      column_group_spacing_ratio: 0.05
+      show_dropoff: true
+      hide_legend: true
+      limit_displayed_rows_values:
+        show_hide: hide
+        first_last: first
+        num_rows: 0
+      hidden_fields: []
+      series_colors:
+        summary.sum_timely: "#55565a"
+      label_color: ["#ffffff", "#a9a8a9"]
+      y_axis_unpin: true
 
     - name: cda_trade_summary_timely
       title: Timeliness
