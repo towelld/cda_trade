@@ -49,6 +49,8 @@
       filters:
         data_elements.feature_description: ''
         summary.statement_date: 2017/02/27 to 2017/03/10
+      listen:
+        feature_description: data_elements.feature_description
       sorts: [summary.statement_date]
       limit: '500'
       column_limit: '50'
