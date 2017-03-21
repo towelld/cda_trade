@@ -6,7 +6,7 @@
   auto_run: true
   embed_style:
     background_color: "#ffffff"
-    show_title: true
+    show_title: false
     title_color: "#646569"
     show_filters_bar: true
     tile_background_color: "#ffffff"
