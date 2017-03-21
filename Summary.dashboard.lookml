@@ -44,7 +44,7 @@
       type: looker_area
       model: cda_trade
       explore: summary
-      dimensions: [summary.statement_date, data_elements.feature_description]
+      dimensions: [summary.statement_date]
       measures: [summary.sum_complete, summary.sum_total]
       dynamic_fields:
       - table_calculation: percentage
