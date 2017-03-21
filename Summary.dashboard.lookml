@@ -110,7 +110,7 @@
       series_colors:
         percentage: "#fa8d29"
       label_color: ["#ffffff", "#a9a8a9"]
-      y_axis_unpin: true
+      y_axis_unpin: false
 
     - name: cda_trade_summary_complete
       title: Completeness
