@@ -117,6 +117,8 @@
       explore: summary
       dimensions: [data_elements.feature_description]
       measures: [summary.sum_complete, summary.sum_total]
+      listen:
+        feature_description: data_elements.feature_description
       dynamic_fields:
       - table_calculation: calculation_1
         label: Calculation 1
@@ -184,6 +186,8 @@
       filters:
         data_elements.feature_description: ''
         summary.statement_date: 2017/02/27 to 2017/03/10
+      listen:
+        feature_description: data_elements.feature_description
       sorts: [summary.statement_date]
       limit: '500'
       column_limit: '50'
@@ -250,6 +254,8 @@
       explore: summary
       dimensions: [data_elements.feature_description]
       measures: [summary.sum_timely, summary.sum_total]
+      listen:
+        feature_description: data_elements.feature_description
       dynamic_fields:
       - table_calculation: calculation_1
         label: Calculation 1
@@ -317,6 +323,8 @@
       filters:
         data_elements.feature_description: ''
         summary.statement_date: 2017/02/27 to 2017/03/10
+      listen:
+        feature_description: data_elements.feature_description
       sorts: [summary.statement_date]
       limit: '500'
       column_limit: '50'
@@ -383,6 +391,8 @@
       explore: summary
       dimensions: [data_elements.feature_description]
       measures: [summary.sum_variant, summary.sum_total]
+      listen:
+        feature_description: data_elements.feature_description
       dynamic_fields:
       - table_calculation: calculation_1
         label: Calculation 1
@@ -450,6 +460,8 @@
       filters:
         data_elements.feature_description: ''
         summary.statement_date: 2017/02/27 to 2017/03/10
+      listen:
+        feature_description: data_elements.feature_description
       sorts: [summary.statement_date]
       limit: '500'
       column_limit: '50'
@@ -516,6 +528,8 @@
       explore: summary
       dimensions: [data_elements.feature_description]
       measures: [summary.sum_conform, summary.sum_total]
+      listen:
+        feature_description: data_elements.feature_description
       dynamic_fields:
       - table_calculation: calculation_1
         label: Calculation 1
@@ -583,6 +597,8 @@
       filters:
         data_elements.feature_description: ''
         summary.statement_date: 2017/02/27 to 2017/03/10
+      listen:
+        feature_description: data_elements.feature_description
       sorts: [summary.statement_date]
       limit: '500'
       column_limit: '50'
@@ -649,6 +665,8 @@
       explore: summary
       dimensions: [data_elements.feature_description]
       measures: [summary.sum_valid, summary.sum_total]
+      listen:
+        feature_description: data_elements.feature_description
       dynamic_fields:
       - table_calculation: calculation_1
         label: Calculation 1
@@ -716,6 +734,8 @@
       filters:
         data_elements.feature_description: ''
         summary.statement_date: 2017/02/27 to 2017/03/10
+      listen:
+        feature_description: data_elements.feature_description
       sorts: [summary.statement_date]
       limit: '500'
       column_limit: '50'
@@ -782,6 +802,8 @@
       explore: summary
       dimensions: [data_elements.feature_description]
       measures: [summary.sum_consistent, summary.sum_total]
+      listen:
+        feature_description: data_elements.feature_description
       dynamic_fields:
       - table_calculation: calculation_1
         label: Calculation 1
@@ -846,6 +868,8 @@
       explore: summary
       dimensions: [summary.statement_date, data_elements.feature_description]
       measures: [summary.sum_unique]
+      listen:
+        feature_description: data_elements.feature_description
       filters:
         data_elements.feature_description: ''
         summary.statement_date: 2017/02/27 to 2017/03/10
@@ -915,6 +939,8 @@
       explore: summary
       dimensions: [data_elements.feature_description]
       measures: [summary.sum_unique, summary.sum_total]
+      listen:
+        feature_description: data_elements.feature_description
       dynamic_fields:
       - table_calculation: calculation_1
         label: Calculation 1
