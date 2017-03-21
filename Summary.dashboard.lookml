@@ -189,6 +189,12 @@
       explore: summary
       dimensions: [summary.statement_date, data_elements.feature_description]
       measures: [summary.sum_timely]
+      dynamic_fields:
+      - table_calculation: percentage
+        label: Percentage
+        expression: 1-((${summary.sum_total}-${summary.sum_timely})/${summary.sum_total})
+        value_format:
+        value_format_name: percent_2
       filters:
         data_elements.feature_description: ''
         summary.statement_date: 2017/02/27 to 2017/03/10
@@ -243,11 +249,11 @@
         show_hide: hide
         first_last: first
         num_rows: 0
-      hidden_fields: []
+      hidden_fields: [summary.sum_timely, summary.sum_total]
       series_colors:
-        summary.sum_timely: "#55565a"
+        percentage: "#55565a"
       label_color: ["#ffffff", "#a9a8a9"]
-      y_axis_unpin: true
+      y_axis_unpin: false
 
     - name: cda_trade_summary_timely
       title: Timeliness
@@ -326,6 +332,12 @@
       explore: summary
       dimensions: [summary.statement_date, data_elements.feature_description]
       measures: [summary.sum_variant]
+      dynamic_fields:
+      - table_calculation: percentage
+        label: Percentage
+        expression: 1-((${summary.sum_total}-${summary.sum_variant})/${summary.sum_total})
+        value_format:
+        value_format_name: percent_2
       filters:
         data_elements.feature_description: ''
         summary.statement_date: 2017/02/27 to 2017/03/10
@@ -380,11 +392,11 @@
         show_hide: hide
         first_last: first
         num_rows: 0
-      hidden_fields: []
+      hidden_fields: [summary.sum_variant, summary.sum_total]
       series_colors:
-        summary.sum_variant: "#5e8ab4"
+        percentage: "#5e8ab4"
       label_color: ["#ffffff", "#a9a8a9"]
-      y_axis_unpin: true
+      y_axis_unpin: false
 
     - name: cda_trade_summary_variant
       title: Variation
@@ -463,6 +475,12 @@
       explore: summary
       dimensions: [summary.statement_date, data_elements.feature_description]
       measures: [summary.sum_conform]
+      dynamic_fields:
+      - table_calculation: percentage
+        label: Percentage
+        expression: 1-((${summary.sum_total}-${summary.sum_conform)/${summary.sum_total})
+        value_format:
+        value_format_name: percent_2
       filters:
         data_elements.feature_description: ''
         summary.statement_date: 2017/02/27 to 2017/03/10
@@ -517,11 +535,11 @@
         show_hide: hide
         first_last: first
         num_rows: 0
-      hidden_fields: []
+      hidden_fields: [summary.sum_conform, summary.sum_total]
       series_colors:
-        summary.sum_conform: "#a9a8a9"
+        percentage: "#a9a8a9"
       label_color: ["#ffffff", "#a9a8a9"]
-      y_axis_unpin: true
+      y_axis_unpin: false
 
     - name: cda_trade_summary_conform
       title: Conformity
@@ -600,6 +618,12 @@
       explore: summary
       dimensions: [summary.statement_date, data_elements.feature_description]
       measures: [summary.sum_valid]
+      dynamic_fields:
+      - table_calculation: percentage
+        label: Percentage
+        expression: 1-((${summary.sum_total}-${summary.sum_valid})/${summary.sum_total})
+        value_format:
+        value_format_name: percent_2
       filters:
         data_elements.feature_description: ''
         summary.statement_date: 2017/02/27 to 2017/03/10
@@ -654,11 +678,11 @@
         show_hide: hide
         first_last: first
         num_rows: 0
-      hidden_fields: []
+      hidden_fields: [summary.sum_valid, summary.sum_total]
       series_colors:
-        summary.sum_valid: "#0c9e9e"
+        percentage: "#0c9e9e"
       label_color: ["#ffffff", "#a9a8a9"]
-      y_axis_unpin: true
+      y_axis_unpin: false
 
     - name: cda_trade_summary_valid
       title: Validity
@@ -737,6 +761,12 @@
       explore: summary
       dimensions: [summary.statement_date, data_elements.feature_description]
       measures: [summary.sum_consistent]
+      dynamic_fields:
+      - table_calculation: percentage
+        label: Percentage
+        expression: 1-((${summary.sum_total}-${summary.sum_consistent})/${summary.sum_total})
+        value_format:
+        value_format_name: percent_2
       filters:
         data_elements.feature_description: ''
         summary.statement_date: 2017/02/27 to 2017/03/10
@@ -791,11 +821,11 @@
         show_hide: hide
         first_last: first
         num_rows: 0
-      hidden_fields: []
+      hidden_fields: [summary.sum_consistent, summary.sum_total]
       series_colors:
-        summary.sum_consistent: "#b34c59"
+        percentage: "#b34c59"
       label_color: ["#ffffff", "#a9a8a9"]
-      y_axis_unpin: true
+      y_axis_unpin: false
 
     - name: cda_trade_summary_consistent
       title: Consistency
@@ -874,6 +904,12 @@
       explore: summary
       dimensions: [summary.statement_date, data_elements.feature_description]
       measures: [summary.sum_unique]
+      dynamic_fields:
+      - table_calculation: percentage
+        label: Percentage
+        expression: 1-((${summary.sum_total}-${summary.sum_unique})/${summary.sum_total})
+        value_format:
+        value_format_name: percent_2
       listen:
         feature_description: data_elements.feature_description
       filters:
@@ -928,11 +964,11 @@
         show_hide: hide
         first_last: first
         num_rows: 0
-      hidden_fields: []
+      hidden_fields: [summary.sum_unique, summary.sum_total]
       series_colors:
-        summary.sum_unique: "#edc559"
+        percentage: "#edc559"
       label_color: ["#ffffff", "#a9a8a9"]
-      y_axis_unpin: true
+      y_axis_unpin: false
 
     - name: cda_trade_summary_unique
       title: Uniqueness
