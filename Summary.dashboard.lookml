@@ -125,6 +125,7 @@
       explore: summary
       dimensions: [data_elements.feature_description]
       measures: [summary.sum_complete, summary.sum_total]
+      drill: [data_elements.feature_description]
       listen:
         feature_description: data_elements.feature_description
       dynamic_fields:
