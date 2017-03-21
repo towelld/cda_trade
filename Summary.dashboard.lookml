@@ -103,7 +103,7 @@
       title: Completeness
       left: 0
       top: 13
-      height: 40
+      height: 35
       width: 10
       type: looker_bar
       model: cda_trade
@@ -236,7 +236,7 @@
       title: Timeliness
       left: 10
       top: 13
-      height: 40
+      height: 35
       width: 10
       type: looker_bar
       model: cda_trade
@@ -369,7 +369,7 @@
       title: Variation
       left: 20
       top: 13
-      height: 40
+      height: 35
       width: 10
       type: looker_bar
       model: cda_trade
@@ -502,7 +502,7 @@
       title: Conformity
       left: 30
       top: 13
-      height: 40
+      height: 35
       width: 10
       type: looker_bar
       model: cda_trade
@@ -635,7 +635,7 @@
       title: Validity
       left: 40
       top: 13
-      height: 40
+      height: 35
       width: 10
       type: looker_bar
       model: cda_trade
@@ -768,7 +768,7 @@
       title: Consistency
       left: 50
       top: 13
-      height: 40
+      height: 35
       width: 10
       type: looker_bar
       model: cda_trade
@@ -901,7 +901,7 @@
       title: Uniqueness
       left: 60
       top: 13
-      height: 40
+      height: 35
       width: 10
       type: looker_bar
       model: cda_trade
