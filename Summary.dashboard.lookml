@@ -165,6 +165,8 @@
         calculation_1: "#646569"
         summary.sum_total: "#fa8d29"
       hide_legend: true
+      y_axis_min: ['0.75']
+      y_axis_max: ['1']
 
     - name: cda_trade_title_timely
       left: 10
@@ -310,6 +312,8 @@
         calculation_1: "#646569"
         summary.sum_total: "#55565a"
       hide_legend: true
+      y_axis_min: ['0.75']
+      y_axis_max: ['1']
 
     - name: cda_trade_title_variant
       left: 20
@@ -455,6 +459,8 @@
         calculation_1: "#646569"
         summary.sum_total: "#5e8ab4"
       hide_legend: true
+      y_axis_min: ['0.75']
+      y_axis_max: ['1']
 
     - name: cda_trade_title_conform
       left: 30
@@ -601,6 +607,8 @@
         calculation_1: "#646569"
         summary.sum_total: "#a9a8a9"
       hide_legend: true
+      y_axis_min: ['0.75']
+      y_axis_max: ['1']
 
     - name: cda_trade_title_valid
       left: 40
@@ -746,6 +754,8 @@
         calculation_1: "#646569"
         summary.sum_total: "#0c9e9e"
       hide_legend: true
+      y_axis_min: ['0.75']
+      y_axis_max: ['1']
 
     - name: cda_trade_title_consistent
       left: 50
@@ -891,6 +901,8 @@
         calculation_1: "#646569"
         summary.sum_total: "#b34c59"
       hide_legend: true
+      y_axis_min: ['0.75']
+      y_axis_max: ['1']
 
     - name: cda_trade_title_unique
       left: 60
@@ -1036,3 +1048,5 @@
         calculation_1: "#646569"
         summary.sum_total: "#edc559"
       hide_legend: true
+      y_axis_min: ['0.75']
+      y_axis_max: ['1']
