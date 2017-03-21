@@ -19,7 +19,7 @@
     - name: cda_trade_title_complete
       left: 0
       top: 0
-      height: 2
+      height: 3
       width: 10
       type: single_value
       model: cda_trade
@@ -30,13 +30,11 @@
       custom_color_enabled: true
       custom_color: "#fa8d29"
 
-
-
     - name: cda_trade_trend_complete
       title: Complete
       title_color: #fa8d29
       left: 0
-      top: 2
+      top: 3
       height: 10
       width: 10
       type: looker_area
@@ -105,7 +103,7 @@
     - name: cda_trade_summary_complete
       title: Completeness
       left: 0
-      top: 12
+      top: 13
       height: 40
       width: 10
       type: looker_bar
@@ -152,10 +150,24 @@
         summary.sum_total: "#fa8d29"
       hide_legend: true
 
+    - name: cda_trade_title_timely
+      left: 10
+      top: 0
+      height: 3
+      width: 10
+      type: single_value
+      model: cda_trade
+      explore: data_elements_rule_types
+      dimensions: [data_elements_rule_types.rule_type]
+      filters:
+        data_elements_rule_types.rule_type: Timely
+      custom_color_enabled: true
+      custom_color: "#55565a"
+
     - name: cda_trade_trend_timely
       title:
       left: 10
-      top: 0
+      top: 3
       height: 10
       width: 10
       type: looker_area
@@ -224,7 +236,7 @@
     - name: cda_trade_summary_timely
       title: Timeliness
       left: 10
-      top: 10
+      top: 13
       height: 40
       width: 10
       type: looker_bar
@@ -271,10 +283,24 @@
         summary.sum_total: "#55565a"
       hide_legend: true
 
+    - name: cda_trade_title_variant
+      left: 20
+      top: 0
+      height: 3
+      width: 10
+      type: single_value
+      model: cda_trade
+      explore: data_elements_rule_types
+      dimensions: [data_elements_rule_types.rule_type]
+      filters:
+        data_elements_rule_types.rule_type: Variant
+      custom_color_enabled: true
+      custom_color: "#5e8ab4"
+
     - name: cda_trade_trend_variant
       title:
       left: 20
-      top: 0
+      top: 3
       height: 10
       width: 10
       type: looker_area
@@ -343,7 +369,7 @@
     - name: cda_trade_summary_variant
       title: Variation
       left: 20
-      top: 10
+      top: 13
       height: 40
       width: 10
       type: looker_bar
@@ -390,10 +416,24 @@
         summary.sum_total: "#5e8ab4"
       hide_legend: true
 
+    - name: cda_trade_title_conform
+      left: 30
+      top: 0
+      height: 3
+      width: 10
+      type: single_value
+      model: cda_trade
+      explore: data_elements_rule_types
+      dimensions: [data_elements_rule_types.rule_type]
+      filters:
+        data_elements_rule_types.rule_type: Conform
+      custom_color_enabled: true
+      custom_color: "#a9a8a9"
+
     - name: cda_trade_trend_conform
       title:
       left: 30
-      top: 0
+      top: 3
       height: 10
       width: 10
       type: looker_area
@@ -462,7 +502,7 @@
     - name: cda_trade_summary_conform
       title: Conformity
       left: 30
-      top: 10
+      top: 13
       height: 40
       width: 10
       type: looker_bar
@@ -509,10 +549,24 @@
         summary.sum_total: "#a9a8a9"
       hide_legend: true
 
+    - name: cda_trade_title_valid
+      left: 40
+      top: 0
+      height: 3
+      width: 10
+      type: single_value
+      model: cda_trade
+      explore: data_elements_rule_types
+      dimensions: [data_elements_rule_types.rule_type]
+      filters:
+        data_elements_rule_types.rule_type: Valid
+      custom_color_enabled: true
+      custom_color: "#0c9e9e"
+
     - name: cda_trade_trend_valid
       title:
       left: 40
-      top: 0
+      top: 3
       height: 10
       width: 10
       type: looker_area
@@ -581,7 +635,7 @@
     - name: cda_trade_summary_valid
       title: Validity
       left: 40
-      top: 10
+      top: 13
       height: 40
       width: 10
       type: looker_bar
@@ -628,10 +682,24 @@
         summary.sum_total: "#0c9e9e"
       hide_legend: true
 
+    - name: cda_trade_title_consistent
+      left: 50
+      top: 0
+      height: 3
+      width: 10
+      type: single_value
+      model: cda_trade
+      explore: data_elements_rule_types
+      dimensions: [data_elements_rule_types.rule_type]
+      filters:
+        data_elements_rule_types.rule_type: Consistent
+      custom_color_enabled: true
+      custom_color: "#b34c59"
+
     - name: cda_trade_trend_consistent
       title:
       left: 50
-      top: 0
+      top: 3
       height: 10
       width: 10
       type: looker_area
@@ -700,7 +768,7 @@
     - name: cda_trade_summary_consistent
       title: Consistency
       left: 50
-      top: 10
+      top: 13
       height: 40
       width: 10
       type: looker_bar
@@ -747,10 +815,24 @@
         summary.sum_total: "#b34c59"
       hide_legend: true
 
+    - name: cda_trade_title_unique
+      left: 60
+      top: 0
+      height: 3
+      width: 10
+      type: single_value
+      model: cda_trade
+      explore: data_elements_rule_types
+      dimensions: [data_elements_rule_types.rule_type]
+      filters:
+        data_elements_rule_types.rule_type: Unique
+      custom_color_enabled: true
+      custom_color: "#edc559"
+
     - name: cda_trade_trend_unique
       title:
       left: 60
-      top: 0
+      top: 3
       height: 10
       width: 10
       type: looker_area
@@ -819,7 +901,7 @@
     - name: cda_trade_summary_unique
       title: Uniqueness
       left: 60
-      top: 10
+      top: 13
       height: 40
       width: 10
       type: looker_bar
