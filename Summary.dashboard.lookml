@@ -7,7 +7,7 @@
   embed_style:
     background_color: "#ffffff"
     show_title: true
-    title_color: "#ffffff"
+    title_color: "#646569"
     show_filters_bar: true
     tile_background_color: "#ffffff"
     tile_text_color: "#646569"
@@ -32,7 +32,6 @@
 
     - name: cda_trade_trend_complete
       title: Complete
-      title_color: #fa8d29
       left: 0
       top: 3
       height: 10
