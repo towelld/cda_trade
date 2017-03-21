@@ -123,10 +123,10 @@
       type: looker_bar
       model: cda_trade
       explore: summary
-      dimensions: [summary.feature_description]
+      dimensions: [data_elements.feature_description]
       measures: [summary.sum_complete, summary.sum_total]
       listen:
-        feature_description: summary.feature_description
+        feature_description: data_elements.feature_description
       dynamic_fields:
       - table_calculation: calculation_1
         label: Calculation 1
