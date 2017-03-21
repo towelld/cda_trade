@@ -7,21 +7,36 @@
   embed_style:
     background_color: "#000000"
     show_title: true
-    title_color: "#646569"
+    title_color: "#ffffff"
     show_filters_bar: true
     tile_background_color: "#ffffff"
-    tile_text_color: "#646569"
+    tile_text_color: "#ffffff"
 
   filters:
 
   elements:
+
+    - name: cda_trade_title_complete
+      left: 0
+      top: 0
+      height: 5
+      width: 10
+      type: single_value
+      model: cda_trade
+      explore: data_elements_rule_types
+      dimensions: [data_elements_rule_types.rule_type]
+      filters:
+        data_elements_rule_types.rule_type: Complete
+      custom_color_enabled: true
+      custom_color: "#fa8d29"
+
 
 
     - name: cda_trade_trend_complete
       title: Complete
       title_color: #fa8d29
       left: 0
-      top: 0
+      top: 5
       height: 10
       width: 10
       type: looker_area
@@ -90,7 +105,7 @@
     - name: cda_trade_summary_complete
       title: Completeness
       left: 0
-      top: 10
+      top: 15
       height: 40
       width: 10
       type: looker_bar
