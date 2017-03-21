@@ -10,7 +10,7 @@
     title_color: "#646569"
     show_filters_bar: true
     tile_background_color: "#ffffff"
-    tile_text_color: "#646569"
+    tile_text_color: "#ffffff"
 
   filters:
 
