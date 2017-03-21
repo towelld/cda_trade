@@ -73,7 +73,7 @@ view: summary {
 
   dimension: feature_description {
     type: string
-    sql:${TABLE}.feature_description ;;
+    sql: data_elements.feature_description ;;
     drill_fields: [rules*]
   }
 
