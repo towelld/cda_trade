@@ -19,7 +19,7 @@
     - name: cda_trade_title_complete
       left: 0
       top: 0
-      height: 5
+      height: 3
       width: 10
       type: single_value
       model: cda_trade
@@ -36,7 +36,7 @@
       title: Complete
       title_color: #fa8d29
       left: 0
-      top: 5
+      top: 3
       height: 10
       width: 10
       type: looker_area
@@ -105,7 +105,7 @@
     - name: cda_trade_summary_complete
       title: Completeness
       left: 0
-      top: 15
+      top: 13
       height: 40
       width: 10
       type: looker_bar
