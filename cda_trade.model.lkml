@@ -22,7 +22,12 @@ explore: comment_record_link {}
 
 explore: comments {}
 
-explore: data_elements {}
+explore: data_elements {
+  join: data_elements_rules {
+    sql_on: ${data_elements_rules.element_id} = ${data_elements.element_id} ;;
+    relationship: one_to_many
+  }
+}
 
 explore: data_elements_detail {}
 
