@@ -16,8 +16,9 @@
 
   elements:
 
+
     - name: cda_trade_trend_complete
-      title:
+      title: Complete
       left: 0
       top: 0
       height: 10
