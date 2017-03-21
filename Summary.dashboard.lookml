@@ -43,7 +43,7 @@
       show_view_names: true
       limit_displayed_rows: false
       y_axis_combined: true
-      show_y_axis_labels: true
+      show_y_axis_labels: false
       show_y_axis_ticks: false
       y_axis_tick_density: default
       y_axis_tick_density_custom: 5
