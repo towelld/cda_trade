@@ -1,7 +1,7 @@
 - dashboard: summary
   title: Trade Summary
   layout: static
-  width: 1620
+  width: 1800
   tile_size: 30
   auto_run: true
   embed_style:
@@ -21,7 +21,7 @@
       left: 0
       top: 0
       height: 10
-      width: 11
+      width: 10
       type: looker_area
       model: cda_trade
       explore: summary
@@ -93,7 +93,7 @@
       left: 0
       top: 10
       height: 40
-      width: 11
+      width: 10
       type: looker_bar
       model: cda_trade
       explore: summary
@@ -140,10 +140,10 @@
 
     - name: cda_trade_summary_timely
       title: Timeliness
-      left: 11
+      left: 10
       top: 10
       height: 40
-      width: 11
+      width: 10
       type: looker_bar
       model: cda_trade
       explore: summary
@@ -190,10 +190,10 @@
 
     - name: cda_trade_summary_variant
       title: Variation
-      left: 22
+      left: 20
       top: 10
       height: 40
-      width: 11
+      width: 10
       type: looker_bar
       model: cda_trade
       explore: summary
@@ -240,10 +240,10 @@
 
     - name: cda_trade_summary_conform
       title: Conformity
-      left: 33
+      left: 30
       top: 10
       height: 40
-      width: 11
+      width: 10
       type: looker_bar
       model: cda_trade
       explore: summary
@@ -290,10 +290,10 @@
 
     - name: cda_trade_summary_valid
       title: Validity
-      left: 44
+      left: 40
       top: 10
       height: 40
-      width: 11
+      width: 10
       type: looker_bar
       model: cda_trade
       explore: summary
@@ -340,10 +340,10 @@
 
     - name: cda_trade_summary_consistent
       title: Consistency
-      left: 55
+      left: 50
       top: 10
       height: 40
-      width: 11
+      width: 10
       type: looker_bar
       model: cda_trade
       explore: summary
@@ -391,10 +391,10 @@
 
     - name: cda_trade_summary_unique
       title: Uniqueness
-      left: 66
+      left: 60
       top: 10
       height: 40
-      width: 11
+      width: 10
       type: looker_bar
       model: cda_trade
       explore: summary
