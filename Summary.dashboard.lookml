@@ -188,7 +188,7 @@
       model: cda_trade
       explore: summary
       dimensions: [summary.statement_date, data_elements.feature_description]
-      measures: [summary.sum_timely]
+      measures: [summary.sum_timely, summary.sum_total]
       dynamic_fields:
       - table_calculation: percentage
         label: Percentage
@@ -331,7 +331,7 @@
       model: cda_trade
       explore: summary
       dimensions: [summary.statement_date, data_elements.feature_description]
-      measures: [summary.sum_variant]
+      measures: [summary.sum_variant, summary.sum_total]
       dynamic_fields:
       - table_calculation: percentage
         label: Percentage
@@ -474,7 +474,7 @@
       model: cda_trade
       explore: summary
       dimensions: [summary.statement_date, data_elements.feature_description]
-      measures: [summary.sum_conform]
+      measures: [summary.sum_conform, summary.sum_total]
       dynamic_fields:
       - table_calculation: percentage
         label: Percentage
@@ -617,7 +617,7 @@
       model: cda_trade
       explore: summary
       dimensions: [summary.statement_date, data_elements.feature_description]
-      measures: [summary.sum_valid]
+      measures: [summary.sum_valid, summary.sum_total]
       dynamic_fields:
       - table_calculation: percentage
         label: Percentage
@@ -760,7 +760,7 @@
       model: cda_trade
       explore: summary
       dimensions: [summary.statement_date, data_elements.feature_description]
-      measures: [summary.sum_consistent]
+      measures: [summary.sum_consistent, summary.sum_total]
       dynamic_fields:
       - table_calculation: percentage
         label: Percentage
@@ -903,7 +903,7 @@
       model: cda_trade
       explore: summary
       dimensions: [summary.statement_date, data_elements.feature_description]
-      measures: [summary.sum_unique]
+      measures: [summary.sum_unique, summary.sum_total]
       dynamic_fields:
       - table_calculation: percentage
         label: Percentage
