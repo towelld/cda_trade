@@ -48,7 +48,7 @@
       y_axis_tick_density: default
       y_axis_tick_density_custom: 5
       show_x_axis_label: false
-      show_x_axis_ticks: false
+      show_x_axis_ticks: true
       x_axis_scale: ordinal
       y_axis_scale_mode: linear
       show_null_points: true
@@ -141,7 +141,7 @@
     - name: cda_trade_summary_timely
       title: Timeliness
       left: 11
-      top: 0
+      top: 10
       height: 40
       width: 11
       type: looker_bar
@@ -190,7 +190,7 @@
 
     - name: cda_trade_summary_variant
       title: Variation
-      left: 18
+      left: 22
       top: 10
       height: 40
       width: 11
@@ -223,7 +223,7 @@
       y_axis_tick_density: default
       y_axis_tick_density_custom: 5
       show_x_axis_label: false
-      show_x_axis_ticks: false
+      show_x_axis_ticks: true
       x_axis_scale: auto
       y_axis_scale_mode: linear
       ordering: none
@@ -240,7 +240,7 @@
 
     - name: cda_trade_summary_conform
       title: Conformity
-      left: 25
+      left: 33
       top: 10
       height: 40
       width: 11
@@ -273,7 +273,7 @@
       y_axis_tick_density: default
       y_axis_tick_density_custom: 5
       show_x_axis_label: false
-      show_x_axis_ticks: false
+      show_x_axis_ticks: true
       x_axis_scale: auto
       y_axis_scale_mode: linear
       ordering: none
@@ -290,7 +290,7 @@
 
     - name: cda_trade_summary_valid
       title: Validity
-      left: 32
+      left: 44
       top: 10
       height: 40
       width: 11
@@ -323,7 +323,7 @@
       y_axis_tick_density: default
       y_axis_tick_density_custom: 5
       show_x_axis_label: false
-      show_x_axis_ticks: false
+      show_x_axis_ticks: true
       x_axis_scale: auto
       y_axis_scale_mode: linear
       ordering: none
@@ -340,7 +340,7 @@
 
     - name: cda_trade_summary_consistent
       title: Consistency
-      left: 39
+      left: 55
       top: 10
       height: 40
       width: 11
@@ -373,7 +373,7 @@
       y_axis_tick_density: default
       y_axis_tick_density_custom: 5
       show_x_axis_label: false
-      show_x_axis_ticks: false
+      show_x_axis_ticks: true
       x_axis_scale: auto
       y_axis_scale_mode: linear
       ordering: none
@@ -391,7 +391,7 @@
 
     - name: cda_trade_summary_unique
       title: Uniqueness
-      left: 46
+      left: 66
       top: 10
       height: 40
       width: 11
@@ -424,7 +424,7 @@
       y_axis_tick_density: default
       y_axis_tick_density_custom: 5
       show_x_axis_label: false
-      show_x_axis_ticks: false
+      show_x_axis_ticks: true
       x_axis_scale: auto
       y_axis_scale_mode: linear
       ordering: none
