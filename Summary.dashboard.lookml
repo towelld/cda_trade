@@ -466,7 +466,7 @@
 
     - name: cda_trade_trend_conform
       title: Conform
-      left: 0
+      left: 30
       top: 3
       height: 10
       width: 10
