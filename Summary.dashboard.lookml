@@ -19,7 +19,7 @@
     - name: cda_trade_trend_complete
       title:
       left: 0
-      top: 00
+      top: 0
       height: 10
       width: 11
       type: looker_area
@@ -88,11 +88,8 @@
       label_color: ["#ffffff", "#a9a8a9"]
       y_axis_unpin: true
 
-
-
-
     - name: cda_trade_summary_complete
-      title:        Completeness
+      title: Completeness
       left: 0
       top: 10
       height: 40
@@ -146,7 +143,7 @@
       left: 11
       top: 0
       height: 40
-      width: 7
+      width: 11
       type: looker_bar
       model: cda_trade
       explore: summary
@@ -176,7 +173,7 @@
       y_axis_tick_density: default
       y_axis_tick_density_custom: 5
       show_x_axis_label: false
-      show_x_axis_ticks: false
+      show_x_axis_ticks: true
       x_axis_scale: auto
       y_axis_scale_mode: linear
       ordering: none
@@ -194,9 +191,9 @@
     - name: cda_trade_summary_variant
       title: Variation
       left: 18
-      top: 0
+      top: 10
       height: 40
-      width: 7
+      width: 11
       type: looker_bar
       model: cda_trade
       explore: summary
@@ -244,9 +241,9 @@
     - name: cda_trade_summary_conform
       title: Conformity
       left: 25
-      top: 0
+      top: 10
       height: 40
-      width: 7
+      width: 11
       type: looker_bar
       model: cda_trade
       explore: summary
@@ -294,9 +291,9 @@
     - name: cda_trade_summary_valid
       title: Validity
       left: 32
-      top: 0
+      top: 10
       height: 40
-      width: 7
+      width: 11
       type: looker_bar
       model: cda_trade
       explore: summary
@@ -344,9 +341,9 @@
     - name: cda_trade_summary_consistent
       title: Consistency
       left: 39
-      top: 0
+      top: 10
       height: 40
-      width: 7
+      width: 11
       type: looker_bar
       model: cda_trade
       explore: summary
@@ -395,9 +392,9 @@
     - name: cda_trade_summary_unique
       title: Uniqueness
       left: 46
-      top: 0
+      top: 10
       height: 40
-      width: 7
+      width: 11
       type: looker_bar
       model: cda_trade
       explore: summary
