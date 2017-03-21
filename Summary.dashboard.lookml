@@ -465,8 +465,8 @@
       custom_color: "#a9a8a9"
 
     - name: cda_trade_trend_conform
-      title:
-      left: 30
+      title: Conform
+      left: 0
       top: 3
       height: 10
       width: 10
@@ -478,7 +478,7 @@
       dynamic_fields:
       - table_calculation: percentage
         label: Percentage
-        expression: 1-((${summary.sum_total}-${summary.sum_conform)/${summary.sum_total})
+        expression: 1-((${summary.sum_total}-${summary.sum_conform})/${summary.sum_total})
         value_format:
         value_format_name: percent_2
       filters:
@@ -540,6 +540,7 @@
         percentage: "#a9a8a9"
       label_color: ["#ffffff", "#a9a8a9"]
       y_axis_unpin: false
+
 
     - name: cda_trade_summary_conform
       title: Conformity
