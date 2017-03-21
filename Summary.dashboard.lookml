@@ -163,7 +163,7 @@
         calculation_1: "#646569"
         summary.sum_total: "#fa8d29"
       hide_legend: true
-      y_axis_unpin: false
+      y_axis_unpin: true
 
     - name: cda_trade_title_timely
       left: 10
