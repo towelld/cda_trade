@@ -45,7 +45,13 @@
       model: cda_trade
       explore: summary
       dimensions: [summary.statement_date, data_elements.feature_description]
-      measures: [summary.sum_complete]
+      measures: [summary.sum_complete, summary.sum_total]
+      dynamic_fields:
+      - table_calculation: percentage
+        label: Percentage
+        expression: 1-((${summary.sum_total}-${summary.sum_complete})/${summary.sum_total})
+        value_format:
+        value_format_name: percent_2
       filters:
         data_elements.feature_description: ''
         summary.statement_date: 2017/02/27 to 2017/03/10
@@ -100,9 +106,9 @@
         show_hide: hide
         first_last: first
         num_rows: 0
-      hidden_fields: []
+      hidden_fields: [summary.sum_complete, summary.sum_total]
       series_colors:
-        summary.sum_complete: "#fa8d29"
+        percentage: "#fa8d29"
       label_color: ["#ffffff", "#a9a8a9"]
       y_axis_unpin: true
 
