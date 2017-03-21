@@ -1,5 +1,5 @@
 - dashboard: summary
-  title: Trade
+  title: Trade Summary
   layout: static
   width: 2100
   tile_size: 30
