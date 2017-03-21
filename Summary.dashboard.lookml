@@ -1,7 +1,7 @@
 - dashboard: summary
   title: Trade Summary
   layout: static
-  width: 1800
+  width: 1200
   tile_size: 30
   auto_run: true
   embed_style:
