@@ -112,7 +112,7 @@
       label_color: ["#ffffff", "#a9a8a9"]
       y_axis_unpin: true
       y_axis_max: ['1']
-      y_axis_min: ['0.8']
+      y_axis_min: ['0.75']
 
     - name: cda_trade_summary_complete
       title: Completeness
@@ -257,7 +257,7 @@
       label_color: ["#ffffff", "#a9a8a9"]
       y_axis_unpin: true
       y_axis_max: ['1']
-      y_axis_min: ['0.8']
+      y_axis_min: ['0.75']
 
     - name: cda_trade_summary_timely
       title: Timeliness
@@ -402,7 +402,7 @@
       label_color: ["#ffffff", "#a9a8a9"]
       y_axis_unpin: true
       y_axis_max: ['1']
-      y_axis_min: ['0.8']
+      y_axis_min: ['0.75']
 
     - name: cda_trade_summary_variant
       title: Variation
@@ -547,7 +547,7 @@
       label_color: ["#ffffff", "#a9a8a9"]
       y_axis_unpin: true
       y_axis_max: ['1']
-      y_axis_min: ['0.8']
+      y_axis_min: ['0.75']
 
 
     - name: cda_trade_summary_conform
@@ -693,7 +693,7 @@
       label_color: ["#ffffff", "#a9a8a9"]
       y_axis_unpin: true
       y_axis_max: ['1']
-      y_axis_min: ['0.8']
+      y_axis_min: ['0.75']
 
     - name: cda_trade_summary_valid
       title: Validity
@@ -838,7 +838,7 @@
       label_color: ["#ffffff", "#a9a8a9"]
       y_axis_unpin: true
       y_axis_max: ['1']
-      y_axis_min: ['0.8']
+      y_axis_min: ['0.75']
 
     - name: cda_trade_summary_consistent
       title: Consistency
@@ -983,7 +983,7 @@
       label_color: ["#ffffff", "#a9a8a9"]
       y_axis_unpin: true
       y_axis_max: ['1']
-      y_axis_min: ['0.8']
+      y_axis_min: ['0.75']
 
     - name: cda_trade_summary_unique
       title: Uniqueness
