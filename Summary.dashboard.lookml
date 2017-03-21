@@ -539,7 +539,7 @@
       series_colors:
         percentage: "#a9a8a9"
       label_color: ["#ffffff", "#a9a8a9"]
-      y_axis_unpin: false
+      y_axis_unpin: true
 
 
     - name: cda_trade_summary_conform
