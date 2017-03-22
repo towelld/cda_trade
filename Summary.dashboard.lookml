@@ -129,11 +129,26 @@
       listen:
         feature_description: data_elements.feature_description
       dynamic_fields:
-      - table_calculation: calculation_1
-        label: Calculation 1
-        expression: "${summary.sum_total}-${summary.sum_complete}"
+      - table_calculation: red
+        label: Red
+        expression: 'if (${summary.sum_complete}/${summary.sum_total}<0.75,${summary.sum_complete}/${summary.sum_total},0)'
         value_format:
-        value_format_name:
+        value_format_name: percent_2
+      - table_calculation: amber
+        label: Amber
+        expression: 'if (${summary.sum_complete}/${summary.sum_total}>=0.75,if(${summary.sum_complete}/${summary.sum_total}<0.9,${summary.sum_complete}/${summary.sum_total},0),0)'
+        value_format:
+        value_format_name: percent_2
+      - table_calculation: green
+        label: Green
+        expression: if (${summary.sum_complete}/${summary.sum_total}>=0.9,${summary.sum_complete}/${summary.sum_total},0)
+        value_format:
+        value_format_name: percent_2
+      - table_calculation: '100'
+        label: 100%
+        expression: 1-(${summary.sum_complete}/${summary.sum_total})
+        value_format:
+        value_format_name: percent_2
       sorts: [data_elements.feature_description]
       limit: '500'
       column_limit: '50'
@@ -163,9 +178,11 @@
       series_types: {}
       hidden_fields: [summary.sum_complete]
       series_colors:
-        calculation_1: "#000000"
-        summary.sum_total: "#fa8d29"
-      hide_legend: true
+        '100': "#646569"
+        red: "#df5555"
+        amber: "#eaa153"
+        green: "#92c263"
+        hide_legend: true
       y_axis_min: ['0.75']
       y_axis_max: ['1']
 
