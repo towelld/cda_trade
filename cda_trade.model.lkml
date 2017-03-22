@@ -33,17 +33,35 @@ explore: data_elements {
   }
 }
 
-explore: data_elements_detail {}
-
+explore: data_elements_detail {
+  join: data_elements {
+    sql_on: ${data_elements.element_id} = ${data_elements_detail.element_id} ;;
+    relationship: one_to_one
+  }
+}
 explore: data_elements_rule_types {}
 
-explore: data_elements_rules {}
+explore: data_elements_rules {
+  join: data_elements_rule_types {
+    sql_on: ${data_elements_rule_types.rule_type_id} = ${data_elements_rules.rule_type_id} ;;
+    relationship: one_to_one
+  }
+  join: data_elements {
+    sql_on: ${data_elements.element_id} = ${data_elements_rules.element_id} ;;
+    relationship: one_to_one
+  }
+}
 
 explore: data_families {}
 
 explore: data_family_element_link {}
 
-explore: data_tolerances {}
+explore: data_tolerances {
+  join: data_elements {
+    sql_on: ${data_elements.element_id} = ${data_tolerances.element_id} ;;
+    relationship: one_to_one
+  }
+}
 
 explore: document_info {}
 
