@@ -13,6 +13,13 @@
     tile_text_color: "#646569"
 
   filters:
+  - name: statement_date
+    label: 'Statement Date'
+    type: field_filter
+    model: cda_trade
+    explore: summary
+    field: summary.statement_date
+    default_value: 2017/02/27 to 2017/03/10
   - name: feature_description
     label: 'Feature'
     type: field_filter
@@ -57,9 +64,8 @@
         expression: 1-((${summary.sum_total}-${summary.sum_complete})/${summary.sum_total})
         value_format:
         value_format_name: percent_2
-      filters:
-        summary.statement_date: 2017/02/27 to 2017/03/10
       listen:
+        statement_date: summary.statement_date
         feature_description: data_elements.feature_description
         family_name: data_families.family_name
         system: summary.system
@@ -134,6 +140,7 @@
       measures: [summary.sum_complete, summary.sum_total]
       drill: [data_elements.feature_description]
       listen:
+        statement_date: summary.statement_date
         feature_description: data_elements.feature_description
         family_name: data_families.family_name
         system: summary.system
@@ -222,10 +229,8 @@
         expression: 1-((${summary.sum_total}-${summary.sum_timely})/${summary.sum_total})
         value_format:
         value_format_name: percent_2
-      filters:
-        data_elements.feature_description: ''
-        summary.statement_date: 2017/02/27 to 2017/03/10
       listen:
+        statement_date: summary.statement_date
         feature_description: data_elements.feature_description
         family_name: data_families.family_name
         system: summary.system
@@ -299,6 +304,7 @@
       dimensions: [data_elements.feature_description]
       measures: [summary.sum_timely, summary.sum_total]
       listen:
+        statement_date: summary.statement_date
         feature_description: data_elements.feature_description
         family_name: data_families.family_name
         system: summary.system
@@ -392,10 +398,8 @@
         expression: 1-((${summary.sum_total}-${summary.sum_variant})/${summary.sum_total})
         value_format:
         value_format_name: percent_2
-      filters:
-        data_elements.feature_description: ''
-        summary.statement_date: 2017/02/27 to 2017/03/10
       listen:
+        statement_date: summary.statement_date
         feature_description: data_elements.feature_description
         family_name: data_families.family_name
         system: summary.system
@@ -469,6 +473,7 @@
       dimensions: [data_elements.feature_description]
       measures: [summary.sum_variant, summary.sum_total]
       listen:
+        statement_date: summary.statement_date
         feature_description: data_elements.feature_description
         family_name: data_families.family_name
         system: summary.system
@@ -562,10 +567,8 @@
         expression: 1-((${summary.sum_total}-${summary.sum_conform})/${summary.sum_total})
         value_format:
         value_format_name: percent_2
-      filters:
-        data_elements.feature_description: ''
-        summary.statement_date: 2017/02/27 to 2017/03/10
       listen:
+        statement_date: summary.statement_date
         feature_description: data_elements.feature_description
         family_name: data_families.family_name
         system: summary.system
@@ -640,6 +643,7 @@
       dimensions: [data_elements.feature_description]
       measures: [summary.sum_conform, summary.sum_total]
       listen:
+        statement_date: summary.statement_date
         feature_description: data_elements.feature_description
         family_name: data_families.family_name
         system: summary.system
@@ -728,10 +732,8 @@
         expression: 1-((${summary.sum_total}-${summary.sum_valid})/${summary.sum_total})
         value_format:
         value_format_name: percent_2
-      filters:
-        data_elements.feature_description: ''
-        summary.statement_date: 2017/02/27 to 2017/03/10
       listen:
+        statement_date: summary.statement_date
         feature_description: data_elements.feature_description
         family_name: data_families.family_name
         system: summary.system
@@ -805,6 +807,7 @@
       dimensions: [data_elements.feature_description]
       measures: [summary.sum_valid, summary.sum_total]
       listen:
+        statement_date: summary.statement_date
         feature_description: data_elements.feature_description
         family_name: data_families.family_name
         system: summary.system
@@ -898,10 +901,8 @@
         expression: 1-((${summary.sum_total}-${summary.sum_consistent})/${summary.sum_total})
         value_format:
         value_format_name: percent_2
-      filters:
-        data_elements.feature_description: ''
-        summary.statement_date: 2017/02/27 to 2017/03/10
       listen:
+        statement_date: summary.statement_date
         feature_description: data_elements.feature_description
         family_name: data_families.family_name
         system: summary.system
@@ -975,6 +976,7 @@
       dimensions: [data_elements.feature_description]
       measures: [summary.sum_consistent, summary.sum_total]
       listen:
+        statement_date: summary.statement_date
         feature_description: data_elements.feature_description
         family_name: data_families.family_name
         system: summary.system
@@ -1069,13 +1071,11 @@
         value_format:
         value_format_name: percent_2
       listen:
+        statement_date: summary.statement_date
         feature_description: data_elements.feature_description
         family_name: data_families.family_name
         system: summary.system
         trade_type: summary.trade_type
-      filters:
-        data_elements.feature_description: ''
-        summary.statement_date: 2017/02/27 to 2017/03/10
       sorts: [summary.statement_date]
       limit: '500'
       column_limit: '50'
@@ -1145,6 +1145,7 @@
       dimensions: [data_elements.feature_description]
       measures: [summary.sum_unique, summary.sum_total]
       listen:
+        statement_date: summary.statement_date
         feature_description: data_elements.feature_description
         family_name: data_families.family_name
         system: summary.system
