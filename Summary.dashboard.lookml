@@ -1,7 +1,7 @@
 - dashboard: summary
   title: Trade Summary
   layout: static
-  width: 2100
+  width: 2310
   tile_size: 30
   auto_run: true
   embed_style:
@@ -26,7 +26,7 @@
       left: 0
       top: 33
       height: 5
-      width: 10
+      width: 17
       type: looker_area
       model: cda_trade
       explore: summary
@@ -105,7 +105,7 @@
       left: 0
       top: 0
       height: 35
-      width: 10
+      width: 17
       type: looker_bar
       model: cda_trade
       explore: summary
@@ -173,7 +173,7 @@
       y_axis_max: ['1']
 
     - name: cda_trade_title_complete
-      left: 0
+      left: 3
       top: 0
       height: 2
       width: 10
