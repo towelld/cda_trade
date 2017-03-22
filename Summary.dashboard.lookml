@@ -38,7 +38,7 @@
     - name: cda_trade_trend_complete
       title: Complete
       left: 0
-      top: 13
+      top: 37
       height: 10
       width: 10
       type: looker_area
