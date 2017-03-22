@@ -276,17 +276,17 @@
       dynamic_fields:
       - table_calculation: red
         label: Red
-        expression: 'if (${summary.sum_timely}/${summary.sum_total}<0.75,${summary.sum_timely}/${summary.sum_total},0)'
+        expression: 'if (${summary.sum_timely}/${summary.sum_total}<0.90,${summary.sum_timely}/${summary.sum_total},0)'
         value_format:
         value_format_name: percent_2
       - table_calculation: amber
         label: Amber
-        expression: 'if (${summary.sum_timely}/${summary.sum_total}>=0.75,if(${summary.sum_timely}/${summary.sum_total}<0.9,${summary.sum_timely}/${summary.sum_total},0),0)'
+        expression: 'if (${summary.sum_timely}/${summary.sum_total}>=0.90,if(${summary.sum_timely}/${summary.sum_total}<0.95,${summary.sum_timely}/${summary.sum_total},0),0)'
         value_format:
         value_format_name: percent_2
       - table_calculation: green
         label: Green
-        expression: 'if (${summary.sum_timely}/${summary.sum_total}>=0.9,${summary.sum_timely}/${summary.sum_total},0)'
+        expression: 'if (${summary.sum_timely}/${summary.sum_total}>=0.95,${summary.sum_timely}/${summary.sum_total},0)'
         value_format:
         value_format_name: percent_2
       - table_calculation: '100'
@@ -440,17 +440,17 @@
       dynamic_fields:
       - table_calculation: red
         label: Red
-        expression: 'if (${summary.sum_variant}/${summary.sum_total}<0.75,${summary.sum_variant}/${summary.sum_total},0)'
+        expression: 'if (${summary.sum_variant}/${summary.sum_total}<0.90,${summary.sum_variant}/${summary.sum_total},0)'
         value_format:
         value_format_name: percent_2
       - table_calculation: amber
         label: Amber
-        expression: 'if (${summary.sum_variant}/${summary.sum_total}>=0.75,if(${summary.sum_variant}/${summary.sum_total}<0.9,${summary.sum_variant}/${summary.sum_total},0),0)'
+        expression: 'if (${summary.sum_variant}/${summary.sum_total}>=0.90,if(${summary.sum_variant}/${summary.sum_total}<0.95,${summary.sum_variant}/${summary.sum_total},0),0)'
         value_format:
         value_format_name: percent_2
       - table_calculation: green
         label: Green
-        expression: 'if (${summary.sum_variant}/${summary.sum_total}>=0.9,${summary.sum_variant}/${summary.sum_total},0)'
+        expression: 'if (${summary.sum_variant}/${summary.sum_total}>=0.95,${summary.sum_variant}/${summary.sum_total},0)'
         value_format:
         value_format_name: percent_2
       - table_calculation: '100'
@@ -605,17 +605,17 @@
       dynamic_fields:
       - table_calculation: red
         label: Red
-        expression: 'if (${summary.sum_conform}/${summary.sum_total}<0.75,${summary.sum_conform}/${summary.sum_total},0)'
+        expression: 'if (${summary.sum_conform}/${summary.sum_total}<0.90,${summary.sum_conform}/${summary.sum_total},0)'
         value_format:
         value_format_name: percent_2
       - table_calculation: amber
         label: Amber
-        expression: 'if (${summary.sum_conform}/${summary.sum_total}>=0.75,if(${summary.sum_conform}/${summary.sum_total}<0.9,${summary.sum_conform}/${summary.sum_total},0),0)'
+        expression: 'if (${summary.sum_conform}/${summary.sum_total}>=0.90,if(${summary.sum_conform}/${summary.sum_total}<0.95,${summary.sum_conform}/${summary.sum_total},0),0)'
         value_format:
         value_format_name: percent_2
       - table_calculation: green
         label: Green
-        expression: 'if (${summary.sum_conform}/${summary.sum_total}>=0.9,${summary.sum_conform}/${summary.sum_total},0)'
+        expression: 'if (${summary.sum_conform}/${summary.sum_total}>=0.95,${summary.sum_conform}/${summary.sum_total},0)'
         value_format:
         value_format_name: percent_2
       - table_calculation: '100'
@@ -769,17 +769,17 @@
       dynamic_fields:
       - table_calculation: red
         label: Red
-        expression: 'if (${summary.sum_valid}/${summary.sum_total}<0.75,${summary.sum_valid}/${summary.sum_total},0)'
+        expression: 'if (${summary.sum_valid}/${summary.sum_total}<0.90,${summary.sum_valid}/${summary.sum_total},0)'
         value_format:
         value_format_name: percent_2
       - table_calculation: amber
         label: Amber
-        expression: 'if (${summary.sum_valid}/${summary.sum_total}>=0.75,if(${summary.sum_valid}/${summary.sum_total}<0.9,${summary.sum_valid}/${summary.sum_total},0),0)'
+        expression: 'if (${summary.sum_valid}/${summary.sum_total}>=0.90,if(${summary.sum_valid}/${summary.sum_total}<0.95,${summary.sum_valid}/${summary.sum_total},0),0)'
         value_format:
         value_format_name: percent_2
       - table_calculation: green
         label: Green
-        expression: 'if (${summary.sum_valid}/${summary.sum_total}>=0.9,${summary.sum_valid}/${summary.sum_total},0)'
+        expression: 'if (${summary.sum_valid}/${summary.sum_total}>=0.95,${summary.sum_valid}/${summary.sum_total},0)'
         value_format:
         value_format_name: percent_2
       - table_calculation: '100'
@@ -933,17 +933,17 @@
       dynamic_fields:
       - table_calculation: red
         label: Red
-        expression: 'if (${summary.sum_consistent}/${summary.sum_total}<0.75,${summary.sum_consistent}/${summary.sum_total},0)'
+        expression: 'if (${summary.sum_consistent}/${summary.sum_total}<0.90,${summary.sum_consistent}/${summary.sum_total},0)'
         value_format:
         value_format_name: percent_2
       - table_calculation: amber
         label: Amber
-        expression: 'if (${summary.sum_consistent}/${summary.sum_total}>=0.75,if(${summary.sum_consistent}/${summary.sum_total}<0.9,${summary.sum_consistent}/${summary.sum_total},0),0)'
+        expression: 'if (${summary.sum_consistent}/${summary.sum_total}>=0.90,if(${summary.sum_consistent}/${summary.sum_total}<0.95,${summary.sum_consistent}/${summary.sum_total},0),0)'
         value_format:
         value_format_name: percent_2
       - table_calculation: green
         label: Green
-        expression: 'if (${summary.sum_consistent}/${summary.sum_total}>=0.9,${summary.sum_consistent}/${summary.sum_total},0)'
+        expression: 'if (${summary.sum_consistent}/${summary.sum_total}>=0.95,${summary.sum_consistent}/${summary.sum_total},0)'
         value_format:
         value_format_name: percent_2
       - table_calculation: '100'
@@ -1097,17 +1097,17 @@
       dynamic_fields:
       - table_calculation: red
         label: Red
-        expression: 'if (${summary.sum_unique}/${summary.sum_total}<0.75,${summary.sum_unique}/${summary.sum_total},0)'
+        expression: 'if (${summary.sum_unique}/${summary.sum_total}<0.90,${summary.sum_unique}/${summary.sum_total},0)'
         value_format:
         value_format_name: percent_2
       - table_calculation: amber
         label: Amber
-        expression: 'if (${summary.sum_unique}/${summary.sum_total}>=0.75,if(${summary.sum_unique}/${summary.sum_total}<0.9,${summary.sum_unique}/${summary.sum_total},0),0)'
+        expression: 'if (${summary.sum_unique}/${summary.sum_total}>=0.90,if(${summary.sum_unique}/${summary.sum_total}<0.95,${summary.sum_unique}/${summary.sum_total},0),0)'
         value_format:
         value_format_name: percent_2
       - table_calculation: green
         label: Green
-        expression: 'if (${summary.sum_unique}/${summary.sum_total}>=0.9,${summary.sum_unique}/${summary.sum_total},0)'
+        expression: 'if (${summary.sum_unique}/${summary.sum_total}>=0.95,${summary.sum_unique}/${summary.sum_total},0)'
         value_format:
         value_format_name: percent_2
       - table_calculation: '100'
