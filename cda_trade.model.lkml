@@ -134,11 +134,11 @@ explore: summary {
   }
   join: data_family_element_link {
     sql_on: ${data_family_element_link.element_id} = ${summary.element_id} ;;
-    relationship: one_to_many
+    relationship: many_to_one
   }
   join: data_families {
     sql_on: ${data_families.family_id} = ${data_family_element_link.family_id} ;;
-    relationship: one_to_many
+    relationship: many_to_one
   }
 }
 
