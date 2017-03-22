@@ -102,10 +102,10 @@
 
     - name: cda_trade_summary_complete
       title: Completeness
-      left: 0
+      left: 7
       top: 0
       height: 35
-      width: 17
+      width: 10
       type: looker_bar
       model: cda_trade
       explore: summary
@@ -173,7 +173,7 @@
       y_axis_max: ['1']
 
     - name: cda_trade_title_complete
-      left: 3
+      left: 7
       top: 0
       height: 2
       width: 10
@@ -188,7 +188,7 @@
 
     - name: cda_trade_trend_timely
       title:
-      left: 10
+      left: 17
       top: 33
       height: 5
       width: 10
@@ -267,7 +267,7 @@
 
     - name: cda_trade_summary_timely
       title: Timeliness
-      left: 10
+      left: 17
       top: 0
       height: 35
       width: 10
@@ -337,7 +337,7 @@
       y_axis_max: ['1']
 
     - name: cda_trade_title_timely
-      left: 10
+      left: 17
       top: 0
       height: 2
       width: 10
@@ -352,7 +352,7 @@
 
     - name: cda_trade_trend_variant
       title:
-      left: 20
+      left: 27
       top: 33
       height: 5
       width: 10
@@ -431,7 +431,7 @@
 
     - name: cda_trade_summary_variant
       title: Variation
-      left: 20
+      left: 27
       top: 0
       height: 35
       width: 10
@@ -501,7 +501,7 @@
       y_axis_max: ['1']
 
     - name: cda_trade_title_variant
-      left: 20
+      left: 27
       top: 0
       height: 2
       width: 10
@@ -516,7 +516,7 @@
 
     - name: cda_trade_trend_conform
       title: Conform
-      left: 30
+      left: 37
       top: 33
       height: 5
       width: 10
@@ -596,7 +596,7 @@
 
     - name: cda_trade_summary_conform
       title: Conformity
-      left: 30
+      left: 37
       top: 0
       height: 35
       width: 10
@@ -666,7 +666,7 @@
       y_axis_max: ['1']
 
     - name: cda_trade_title_conform
-      left: 30
+      left: 37
       top: 0
       height: 2
       width: 10
@@ -681,7 +681,7 @@
 
     - name: cda_trade_trend_valid
       title:
-      left: 40
+      left: 47
       top: 33
       height: 5
       width: 10
@@ -760,7 +760,7 @@
 
     - name: cda_trade_summary_valid
       title: Validity
-      left: 40
+      left: 47
       top: 0
       height: 35
       width: 10
@@ -830,7 +830,7 @@
       y_axis_max: ['1']
 
     - name: cda_trade_title_valid
-      left: 40
+      left: 47
       top: 0
       height: 2
       width: 10
@@ -845,7 +845,7 @@
 
     - name: cda_trade_trend_consistent
       title:
-      left: 50
+      left: 57
       top: 33
       height: 5
       width: 10
@@ -924,7 +924,7 @@
 
     - name: cda_trade_summary_consistent
       title: Consistency
-      left: 50
+      left: 57
       top: 0
       height: 35
       width: 10
@@ -994,7 +994,7 @@
       y_axis_max: ['1']
 
     - name: cda_trade_title_consistent
-      left: 50
+      left: 57
       top: 0
       height: 2
       width: 10
@@ -1009,7 +1009,7 @@
 
     - name: cda_trade_trend_unique
       title:
-      left: 60
+      left: 67
       top: 33
       height: 5
       width: 10
@@ -1088,7 +1088,7 @@
 
     - name: cda_trade_summary_unique
       title: Uniqueness
-      left: 60
+      left: 67
       top: 0
       height: 35
       width: 10
@@ -1158,7 +1158,7 @@
       y_axis_max: ['1']
 
     - name: cda_trade_title_unique
-      left: 60
+      left: 67
       top: 0
       height: 2
       width: 10
