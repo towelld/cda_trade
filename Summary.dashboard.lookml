@@ -25,7 +25,7 @@
       title: Complete
       left: 0
       top: 33
-      height: 10
+      height: 5
       width: 10
       type: looker_area
       model: cda_trade
@@ -190,7 +190,7 @@
       title:
       left: 10
       top: 33
-      height: 10
+      height: 5
       width: 10
       type: looker_area
       model: cda_trade
@@ -354,7 +354,7 @@
       title:
       left: 20
       top: 33
-      height: 10
+      height: 5
       width: 10
       type: looker_area
       model: cda_trade
@@ -518,7 +518,7 @@
       title: Conform
       left: 30
       top: 33
-      height: 10
+      height: 5
       width: 10
       type: looker_area
       model: cda_trade
@@ -683,7 +683,7 @@
       title:
       left: 40
       top: 33
-      height: 10
+      height: 5
       width: 10
       type: looker_area
       model: cda_trade
@@ -847,7 +847,7 @@
       title:
       left: 50
       top: 33
-      height: 10
+      height: 5
       width: 10
       type: looker_area
       model: cda_trade
@@ -1011,7 +1011,7 @@
       title:
       left: 60
       top: 33
-      height: 10
+      height: 5
       width: 10
       type: looker_area
       model: cda_trade
