@@ -5,7 +5,7 @@
   tile_size: 30
   auto_run: true
   embed_style:
-    background_color: "#000000"
+    background_color: "#ffffff"
     show_title: false
     title_color: "#ffffff"
     show_filters_bar: true
@@ -186,24 +186,10 @@
       custom_color_enabled: true
       custom_color: "#fa8d29"
 
-    - name: cda_trade_title_timely
-      left: 10
-      top: 0
-      height: 3
-      width: 10
-      type: single_value
-      model: cda_trade
-      explore: data_elements_rule_types
-      dimensions: [data_elements_rule_types.rule_type]
-      filters:
-        data_elements_rule_types.rule_type: Timely
-      custom_color_enabled: true
-      custom_color: "#55565a"
-
     - name: cda_trade_trend_timely
       title:
       left: 10
-      top: 3
+      top: 33
       height: 10
       width: 10
       type: looker_area
@@ -282,7 +268,7 @@
     - name: cda_trade_summary_timely
       title: Timeliness
       left: 10
-      top: 13
+      top: 0
       height: 35
       width: 10
       type: looker_bar
@@ -350,24 +336,24 @@
       y_axis_min: ['0.75']
       y_axis_max: ['1']
 
-    - name: cda_trade_title_variant
-      left: 20
+    - name: cda_trade_title_timely
+      left: 10
       top: 0
-      height: 3
+      height: 2
       width: 10
       type: single_value
       model: cda_trade
       explore: data_elements_rule_types
       dimensions: [data_elements_rule_types.rule_type]
       filters:
-        data_elements_rule_types.rule_type: Variant
+        data_elements_rule_types.rule_type: Timely
       custom_color_enabled: true
-      custom_color: "#5e8ab4"
+      custom_color: "#55565a"
 
     - name: cda_trade_trend_variant
       title:
       left: 20
-      top: 3
+      top: 33
       height: 10
       width: 10
       type: looker_area
@@ -446,7 +432,7 @@
     - name: cda_trade_summary_variant
       title: Variation
       left: 20
-      top: 13
+      top: 0
       height: 35
       width: 10
       type: looker_bar
@@ -514,24 +500,24 @@
       y_axis_min: ['0.75']
       y_axis_max: ['1']
 
-    - name: cda_trade_title_conform
-      left: 30
+    - name: cda_trade_title_variant
+      left: 20
       top: 0
-      height: 3
+      height: 2
       width: 10
       type: single_value
       model: cda_trade
       explore: data_elements_rule_types
       dimensions: [data_elements_rule_types.rule_type]
       filters:
-        data_elements_rule_types.rule_type: Conform
+        data_elements_rule_types.rule_type: Variant
       custom_color_enabled: true
-      custom_color: "#a9a8a9"
+      custom_color: "#5e8ab4"
 
     - name: cda_trade_trend_conform
       title: Conform
       left: 30
-      top: 3
+      top: 33
       height: 10
       width: 10
       type: looker_area
@@ -611,7 +597,7 @@
     - name: cda_trade_summary_conform
       title: Conformity
       left: 30
-      top: 13
+      top: 0
       height: 35
       width: 10
       type: looker_bar
@@ -679,24 +665,24 @@
       y_axis_min: ['0.75']
       y_axis_max: ['1']
 
-    - name: cda_trade_title_valid
-      left: 40
+    - name: cda_trade_title_conform
+      left: 30
       top: 0
-      height: 3
+      height: 2
       width: 10
       type: single_value
       model: cda_trade
       explore: data_elements_rule_types
       dimensions: [data_elements_rule_types.rule_type]
       filters:
-        data_elements_rule_types.rule_type: Valid
+        data_elements_rule_types.rule_type: Conform
       custom_color_enabled: true
-      custom_color: "#0c9e9e"
+      custom_color: "#a9a8a9"
 
     - name: cda_trade_trend_valid
       title:
       left: 40
-      top: 3
+      top: 33
       height: 10
       width: 10
       type: looker_area
@@ -775,7 +761,7 @@
     - name: cda_trade_summary_valid
       title: Validity
       left: 40
-      top: 13
+      top: 0
       height: 35
       width: 10
       type: looker_bar
@@ -843,24 +829,24 @@
       y_axis_min: ['0.75']
       y_axis_max: ['1']
 
-    - name: cda_trade_title_consistent
-      left: 50
+    - name: cda_trade_title_valid
+      left: 40
       top: 0
-      height: 3
+      height: 2
       width: 10
       type: single_value
       model: cda_trade
       explore: data_elements_rule_types
       dimensions: [data_elements_rule_types.rule_type]
       filters:
-        data_elements_rule_types.rule_type: Consistent
+        data_elements_rule_types.rule_type: Valid
       custom_color_enabled: true
-      custom_color: "#b34c59"
+      custom_color: "#0c9e9e"
 
     - name: cda_trade_trend_consistent
       title:
       left: 50
-      top: 3
+      top: 33
       height: 10
       width: 10
       type: looker_area
@@ -939,7 +925,7 @@
     - name: cda_trade_summary_consistent
       title: Consistency
       left: 50
-      top: 13
+      top: 0
       height: 35
       width: 10
       type: looker_bar
@@ -1007,24 +993,24 @@
       y_axis_min: ['0.75']
       y_axis_max: ['1']
 
-    - name: cda_trade_title_unique
-      left: 60
+    - name: cda_trade_title_consistent
+      left: 50
       top: 0
-      height: 3
+      height: 2
       width: 10
       type: single_value
       model: cda_trade
       explore: data_elements_rule_types
       dimensions: [data_elements_rule_types.rule_type]
       filters:
-        data_elements_rule_types.rule_type: Unique
+        data_elements_rule_types.rule_type: Consistent
       custom_color_enabled: true
-      custom_color: "#edc559"
+      custom_color: "#b34c59"
 
     - name: cda_trade_trend_unique
       title:
       left: 60
-      top: 3
+      top: 33
       height: 10
       width: 10
       type: looker_area
@@ -1103,7 +1089,7 @@
     - name: cda_trade_summary_unique
       title: Uniqueness
       left: 60
-      top: 13
+      top: 0
       height: 35
       width: 10
       type: looker_bar
@@ -1170,3 +1156,17 @@
       hide_legend: true
       y_axis_min: ['0.75']
       y_axis_max: ['1']
+
+    - name: cda_trade_title_unique
+      left: 60
+      top: 0
+      height: 2
+      width: 10
+      type: single_value
+      model: cda_trade
+      explore: data_elements_rule_types
+      dimensions: [data_elements_rule_types.rule_type]
+      filters:
+        data_elements_rule_types.rule_type: Unique
+      custom_color_enabled: true
+      custom_color: "#edc559"
