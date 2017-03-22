@@ -25,6 +25,18 @@
     model: cda_trade
     explore: data_families
     field: data_families.family_name
+  - name: system
+    label: 'System'
+    type: field_filter
+    model: cda_trade
+    explore: summary
+    field: summary.system
+  - name: trade_type
+    label: 'Trade Type'
+    type: field_filter
+    model: cda_trade
+    explore: summary
+    field: summary.trade_type
 
   elements:
 
@@ -50,6 +62,8 @@
       listen:
         feature_description: data_elements.feature_description
         family_name: data_families.family_name
+        system: summary.system
+        trade_type: summary.trade_type
       sorts: [summary.statement_date]
       limit: '500'
       column_limit: '50'
@@ -122,6 +136,8 @@
       listen:
         feature_description: data_elements.feature_description
         family_name: data_families.family_name
+        system: summary.system
+        trade_type: summary.trade_type
       dynamic_fields:
       - table_calculation: red
         label: Red
@@ -212,6 +228,8 @@
       listen:
         feature_description: data_elements.feature_description
         family_name: data_families.family_name
+        system: summary.system
+        trade_type: summary.trade_type
       sorts: [summary.statement_date]
       limit: '500'
       column_limit: '50'
@@ -283,6 +301,8 @@
       listen:
         feature_description: data_elements.feature_description
         family_name: data_families.family_name
+        system: summary.system
+        trade_type: summary.trade_type
       dynamic_fields:
       - table_calculation: red
         label: Red
@@ -378,6 +398,8 @@
       listen:
         feature_description: data_elements.feature_description
         family_name: data_families.family_name
+        system: summary.system
+        trade_type: summary.trade_type
       sorts: [summary.statement_date]
       limit: '500'
       column_limit: '50'
@@ -449,6 +471,8 @@
       listen:
         feature_description: data_elements.feature_description
         family_name: data_families.family_name
+        system: summary.system
+        trade_type: summary.trade_type
       dynamic_fields:
       - table_calculation: red
         label: Red
@@ -544,6 +568,8 @@
       listen:
         feature_description: data_elements.feature_description
         family_name: data_families.family_name
+        system: summary.system
+        trade_type: summary.trade_type
       sorts: [summary.statement_date]
       limit: '500'
       column_limit: '50'
@@ -616,6 +642,8 @@
       listen:
         feature_description: data_elements.feature_description
         family_name: data_families.family_name
+        system: summary.system
+        trade_type: summary.trade_type
       dynamic_fields:
       - table_calculation: red
         label: Red
@@ -706,6 +734,8 @@
       listen:
         feature_description: data_elements.feature_description
         family_name: data_families.family_name
+        system: summary.system
+        trade_type: summary.trade_type
       sorts: [summary.statement_date]
       limit: '500'
       column_limit: '50'
@@ -777,6 +807,8 @@
       listen:
         feature_description: data_elements.feature_description
         family_name: data_families.family_name
+        system: summary.system
+        trade_type: summary.trade_type
       dynamic_fields:
       - table_calculation: red
         label: Red
@@ -872,6 +904,8 @@
       listen:
         feature_description: data_elements.feature_description
         family_name: data_families.family_name
+        system: summary.system
+        trade_type: summary.trade_type
       sorts: [summary.statement_date]
       limit: '500'
       column_limit: '50'
@@ -943,6 +977,8 @@
       listen:
         feature_description: data_elements.feature_description
         family_name: data_families.family_name
+        system: summary.system
+        trade_type: summary.trade_type
       dynamic_fields:
       - table_calculation: red
         label: Red
@@ -1035,6 +1071,8 @@
       listen:
         feature_description: data_elements.feature_description
         family_name: data_families.family_name
+        system: summary.system
+        trade_type: summary.trade_type
       filters:
         data_elements.feature_description: ''
         summary.statement_date: 2017/02/27 to 2017/03/10
@@ -1109,6 +1147,8 @@
       listen:
         feature_description: data_elements.feature_description
         family_name: data_families.family_name
+        system: summary.system
+        trade_type: summary.trade_type
       dynamic_fields:
       - table_calculation: red
         label: Red
