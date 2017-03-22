@@ -105,7 +105,7 @@
       left: 0
       top: 0
       height: 35
-      width: 17
+      width: 15
       type: looker_bar
       model: cda_trade
       explore: summary
