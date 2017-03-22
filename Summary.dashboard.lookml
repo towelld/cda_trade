@@ -18,6 +18,11 @@
     model: cda_trade
     explore: data_elements
     field: data_elements.feature_description
+  - name: family_description
+    type: field_filter
+    model: cda_trade
+    explore: data_families
+    field: data_families.family_description
 
   elements:
 
