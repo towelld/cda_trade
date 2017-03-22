@@ -37,7 +37,7 @@
       type: looker_area
       model: cda_trade
       explore: summary
-      dimensions: [summary.statement_date, data_elements.feature_description, data_families.family_name]
+      dimensions: [summary.statement_date]
       measures: [summary.sum_complete, summary.sum_total]
       dynamic_fields:
       - table_calculation: percentage
@@ -99,7 +99,7 @@
         show_hide: hide
         first_last: first
         num_rows: 0
-      hidden_fields: [summary.sum_complete, summary.sum_total, data_elements.feature_description, data_families.family_name]
+      hidden_fields: [summary.sum_complete, summary.sum_total]
       series_colors:
         percentage: "#646569"
       label_color: ["#ffffff", "#a9a8a9"]
