@@ -1,7 +1,7 @@
 - dashboard: summary
   title: Trade Summary
   layout: static
-  width: 2310
+  width: 2250
   tile_size: 30
   auto_run: true
   embed_style:
@@ -23,7 +23,7 @@
 
     - name: cda_trade_trend_complete
       title: Complete
-      left: 7
+      left: 5
       top: 33
       height: 5
       width: 10
@@ -173,7 +173,7 @@
       y_axis_max: ['1']
 
     - name: cda_trade_title_complete
-      left: 7
+      left: 5
       top: 0
       height: 2
       width: 10
@@ -188,7 +188,7 @@
 
     - name: cda_trade_trend_timely
       title:
-      left: 17
+      left: 15
       top: 33
       height: 5
       width: 10
@@ -267,7 +267,7 @@
 
     - name: cda_trade_summary_timely
       title: Timeliness
-      left: 17
+      left: 15
       top: 0
       height: 35
       width: 10
@@ -337,7 +337,7 @@
       y_axis_max: ['1']
 
     - name: cda_trade_title_timely
-      left: 17
+      left: 15
       top: 0
       height: 2
       width: 10
@@ -352,7 +352,7 @@
 
     - name: cda_trade_trend_variant
       title:
-      left: 27
+      left: 25
       top: 33
       height: 5
       width: 10
@@ -431,7 +431,7 @@
 
     - name: cda_trade_summary_variant
       title: Variation
-      left: 27
+      left: 25
       top: 0
       height: 35
       width: 10
@@ -501,7 +501,7 @@
       y_axis_max: ['1']
 
     - name: cda_trade_title_variant
-      left: 27
+      left: 25
       top: 0
       height: 2
       width: 10
@@ -516,7 +516,7 @@
 
     - name: cda_trade_trend_conform
       title: Conform
-      left: 37
+      left: 35
       top: 33
       height: 5
       width: 10
@@ -596,7 +596,7 @@
 
     - name: cda_trade_summary_conform
       title: Conformity
-      left: 37
+      left: 35
       top: 0
       height: 35
       width: 10
@@ -666,7 +666,7 @@
       y_axis_max: ['1']
 
     - name: cda_trade_title_conform
-      left: 37
+      left: 35
       top: 0
       height: 2
       width: 10
@@ -681,7 +681,7 @@
 
     - name: cda_trade_trend_valid
       title:
-      left: 47
+      left: 45
       top: 33
       height: 5
       width: 10
@@ -760,7 +760,7 @@
 
     - name: cda_trade_summary_valid
       title: Validity
-      left: 47
+      left: 45
       top: 0
       height: 35
       width: 10
@@ -830,7 +830,7 @@
       y_axis_max: ['1']
 
     - name: cda_trade_title_valid
-      left: 47
+      left: 45
       top: 0
       height: 2
       width: 10
@@ -845,7 +845,7 @@
 
     - name: cda_trade_trend_consistent
       title:
-      left: 57
+      left: 55
       top: 33
       height: 5
       width: 10
@@ -924,7 +924,7 @@
 
     - name: cda_trade_summary_consistent
       title: Consistency
-      left: 57
+      left: 55
       top: 0
       height: 35
       width: 10
@@ -994,7 +994,7 @@
       y_axis_max: ['1']
 
     - name: cda_trade_title_consistent
-      left: 57
+      left: 55
       top: 0
       height: 2
       width: 10
@@ -1009,7 +1009,7 @@
 
     - name: cda_trade_trend_unique
       title:
-      left: 67
+      left: 65
       top: 33
       height: 5
       width: 10
@@ -1088,7 +1088,7 @@
 
     - name: cda_trade_summary_unique
       title: Uniqueness
-      left: 67
+      left: 65
       top: 0
       height: 35
       width: 10
@@ -1158,7 +1158,7 @@
       y_axis_max: ['1']
 
     - name: cda_trade_title_unique
-      left: 67
+      left: 65
       top: 0
       height: 2
       width: 10
