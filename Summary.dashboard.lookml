@@ -50,6 +50,7 @@
         summary.statement_date: 2017/02/27 to 2017/03/10
       listen:
         feature_description: data_elements.feature_description
+        family_description: data_families.family_description
       sorts: [summary.statement_date]
       limit: '500'
       column_limit: '50'
@@ -121,6 +122,7 @@
       drill: [data_elements.feature_description]
       listen:
         feature_description: data_elements.feature_description
+        family_description: data_families.family_description
       dynamic_fields:
       - table_calculation: red
         label: Red
