@@ -122,7 +122,7 @@
         value_format_name: percent_2
       - table_calculation: amber
         label: Amber
-        expression: 0.0
+        expression: '0'
         value_format:
         value_format_name: percent_2
       - table_calculation: green
