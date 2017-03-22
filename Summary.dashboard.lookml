@@ -19,12 +19,12 @@
     model: cda_trade
     explore: data_elements
     field: data_elements.feature_description
-  - name: family_description
+  - name: family_name
     label: 'Data Family'
     type: field_filter
     model: cda_trade
     explore: data_families
-    field: data_families.family_description
+    field: data_families.family_name
 
   elements:
 
@@ -37,7 +37,7 @@
       type: looker_area
       model: cda_trade
       explore: summary
-      dimensions: [summary.statement_date, data_families.family_description]
+      dimensions: [summary.statement_date]
       measures: [summary.sum_complete, summary.sum_total]
       dynamic_fields:
       - table_calculation: percentage
@@ -50,7 +50,7 @@
         summary.statement_date: 2017/02/27 to 2017/03/10
       listen:
         feature_description: data_elements.feature_description
-        family_description: data_families.family_description
+        family_name: data_families.family_name
       sorts: [summary.statement_date]
       limit: '500'
       column_limit: '50'
@@ -100,7 +100,7 @@
         show_hide: hide
         first_last: first
         num_rows: 0
-      hidden_fields: [summary.sum_complete, summary.sum_total, data_families.family_description]
+      hidden_fields: [summary.sum_complete, summary.sum_total]
       series_colors:
         percentage: "#646569"
       label_color: ["#ffffff", "#a9a8a9"]
@@ -122,7 +122,7 @@
       drill: [data_elements.feature_description]
       listen:
         feature_description: data_elements.feature_description
-        family_description: data_families.family_description
+        family_name: data_families.family_name
       dynamic_fields:
       - table_calculation: red
         label: Red
