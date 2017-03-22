@@ -165,7 +165,7 @@
       show_silhouette: false
       totals_color: "#808080"
       series_types: {}
-      hidden_fields: [summary.sum_complete, summary.sum_total]
+      hidden_fields: [summary.sum_complete, summary.sum_total, data_families.family_name]
       series_colors:
         '100': "#646569"
         red: "#df5555"
