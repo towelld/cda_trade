@@ -211,6 +211,7 @@
         summary.statement_date: 2017/02/27 to 2017/03/10
       listen:
         feature_description: data_elements.feature_description
+        family_name: data_families.family_name
       sorts: [summary.statement_date]
       limit: '500'
       column_limit: '50'
@@ -281,6 +282,7 @@
       measures: [summary.sum_timely, summary.sum_total]
       listen:
         feature_description: data_elements.feature_description
+        family_name: data_families.family_name
       dynamic_fields:
       - table_calculation: red
         label: Red
@@ -375,6 +377,7 @@
         summary.statement_date: 2017/02/27 to 2017/03/10
       listen:
         feature_description: data_elements.feature_description
+        family_name: data_families.family_name
       sorts: [summary.statement_date]
       limit: '500'
       column_limit: '50'
@@ -445,6 +448,7 @@
       measures: [summary.sum_variant, summary.sum_total]
       listen:
         feature_description: data_elements.feature_description
+        family_name: data_families.family_name
       dynamic_fields:
       - table_calculation: red
         label: Red
@@ -539,6 +543,7 @@
         summary.statement_date: 2017/02/27 to 2017/03/10
       listen:
         feature_description: data_elements.feature_description
+        family_name: data_families.family_name
       sorts: [summary.statement_date]
       limit: '500'
       column_limit: '50'
@@ -610,6 +615,7 @@
       measures: [summary.sum_conform, summary.sum_total]
       listen:
         feature_description: data_elements.feature_description
+        family_name: data_families.family_name
       dynamic_fields:
       - table_calculation: red
         label: Red
@@ -699,6 +705,7 @@
         summary.statement_date: 2017/02/27 to 2017/03/10
       listen:
         feature_description: data_elements.feature_description
+        family_name: data_families.family_name
       sorts: [summary.statement_date]
       limit: '500'
       column_limit: '50'
@@ -769,6 +776,7 @@
       measures: [summary.sum_valid, summary.sum_total]
       listen:
         feature_description: data_elements.feature_description
+        family_name: data_families.family_name
       dynamic_fields:
       - table_calculation: red
         label: Red
@@ -863,6 +871,7 @@
         summary.statement_date: 2017/02/27 to 2017/03/10
       listen:
         feature_description: data_elements.feature_description
+        family_name: data_families.family_name
       sorts: [summary.statement_date]
       limit: '500'
       column_limit: '50'
@@ -933,6 +942,7 @@
       measures: [summary.sum_consistent, summary.sum_total]
       listen:
         feature_description: data_elements.feature_description
+        family_name: data_families.family_name
       dynamic_fields:
       - table_calculation: red
         label: Red
@@ -1024,6 +1034,7 @@
         value_format_name: percent_2
       listen:
         feature_description: data_elements.feature_description
+        family_name: data_families.family_name
       filters:
         data_elements.feature_description: ''
         summary.statement_date: 2017/02/27 to 2017/03/10
@@ -1097,6 +1108,7 @@
       measures: [summary.sum_unique, summary.sum_total]
       listen:
         feature_description: data_elements.feature_description
+        family_name: data_families.family_name
       dynamic_fields:
       - table_calculation: red
         label: Red
