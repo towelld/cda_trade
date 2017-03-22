@@ -37,7 +37,7 @@
       type: looker_area
       model: cda_trade
       explore: summary
-      dimensions: [summary.statement_date]
+      dimensions: [summary.statement_date, data_elements.feature_description, data_families.family_name]
       measures: [summary.sum_complete, summary.sum_total]
       dynamic_fields:
       - table_calculation: percentage
@@ -46,7 +46,6 @@
         value_format:
         value_format_name: percent_2
       filters:
-        data_elements.feature_description: ''
         summary.statement_date: 2017/02/27 to 2017/03/10
       listen:
         feature_description: data_elements.feature_description
@@ -117,7 +116,7 @@
       type: looker_bar
       model: cda_trade
       explore: summary
-      dimensions: [data_elements.feature_description]
+      dimensions: [data_elements.feature_description, data_families.family_name]
       measures: [summary.sum_complete, summary.sum_total]
       drill: [data_elements.feature_description]
       listen:
