@@ -116,7 +116,7 @@
       type: looker_bar
       model: cda_trade
       explore: summary
-      dimensions: [data_elements.feature_description, data_families.family_name]
+      dimensions: [data_elements.feature_description]
       measures: [summary.sum_complete, summary.sum_total]
       drill: [data_elements.feature_description]
       listen:
@@ -165,7 +165,7 @@
       show_silhouette: false
       totals_color: "#808080"
       series_types: {}
-      hidden_fields: [summary.sum_complete, summary.sum_total, data_families.family_name]
+      hidden_fields: [summary.sum_complete, summary.sum_total]
       series_colors:
         '100': "#646569"
         red: "#df5555"
