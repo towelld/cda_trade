@@ -21,20 +21,6 @@
 
   elements:
 
-    - name: cda_trade_title_complete
-      left: 0
-      top: 0
-      height: 2
-      width: 10
-      type: single_value
-      model: cda_trade
-      explore: data_elements_rule_types
-      dimensions: [data_elements_rule_types.rule_type]
-      filters:
-        data_elements_rule_types.rule_type: Complete
-      custom_color_enabled: true
-      custom_color: "#fa8d29"
-
     - name: cda_trade_trend_complete
       title: Complete
       left: 0
@@ -117,7 +103,7 @@
     - name: cda_trade_summary_complete
       title: Completeness
       left: 0
-      top: 1
+      top: 0
       height: 35
       width: 10
       type: looker_bar
@@ -185,6 +171,20 @@
       hide_legend: true
       y_axis_min: ['0.75']
       y_axis_max: ['1']
+
+    - name: cda_trade_title_complete
+      left: 0
+      top: 0
+      height: 2
+      width: 10
+      type: single_value
+      model: cda_trade
+      explore: data_elements_rule_types
+      dimensions: [data_elements_rule_types.rule_type]
+      filters:
+        data_elements_rule_types.rule_type: Complete
+      custom_color_enabled: true
+      custom_color: "#fa8d29"
 
     - name: cda_trade_title_timely
       left: 10
