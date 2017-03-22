@@ -120,11 +120,6 @@
         expression: 'if (${summary.sum_complete}/${summary.sum_total}<1.0,${summary.sum_complete}/${summary.sum_total},0)'
         value_format:
         value_format_name: percent_2
-      - table_calculation: amber
-        label: Amber
-        expression: '0'
-        value_format:
-        value_format_name: percent_2
       - table_calculation: green
         label: Green
         expression: 'if (${summary.sum_complete}/${summary.sum_total}>=1.0,${summary.sum_complete}/${summary.sum_total},0)'
@@ -162,7 +157,7 @@
       show_silhouette: false
       totals_color: "#808080"
       series_types: {}
-      hidden_fields: [summary.sum_complete, summary.sum_total, summary.Amber]
+      hidden_fields: [summary.sum_complete, summary.sum_total]
       series_colors:
         '100': "#646569"
         red: "#df5555"
