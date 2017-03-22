@@ -132,6 +132,14 @@ explore: summary {
     sql_on: ${data_elements_rule_types.rule_type_id} = ${data_elements_rules.rule_type_id} ;;
     relationship: one_to_one
   }
+  join: data_family_element_link {
+    sql_on: ${data_family_element_link.element_id} = ${summary.element_id} ;;
+    relationship: one_to_one
+  }
+  join: data_families {
+    sql_on: ${data_families.family_id} = ${data_family_element_link.family_id} ;;
+    relationship: many_to_many
+  }
 }
 
 explore: user_audit {}
