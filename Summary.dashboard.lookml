@@ -24,7 +24,7 @@
     - name: cda_trade_title_complete
       left: 0
       top: 0
-      height: 3
+      height: 2
       width: 10
       type: single_value
       model: cda_trade
@@ -38,7 +38,7 @@
     - name: cda_trade_trend_complete
       title: Complete
       left: 0
-      top: 3
+      top: 13
       height: 10
       width: 10
       type: looker_area
@@ -117,7 +117,7 @@
     - name: cda_trade_summary_complete
       title: Completeness
       left: 0
-      top: 13
+      top: 2
       height: 35
       width: 10
       type: looker_bar
