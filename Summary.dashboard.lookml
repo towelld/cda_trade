@@ -23,10 +23,10 @@
 
     - name: cda_trade_trend_complete
       title: Complete
-      left: 0
+      left: 7
       top: 33
       height: 5
-      width: 17
+      width: 10
       type: looker_area
       model: cda_trade
       explore: summary
@@ -102,10 +102,10 @@
 
     - name: cda_trade_summary_complete
       title: Completeness
-      left: 7
+      left: 0
       top: 0
       height: 35
-      width: 10
+      width: 17
       type: looker_bar
       model: cda_trade
       explore: summary
@@ -317,7 +317,7 @@
       y_axis_tick_density: default
       y_axis_tick_density_custom: 5
       show_x_axis_label: false
-      show_x_axis_ticks: true
+      show_x_axis_ticks: false
       x_axis_scale: auto
       y_axis_scale_mode: linear
       ordering: none
