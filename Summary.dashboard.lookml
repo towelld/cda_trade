@@ -117,7 +117,7 @@
     - name: cda_trade_summary_complete
       title: Completeness
       left: 0
-      top: 1
+      top: 0
       height: 35
       width: 10
       type: looker_bar
