@@ -5,7 +5,7 @@
   tile_size: 30
   auto_run: true
   embed_style:
-    background_color: "#ffffff"
+    background_color: "#000000"
     show_title: false
     title_color: "#ffffff"
     show_filters_bar: true
