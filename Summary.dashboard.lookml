@@ -117,17 +117,17 @@
       dynamic_fields:
       - table_calculation: red
         label: Red
-        expression: 'if (${summary.sum_complete}/${summary.sum_total}<0.75,${summary.sum_complete}/${summary.sum_total},0)'
+        expression: 'if (${summary.sum_complete}/${summary.sum_total}<1.0,${summary.sum_complete}/${summary.sum_total},0)'
         value_format:
         value_format_name: percent_2
       - table_calculation: amber
         label: Amber
-        expression: 'if (${summary.sum_complete}/${summary.sum_total}>=0.75,if(${summary.sum_complete}/${summary.sum_total}<0.9,${summary.sum_complete}/${summary.sum_total},0),0)'
+        expression: 0.0
         value_format:
         value_format_name: percent_2
       - table_calculation: green
         label: Green
-        expression: 'if (${summary.sum_complete}/${summary.sum_total}>=0.9,${summary.sum_complete}/${summary.sum_total},0)'
+        expression: 'if (${summary.sum_complete}/${summary.sum_total}>=1.0,${summary.sum_complete}/${summary.sum_total},0)'
         value_format:
         value_format_name: percent_2
       - table_calculation: '100'
