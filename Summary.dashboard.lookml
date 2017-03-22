@@ -94,7 +94,7 @@
         num_rows: 0
       hidden_fields: [summary.sum_complete, summary.sum_total]
       series_colors:
-        percentage: "#fa8d29"
+        percentage: "#646569"
       label_color: ["#ffffff", "#a9a8a9"]
       y_axis_unpin: true
       y_axis_max: ['1']
@@ -184,7 +184,7 @@
       filters:
         data_elements_rule_types.rule_type: Complete
       custom_color_enabled: true
-      custom_color: "#fa8d29"
+      custom_color: "#646569"
 
     - name: cda_trade_trend_timely
       title:
@@ -259,7 +259,7 @@
         num_rows: 0
       hidden_fields: [summary.sum_timely, summary.sum_total]
       series_colors:
-        percentage: "#55565a"
+        percentage: "#646569"
       label_color: ["#ffffff", "#a9a8a9"]
       y_axis_unpin: true
       y_axis_max: ['1']
@@ -348,7 +348,7 @@
       filters:
         data_elements_rule_types.rule_type: Timely
       custom_color_enabled: true
-      custom_color: "#55565a"
+      custom_color: "#646569"
 
     - name: cda_trade_trend_variant
       title:
@@ -423,7 +423,7 @@
         num_rows: 0
       hidden_fields: [summary.sum_variant, summary.sum_total]
       series_colors:
-        percentage: "#5e8ab4"
+        percentage: "#646569"
       label_color: ["#ffffff", "#a9a8a9"]
       y_axis_unpin: true
       y_axis_max: ['1']
@@ -512,7 +512,7 @@
       filters:
         data_elements_rule_types.rule_type: Variant
       custom_color_enabled: true
-      custom_color: "#5e8ab4"
+      custom_color: "#646569"
 
     - name: cda_trade_trend_conform
       title: Conform
@@ -587,7 +587,7 @@
         num_rows: 0
       hidden_fields: [summary.sum_conform, summary.sum_total]
       series_colors:
-        percentage: "#a9a8a9"
+        percentage: "#646569"
       label_color: ["#ffffff", "#a9a8a9"]
       y_axis_unpin: true
       y_axis_max: ['1']
@@ -677,7 +677,7 @@
       filters:
         data_elements_rule_types.rule_type: Conform
       custom_color_enabled: true
-      custom_color: "#a9a8a9"
+      custom_color: "#646569"
 
     - name: cda_trade_trend_valid
       title:
@@ -752,7 +752,7 @@
         num_rows: 0
       hidden_fields: [summary.sum_valid, summary.sum_total]
       series_colors:
-        percentage: "#0c9e9e"
+        percentage: "#646569"
       label_color: ["#ffffff", "#a9a8a9"]
       y_axis_unpin: true
       y_axis_max: ['1']
@@ -841,7 +841,7 @@
       filters:
         data_elements_rule_types.rule_type: Valid
       custom_color_enabled: true
-      custom_color: "#0c9e9e"
+      custom_color: "#646569"
 
     - name: cda_trade_trend_consistent
       title:
@@ -916,7 +916,7 @@
         num_rows: 0
       hidden_fields: [summary.sum_consistent, summary.sum_total]
       series_colors:
-        percentage: "#b34c59"
+        percentage: "#646569"
       label_color: ["#ffffff", "#a9a8a9"]
       y_axis_unpin: true
       y_axis_max: ['1']
@@ -1005,7 +1005,7 @@
       filters:
         data_elements_rule_types.rule_type: Consistent
       custom_color_enabled: true
-      custom_color: "#b34c59"
+      custom_color: "#646569"
 
     - name: cda_trade_trend_unique
       title:
@@ -1080,7 +1080,7 @@
         num_rows: 0
       hidden_fields: [summary.sum_unique, summary.sum_total]
       series_colors:
-        percentage: "#edc559"
+        percentage: "#646569"
       label_color: ["#ffffff", "#a9a8a9"]
       y_axis_unpin: true
       y_axis_max: ['1']
@@ -1169,4 +1169,4 @@
       filters:
         data_elements_rule_types.rule_type: Unique
       custom_color_enabled: true
-      custom_color: "#edc559"
+      custom_color: "#646569"
