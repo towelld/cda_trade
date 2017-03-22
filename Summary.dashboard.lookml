@@ -99,7 +99,7 @@
         show_hide: hide
         first_last: first
         num_rows: 0
-      hidden_fields: [summary.sum_complete, summary.sum_total]
+      hidden_fields: [summary.sum_complete, summary.sum_total, data_elements.feature_description, data_families.family_name]
       series_colors:
         percentage: "#646569"
       label_color: ["#ffffff", "#a9a8a9"]
