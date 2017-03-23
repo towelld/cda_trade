@@ -109,4 +109,9 @@ view: summary {
     sql: ${variant};;
   }
 
+  set: rules {
+    fields: [data_elements_rule_type.rule_type]
+  }
+
+
 }
