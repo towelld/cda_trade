@@ -71,6 +71,14 @@ view: summary {
     sql: ${TABLE}.variant ;;
   }
 
+
+  dimension: feature_description {
+    type: string
+    sql: ${TABLE}.feature_description ;;
+    drill_fields: [rules*]
+  }
+
+
   measure: count {
     type: count
     drill_fields: []
