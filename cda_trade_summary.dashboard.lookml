@@ -136,11 +136,11 @@
       type: looker_bar
       model: cda_trade
       explore: summary
-      dimensions: [summary.feature_description]
+      dimensions: [data_elements.feature_description]
       measures: [summary.sum_complete, summary.sum_total]
       listen:
         statement_date: summary.statement_date
-        feature_description: summary.feature_description
+        feature_description: data_elements.feature_description
         family_name: data_families.family_name
         system: summary.system
         trade_type: summary.trade_type
@@ -160,7 +160,7 @@
         expression: '1-(${summary.sum_complete}/${summary.sum_total})'
         value_format:
         value_format_name: percent_2
-      sorts: [summary.feature_description]
+      sorts: [data_elements.feature_description]
       limit: '500'
       column_limit: '50'
       query_timezone: Europe/London
