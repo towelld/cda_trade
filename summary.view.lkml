@@ -87,7 +87,7 @@ view: summary {
   measure: sum_complete {
     type: sum
     sql: ${complete};;
-    drill_fields: [rules*]
+    drill_fields: [element_id, feature_description]
   }
   measure: sum_total {
     type: sum

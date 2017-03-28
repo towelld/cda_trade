@@ -64,7 +64,7 @@
         expression: 1-((${summary.sum_total}-${summary.sum_complete})/${summary.sum_total})
         value_format:
         value_format_name: percent_2
-        drill: [summary.trade_type]
+        drill_fields: [element_id, feature_description]
       listen:
         statement_date: summary.statement_date
         feature_description: data_elements.feature_description
