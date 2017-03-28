@@ -158,6 +158,10 @@ explore: summary {
     sql_on: ${data_families.family_id} = ${data_family_element_link.family_id} ;;
     relationship: many_to_one
   }
+  join: records {
+    sql_on: ${records.record_complete} = ${summary.complete} ;;
+    relationship: many_to_one
+  }
 }
 
 explore: user_audit {}
