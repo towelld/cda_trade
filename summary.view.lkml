@@ -81,7 +81,7 @@ view: summary {
 
   measure: count {
     type: count
-    drill_fields: []
+    drill_fields: [rules*]
   }
 
   measure: sum_complete {
