@@ -19,7 +19,7 @@
     model: cda_trade
     explore: summary
     field: summary.statement_date
-    default_value: '2017/02/27 to 2017/03/10'
+    default_value: '2016/11/08 to 2017/03/16'
   - name: feature_description
     label: 'Feature'
     type: field_filter
