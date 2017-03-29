@@ -111,7 +111,7 @@ view: summary {
   }
   measure: sum_complete_100 {
     type: sum
-    sql: 1-(cast(sum(${complete}) as decimal)/sum(${total}));;
+    sql: 1-(cast(sum(${complete}) as decimal)/cast(sum(${total}));;
     drill_fields: [element_id, feature_description]
   }
 
