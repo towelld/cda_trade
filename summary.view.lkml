@@ -84,15 +84,37 @@ view: summary {
     drill_fields: [rules*]
   }
 
-  measure: sum_complete {
-    type: sum
-    sql: ${complete};;
-    drill_fields: [element_id, feature_description]
-  }
   measure: sum_total {
     type: sum
     sql: ${total};;
   }
+
+  measure: sum_complete {
+    type: sum
+    sql: ${complete};;
+    drill_fields: [details*]
+  }
+  measure: sum_complete_red {
+    type: sum
+    sql: if (${summary.sum_complete}/${summary.sum_total}<0.90,${summary.sum_complete}/${summary.sum_total},0);;
+    drill_fields: [details*]
+  }
+  measure: sum_complete_amber {
+    type: sum
+    sql: if (${summary.sum_timely}/${summary.sum_total}>=0.90,if(${summary.sum_timely}/${summary.sum_total}<0.95,${summary.sum_timely}/${summary.sum_total},0),0);;
+    drill_fields: [details*]
+  }
+  measure: sum_complete_green {
+    type: sum
+    sql: if (${summary.sum_complete}/${summary.sum_total}>=0.95,${summary.sum_complete}/${summary.sum_total},0);;
+    drill_fields: [details*]
+  }
+  measure: sum_complete_100 {
+    type: sum
+    sql: 1-(${summary.sum_complete}/${summary.sum_total});;
+    drill_fields: [element_id, feature_description]
+  }
+
   measure: sum_timely {
     type: sum
     sql: ${timely};;
@@ -118,8 +140,12 @@ view: summary {
     sql: ${variant};;
   }
 
+
   set: rules {
     fields: [data_elements_rule_type.rule_type]
+  }
+  set: details {
+    fields: [element_id, feature_description]
   }
 
 
