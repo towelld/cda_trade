@@ -96,7 +96,7 @@ view: summary {
   }
   measure: sum_complete_red {
     type: sum
-    sql: case when (cast(sum(${complete}) as decimal)/cast(sum(${total}) as decimal)<sum(${data_tolerances.rag_complete_lower})) then cast(sum(${complete}) as decimal)/cast(sum(${total}) as decimal) else 0 end;;
+    sql: case when cast(sum(${complete}) as decimal)/cast(sum(${total}) as decimal)<sum(${data_tolerances.rag_complete_lower}) then cast(sum(${complete}) as decimal)/cast(sum(${total}) as decimal) else 0 end;;
     drill_fields: [details*]
   }
   measure: sum_complete_amber {
