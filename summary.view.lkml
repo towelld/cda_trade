@@ -96,7 +96,7 @@ view: summary {
   }
   measure: sum_complete_red {
     type: sum
-    sql: case when ${summary.sum_complete}/${summary.sum_total}<${data_tolerances.rag_complete_lower} then ${summary.sum_complete}/${summary.sum_total} else 0 end;;
+    sql: case when sum(${complete})/sum(${total})<${data_tolerances.rag_complete_lower} then sum(${complete})/sum(${total}) else 0 end;;
     drill_fields: [details*]
   }
   measure: sum_complete_amber {
