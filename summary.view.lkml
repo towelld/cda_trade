@@ -101,17 +101,17 @@ view: summary {
   }
   measure: sum_complete_amber {
     type: sum
-    sql: case when ${summary.sum_timely}/${summary.sum_total}>=${data_tolerances.rag_complete_lower} then case when ${summary.sum_timely}/${summary.sum_total}<${data_tolerances.rag_complete_upper} then ${summary.sum_timely}/${summary.sum_total} else 0 end else 0 end;;
+    sql: case when sum(${complete})/sum(${total})>=${data_tolerances.rag_complete_lower} then case when sum(${complete})/sum(${total})<${data_tolerances.rag_complete_upper} then sum(${complete})/sum(${total}) else 0 end else 0 end;;
     drill_fields: [details*]
   }
   measure: sum_complete_green {
     type: sum
-    sql: case when ${summary.sum_complete}/${summary.sum_total}>=${data_tolerances.rag_complete_upper} then ${summary.sum_complete}/${summary.sum_total} else 0 end;;
+    sql: case when sum(${complete})/sum(${total})>=${data_tolerances.rag_complete_upper} then sum(${complete})/sum(${total}) else 0 end;;
     drill_fields: [details*]
   }
   measure: sum_complete_100 {
     type: sum
-    sql: 1-(${summary.sum_complete}/${summary.sum_total});;
+    sql: 1-(sum(${complete})/sum(${total}));;
     drill_fields: [element_id, feature_description]
   }
 
