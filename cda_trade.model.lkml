@@ -162,6 +162,10 @@ explore: summary {
     sql_on: ${records.record_complete} = ${summary.complete} ;;
     relationship: many_to_one
   }
+  join: data_tolerances {
+    sql_on: ${data_tolerances.element_id} = ${summary.element_id} ;;
+    relationship: one_to_one
+  }
 }
 
 explore: user_audit {}

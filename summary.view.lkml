@@ -96,17 +96,17 @@ view: summary {
   }
   measure: sum_complete_red {
     type: sum
-    sql: if (${summary.sum_complete}/${summary.sum_total}<0.90,${summary.sum_complete}/${summary.sum_total},0);;
+    sql: if (${summary.sum_complete}/${summary.sum_total}<${data_tolerances.rag_complete_lower},${summary.sum_complete}/${summary.sum_total},0);;
     drill_fields: [details*]
   }
   measure: sum_complete_amber {
     type: sum
-    sql: if (${summary.sum_timely}/${summary.sum_total}>=0.90,if(${summary.sum_timely}/${summary.sum_total}<0.95,${summary.sum_timely}/${summary.sum_total},0),0);;
+    sql: if (${summary.sum_timely}/${summary.sum_total}>=${data_tolerances.rag_complete_lower},if(${summary.sum_timely}/${summary.sum_total}<${data_tolerances.rag_complete_upper},${summary.sum_timely}/${summary.sum_total},0),0);;
     drill_fields: [details*]
   }
   measure: sum_complete_green {
     type: sum
-    sql: if (${summary.sum_complete}/${summary.sum_total}>=0.95,${summary.sum_complete}/${summary.sum_total},0);;
+    sql: if (${summary.sum_complete}/${summary.sum_total}>=${data_tolerances.rag_complete_upper},${summary.sum_complete}/${summary.sum_total},0);;
     drill_fields: [details*]
   }
   measure: sum_complete_100 {
