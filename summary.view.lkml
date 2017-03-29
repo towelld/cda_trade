@@ -96,17 +96,17 @@ view: summary {
   }
   measure: sum_complete_red {
     type: sum
-    sql: if (${summary.sum_complete}/${summary.sum_total}<${data_tolerances.rag_complete_lower},${summary.sum_complete}/${summary.sum_total},0);;
+    sql: case when ${summary.sum_complete}/${summary.sum_total}<${data_tolerances.rag_complete_lower} then ${summary.sum_complete}/${summary.sum_total} else 0 end;;
     drill_fields: [details*]
   }
   measure: sum_complete_amber {
     type: sum
-    sql: if (${summary.sum_timely}/${summary.sum_total}>=${data_tolerances.rag_complete_lower},if(${summary.sum_timely}/${summary.sum_total}<${data_tolerances.rag_complete_upper},${summary.sum_timely}/${summary.sum_total},0),0);;
+    sql: case when ${summary.sum_timely}/${summary.sum_total}>=${data_tolerances.rag_complete_lower} then case when ${summary.sum_timely}/${summary.sum_total}<${data_tolerances.rag_complete_upper} then ${summary.sum_timely}/${summary.sum_total} else 0 end else 0 end;;
     drill_fields: [details*]
   }
   measure: sum_complete_green {
     type: sum
-    sql: if (${summary.sum_complete}/${summary.sum_total}>=${data_tolerances.rag_complete_upper},${summary.sum_complete}/${summary.sum_total},0);;
+    sql: case when ${summary.sum_complete}/${summary.sum_total}>=${data_tolerances.rag_complete_upper} then ${summary.sum_complete}/${summary.sum_total} else 0 end;;
     drill_fields: [details*]
   }
   measure: sum_complete_100 {
