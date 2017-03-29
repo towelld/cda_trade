@@ -96,22 +96,22 @@ view: summary {
   }
   measure: sum_complete_red {
     type: sum
-    sql: case when sum(${complete})/sum(${total})<${data_tolerances.rag_complete_lower} then sum(${complete})/sum(${total}) else 0 end;;
+    sql: case when cast(sum(${complete}) as decimal)/cast(sum(${total}) as decimal)<sum(${data_tolerances.rag_complete_lower}) then cast(sum(${complete}) as decimal)/cast(sum(${total}) as decimal) else 0 end;;
     drill_fields: [details*]
   }
   measure: sum_complete_amber {
     type: sum
-    sql: case when sum(${complete})/sum(${total})>=${data_tolerances.rag_complete_lower} then case when sum(${complete})/sum(${total})<${data_tolerances.rag_complete_upper} then sum(${complete})/sum(${total}) else 0 end else 0 end;;
+    sql: case when cast(sum(${complete}) as decimal)/cast(sum(${total}) as decimal)>=sum(${data_tolerances.rag_complete_lower}) then case when cast(sum(${complete}) as decimal)/cast(sum(${total}) as decimal)<sum(${data_tolerances.rag_complete_upper}) then cast(sum(${complete}) as decimal)/cast(sum(${total}) as decimal) else 0 end else 0 end;;
     drill_fields: [details*]
   }
   measure: sum_complete_green {
     type: sum
-    sql: case when sum(${complete})/sum(${total})>=${data_tolerances.rag_complete_upper} then sum(${complete})/sum(${total}) else 0 end;;
+    sql: case when cast(sum(${complete}) as decimal)/cast(sum(${total}) as decimal)>=sum(${data_tolerances.rag_complete_upper}) then cast(sum(${complete}) as decimal)/cast(sum(${total}) as decimal) else 0 end;;
     drill_fields: [details*]
   }
   measure: sum_complete_100 {
     type: sum
-    sql: 1-(sum(${complete})/sum(${total}));;
+    sql: 1-(cast(sum(${complete}) as decimal)/sum(${total}));;
     drill_fields: [element_id, feature_description]
   }
 
