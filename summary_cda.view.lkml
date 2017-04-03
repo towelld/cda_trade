@@ -33,6 +33,7 @@ view: summary_cda {
   dimension: system {
     type: string
     sql: ${TABLE}.system ;;
+    drill_fields: [trade_type]
   }
 
   dimension: total {
