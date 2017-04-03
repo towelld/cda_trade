@@ -168,6 +168,34 @@ explore: summary {
   }
 }
 
+explore: summary_cda {
+  join: data_elements {
+    sql_on: ${data_elements.element_id} = ${summary_cda.element_id} ;;
+    relationship: one_to_one
+  }
+  join: data_elements_rules {
+    sql_on: ${data_elements_rules.element_id} = ${summary_cda.element_id} ;;
+    relationship: one_to_many
+  }
+  join: data_elements_rule_types {
+    sql_on: ${data_elements_rule_types.rule_type_id} = ${data_elements_rules.rule_type_id} ;;
+    relationship: one_to_one
+  }
+  join: data_family_element_link {
+    sql_on: ${data_family_element_link.element_id} = ${summary_cda.element_id} ;;
+    relationship: many_to_one
+  }
+  join: data_families {
+    sql_on: ${data_families.family_id} = ${data_family_element_link.family_id} ;;
+    relationship: many_to_one
+  }
+  join: data_tolerances {
+    sql_on: ${data_tolerances.element_id} = ${summary_cda.element_id} ;;
+    relationship: one_to_one
+  }
+}
+
+
 explore: user_audit {}
 
 explore: v_summary {}
