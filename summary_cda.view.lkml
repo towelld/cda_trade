@@ -49,4 +49,14 @@ view: summary_cda {
     type: count
     drill_fields: []
   }
+
+  measure: sum_failure {
+    type: sum
+    sql: ${failure};;
+  }
+
+  measure: sum_total {
+    type: sum
+    sql: ${total};;
+  }
 }
