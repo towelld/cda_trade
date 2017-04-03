@@ -8,7 +8,7 @@ view: summary_cda {
 
   dimension: passed {
     type: number
-    sql: ${TABLE}.failure ;;
+    sql: ${TABLE}.passed ;;
   }
 
   dimension: rule_type {
