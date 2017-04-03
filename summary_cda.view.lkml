@@ -6,7 +6,7 @@ view: summary_cda {
     sql: ${TABLE}.element_id ;;
   }
 
-  dimension: failure {
+  dimension: passed {
     type: number
     sql: ${TABLE}.failure ;;
   }
@@ -50,9 +50,14 @@ view: summary_cda {
     drill_fields: []
   }
 
-  measure: sum_failure {
+  measure: sum_passed {
     type: sum
-    sql: ${failure};;
+    sql: ${passed};;
+  }
+
+  measure: sum_failed {
+    type: sum
+    sql: ${total}-${passed};;
   }
 
   measure: sum_total {
