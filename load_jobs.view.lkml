@@ -56,8 +56,12 @@ view: load_jobs {
     sql: ${TABLE}.TimeStampZoneId ;;
   }
 
-  measure: count {
+  measure: count_files {
     type: count
     drill_fields: [feed_name, file_name, rec_name]
+  }
+  measure: sum_records {
+    type: sum
+    sql: ${number_of_loaded_records};;
   }
 }
