@@ -56,15 +56,18 @@ view: summary_cda {
   measure: sum_passed {
     type: sum
     sql: ${passed};;
+    label: "Passed"
   }
 
   measure: sum_failed {
     type: sum
     sql: ${total}-${passed};;
+    label: "Failed"
   }
 
   measure: sum_total {
     type: sum
     sql: ${total};;
+    label: "Total"
   }
 }
