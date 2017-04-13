@@ -40,7 +40,7 @@
       measures: [summary_cda.sum_passed, summary_cda.sum_failed]
       listen:
         statement_date: summary_cda.statement_date
-      sorts: [summary_cda.system asc]
+      sorts: [summary_cda.trade_type asc]
       limit: '500'
       column_limit: '50'
       query_timezone: Europe/London

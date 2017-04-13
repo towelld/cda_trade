@@ -31,7 +31,7 @@
       type: looker_bar
       model: cda_trade
       explore: summary_cda
-      dimensions: [summary_cda.system]
+      dimensions: [summary_cda.trade_type]
       measures: [summary_cda.sum_passed, summary_cda.sum_failed]
       filters:
         summary_cda.statement_date: 2017/03/16
