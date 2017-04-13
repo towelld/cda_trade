@@ -132,7 +132,7 @@
       left: 0
       top: 0
       height: 35
-      width: 18
+      width: 23
       type: looker_bar
       model: cda_trade
       explore: summary
@@ -200,7 +200,7 @@
 
     - name: cda_trade_trend_conform
       title: Conform
-      left: 18
+      left: 23
       top: 33
       height: 5
       width: 18
@@ -281,7 +281,7 @@
 
     - name: cda_trade_summary_conform
       title: Conformity
-      left: 18
+      left: 23
       top: 0
       height: 35
       width: 18
@@ -351,7 +351,7 @@
 
     - name: cda_trade_trend_valid
       title:
-      left: 36
+      left: 41
       top: 33
       height: 5
       width: 18
@@ -431,7 +431,7 @@
 
     - name: cda_trade_summary_valid
       title: Validity
-      left: 36
+      left: 41
       top: 0
       height: 35
       width: 18
@@ -506,7 +506,7 @@
 
     - name: cda_trade_trend_variant
       title:
-      left: 54
+      left: 59
       top: 33
       height: 5
       width: 18
@@ -586,7 +586,7 @@
 
     - name: cda_trade_summary_variant
       title: Variation
-      left: 54
+      left: 59
       top: 0
       height: 35
       width: 18
