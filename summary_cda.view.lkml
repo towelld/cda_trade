@@ -66,9 +66,9 @@ view: summary_cda {
     }
     link: {
       label: "System"
-      url: "/embed/dashboards/cda_trade::system?system=view.system"
+      url: "/embed/dashboards/cda_trade::system?system={{ system }}"
     }
-  }
+    }
 
   measure: sum_failed {
     type: sum
@@ -84,7 +84,7 @@ view: summary_cda {
     }
     link: {
       label: "System"
-      url: "/embed/dashboards/cda_trade::system?system=view.system"
+      url: "/embed/dashboards/cda_trade::system?system={{ system }}"
     }
   }
 
@@ -93,5 +93,8 @@ view: summary_cda {
     sql: ${total};;
     label: "Total"
   }
+
+
+
 
 }
