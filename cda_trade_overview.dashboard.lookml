@@ -32,7 +32,7 @@
       title: Overview
       left: 0
       top: 0
-      height: 30
+      height: 20
       width: 72
       type: looker_bar
       model: cda_trade
@@ -80,7 +80,7 @@
     - name: cda_trade_overview_complete
       title: Complete
       left: 0
-      top: 30
+      top: 20
       height: 10
       width: 18
       type: looker_column
@@ -128,7 +128,7 @@
     - name: cda_trade_overview_conform
       title: Conform
       left: 18
-      top: 30
+      top: 20
       height: 10
       width: 18
       type: looker_column
@@ -176,7 +176,7 @@
     - name: cda_trade_overview_valid
       title: Valid
       left: 36
-      top: 30
+      top: 20
       height: 10
       width: 18
       type: looker_column
@@ -224,7 +224,7 @@
     - name: cda_trade_overview_variant
       title: Variant
       left: 54
-      top: 30
+      top: 20
       height: 10
       width: 18
       type: looker_column
@@ -273,7 +273,7 @@
     - name: cda_trade_overview_records
       title: Records Processed
       left: 0
-      top: 40
+      top: 30
       height: 10
       width: 24
       type: looker_column
@@ -313,7 +313,7 @@
     - name: cda_trade_overview_files
       title: Last 10 Files
       left: 24
-      top: 40
+      top: 30
       height: 10
       width: 48
       type: looker_bar
