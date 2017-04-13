@@ -13,6 +13,6 @@ view: data_elements_rule_types {
 
   measure: count {
     type: count
-    drill_fields: []
+    drill_fields: [data_elements.feature_description, data_elements_rules.rule_description]
   }
 }
