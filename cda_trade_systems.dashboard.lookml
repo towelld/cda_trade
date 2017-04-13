@@ -1,7 +1,7 @@
 - dashboard: systems
   title: Trade Systems
   layout: static
-  width: 2250
+  width: 2160
   tile_size: 30
   auto_run: true
   embed_style:
@@ -21,7 +21,7 @@
       left: 0
       top: 0
       height: 30
-      width: 75
+      width: 72
       type: looker_bar
       model: cda_trade
       explore: summary_cda
