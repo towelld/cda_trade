@@ -13,6 +13,12 @@
     tile_text_color: "#646569"
 
   filters:
+    - name: statement_date
+      type: field_filter
+      model: cda_trade
+      explore: summary_cda
+      field: summary_cda.statement_date
+      default_value: 2017/03/16
     - name: system
       type: field_filter
       model: cda_trade
@@ -33,10 +39,9 @@
       explore: summary_cda
       dimensions: [summary_cda.trade_type]
       measures: [summary_cda.sum_passed, summary_cda.sum_failed]
-      filters:
-        summary_cda.statement_date: 2017/03/16
       listen:
         system: summary_cda.trade_type
+        statement_date: summary_cda.statement_date
       sorts: [summary_cda.sum_passed desc]
       limit: '500'
       column_limit: '50'
@@ -85,9 +90,9 @@
       measures: [summary_cda.sum_passed, summary_cda.sum_failed]
       filters:
         summary_cda.rule_type: '1'
-        summary_cda.statement_date: 2017/03/16
       listen:
         system: summary_cda.trade_type
+        statement_date: summary_cda.statement_date
       limit: '500'
       column_limit: '50'
       query_timezone: Europe/London
@@ -135,8 +140,8 @@
       measures: [summary_cda.sum_passed, summary_cda.sum_failed]
       filters:
         summary_cda.rule_type: '2'
-        summary_cda.statement_date: 2017/03/16
       listen:
+        statement_date: summary_cda.statement_date
         system: summary_cda.trade_type
       limit: '500'
       column_limit: '50'
@@ -185,9 +190,9 @@
       measures: [summary_cda.sum_passed, summary_cda.sum_failed]
       filters:
         summary_cda.rule_type: '3'
-        summary_cda.statement_date: 2017/03/16
       listen:
         system: summary_cda.trade_type
+        statement_date: summary_cda.statement_date
       limit: '500'
       column_limit: '50'
       query_timezone: Europe/London
@@ -235,9 +240,9 @@
       measures: [summary_cda.sum_passed, summary_cda.sum_failed]
       filters:
         summary_cda.rule_type: '10'
-        summary_cda.statement_date: 2017/03/16
       listen:
         system: summary_cda.trade_type
+        statement_date: summary_cda.statement_date
       limit: '500'
       column_limit: '50'
       query_timezone: Europe/London
