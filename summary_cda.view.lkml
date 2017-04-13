@@ -53,21 +53,12 @@ view: summary_cda {
     type: sum
     sql: ${passed};;
     label: "Passed"
-    html: <a href="/embed/dashboards/cda_trade::system?system={{ system }}" target="_self"></a> ;;
   }
 
   measure: sum_failed {
     type: sum
     sql: ${total}-${passed};;
     label: "Failed"
-    link: {
-      label: "Overview"
-      url: "/embed/dashboards/cda_trade::overview"
-    }
-    link: {
-      label: "All Systems"
-      url: "/embed/dashboards/cda_trade::systems"
-    }
   }
 
   measure: sum_total {

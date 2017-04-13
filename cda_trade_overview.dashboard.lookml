@@ -12,6 +12,13 @@
     tile_background_color: "#ffffff"
     tile_text_color: "#646569"
 
+  filters:
+    - name: system
+      type: field_filter
+      model: cda_trade
+      explore: summary_cda
+      field: summary_cda.system
+
 
   elements:
 
