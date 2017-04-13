@@ -56,18 +56,26 @@ view: summary_cda {
     type: sum
     sql: ${passed};;
     link: {
-      label: "Systems"
-      url: "/embed/dashboards/cda_trade::systenms"
+      label: "Overview"
+      url: "/embed/dashboards/cda_trade::overview"
     }
-  }
+    link: {
+      label: "Systems"
+      url: "/embed/dashboards/cda_trade::systems"
+    }
+    }
 
   measure: sum_failed {
     type: sum
     sql: ${total}-${passed};;
     label: "Failed"
     link: {
+      label: "Overview"
+      url: "/embed/dashboards/cda_trade::overview"
+    }
+    link: {
       label: "Systems"
-      url: "/embed/dashboards/cda_trade::systenms"
+      url: "/embed/dashboards/cda_trade::systems"
     }
   }
 
