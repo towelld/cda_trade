@@ -348,5 +348,3 @@
       hidden_fields: [files.load_time_stamp]
       series_colors:
         files.sum_records: "#5e8ab4"
-
-
