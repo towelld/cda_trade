@@ -49,6 +49,11 @@ view: files {
     sql: ${TABLE}.TimeStampZoneId ;;
   }
 
+  dimension:  system {
+    type:  string
+    sql:  substring(${TABLE}.filename,1,CHARINDEX('_',${TABLE}.filename)-1) ;;
+  }
+
   measure: count {
     type: count
     drill_fields: [id, file_name, file_record_link.count, file_row_errors.count, record_history.count]

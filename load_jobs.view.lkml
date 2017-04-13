@@ -56,6 +56,11 @@ view: load_jobs {
     sql: ${TABLE}.TimeStampZoneId ;;
   }
 
+  dimension:  system {
+    type:  string
+    sql:  substring(${TABLE}.filename,1,CHARINDEX('_',${TABLE}.filename)-1) ;;
+  }
+
   measure: count_files {
     type: count
     drill_fields: [feed_name, file_name, rec_name]
