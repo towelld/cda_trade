@@ -32,7 +32,7 @@
       title: Type
       left: 0
       top: 0
-      height: 30
+      height: 20
       width: 72
       type: looker_bar
       model: cda_trade
@@ -81,7 +81,7 @@
     - name: cda_trade_type_complete
       title: Complete
       left: 0
-      top: 30
+      top: 20
       height: 10
       width: 18
       type: looker_column
@@ -131,7 +131,7 @@
     - name: cda_trade_type_conform
       title: Conform
       left: 18
-      top: 30
+      top: 20
       height: 10
       width: 18
       type: looker_column
@@ -181,7 +181,7 @@
     - name: cda_trade_type_valid
       title: Valid
       left: 36
-      top: 30
+      top: 20
       height: 10
       width: 18
       type: looker_column
@@ -231,7 +231,7 @@
     - name: cda_trade_type_variant
       title: Variant
       left: 54
-      top: 30
+      top: 20
       height: 10
       width: 18
       type: looker_column
