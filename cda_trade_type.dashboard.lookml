@@ -23,7 +23,7 @@
 
 
     - name: cda_trade_type_pass_fail
-      title: System
+      title: Type
       left: 0
       top: 0
       height: 30
