@@ -27,6 +27,8 @@
       explore: summary_cda
       dimensions: [summary_cda.system]
       measures: [summary_cda.sum_passed, summary_cda.sum_failed]
+      filters:
+        summary_cda.statement_date: 2017/03/16
       sorts: [summary_cda.sum_passed desc]
       limit: '500'
       column_limit: '50'
