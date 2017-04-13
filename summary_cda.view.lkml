@@ -61,10 +61,14 @@ view: summary_cda {
       url: "/embed/dashboards/cda_trade::overview"
     }
     link: {
-      label: "Systems"
+      label: "All Systems"
       url: "/embed/dashboards/cda_trade::systems"
     }
+    link: {
+      label: "System"
+      url: "/embed/dashboards/cda_trade::system?system=BABEL"
     }
+  }
 
   measure: sum_failed {
     type: sum
@@ -75,8 +79,12 @@ view: summary_cda {
       url: "/embed/dashboards/cda_trade::overview"
     }
     link: {
-      label: "Systems"
+      label: "All Systems"
       url: "/embed/dashboards/cda_trade::systems"
+    }
+    link: {
+      label: "System"
+      url: "/embed/dashboards/cda_trade::system?system=BABEL"
     }
   }
 
