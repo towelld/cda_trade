@@ -27,7 +27,7 @@
 
   elements:
 
-    - name: cda_trade_overview_pass_fail
+    - name: cda_trade_systems_pass_fail
       title: Systems
       left: 0
       top: 0
@@ -76,7 +76,7 @@
       hidden_series: []
       hidden_fields: []
 
-    - name: cda_trade_overview_complete
+    - name: cda_trade_systems_complete
       title: Complete
       left: 0
       top: 30
@@ -125,7 +125,7 @@
       hidden_series: []
 
 
-    - name: cda_trade_overview_conform
+    - name: cda_trade_systems_conform
       title: Conform
       left: 18
       top: 30
@@ -174,7 +174,7 @@
       hidden_series: []
 
 
-    - name: cda_trade_overview_valid
+    - name: cda_trade_systems_valid
       title: Valid
       left: 36
       top: 30
@@ -223,7 +223,7 @@
       hidden_series: []
 
 
-    - name: cda_trade_overview_variant
+    - name: cda_trade_systems_variant
       title: Variant
       left: 54
       top: 30
@@ -273,7 +273,7 @@
 
 
 
-    - name: cda_trade_overview_records
+    - name: cda_trade_systems_records
       title: Records Processed
       left: 0
       top: 40
@@ -313,7 +313,7 @@
         load_jobs.sum_records: "#5e8ab4"
 
 
-    - name: cda_trade_overview_files
+    - name: cda_trade_systems_files
       title: Last 10 Files
       left: 24
       top: 40

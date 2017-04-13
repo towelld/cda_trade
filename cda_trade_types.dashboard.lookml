@@ -1,5 +1,5 @@
-- dashboard: system
-  title: Trade System
+- dashboard: types
+  title: Trade Types
   layout: static
   width: 2160
   tile_size: 30
@@ -13,17 +13,22 @@
     tile_text_color: "#646569"
 
   filters:
-    - name: system
+    - name: statement_date
       type: field_filter
       model: cda_trade
       explore: summary_cda
-      field: summary_cda.system
+      field: summary_cda.statement_date
+      default_value: 2017/03/16
+    - name: trade_type
+      type: field_filter
+      model: cda_trade
+      explore: summary_cda
+      field: summary_cda.trade_type
 
   elements:
 
-
-    - name: cda_trade_system_pass_fail
-      title: System
+    - name: cda_trade_types_pass_fail
+      title: Types
       left: 0
       top: 0
       height: 30
@@ -31,13 +36,11 @@
       type: looker_bar
       model: cda_trade
       explore: summary_cda
-      dimensions: [summary_cda.system]
+      dimensions: [summary_cda.trade_type]
       measures: [summary_cda.sum_passed, summary_cda.sum_failed]
-      filters:
-        summary_cda.statement_date: 2017/03/16
       listen:
-        system: summary_cda.system
-      sorts: [summary_cda.sum_passed desc]
+        statement_date: summary_cda.statement_date
+      sorts: [summary_cda.system asc]
       limit: '500'
       column_limit: '50'
       query_timezone: Europe/London
@@ -73,7 +76,7 @@
       hidden_series: []
       hidden_fields: []
 
-    - name: cda_trade_system_complete
+    - name: cda_trade_types_complete
       title: Complete
       left: 0
       top: 30
@@ -85,9 +88,8 @@
       measures: [summary_cda.sum_passed, summary_cda.sum_failed]
       filters:
         summary_cda.rule_type: '1'
-        summary_cda.statement_date: 2017/03/16
       listen:
-        system: summary_cda.system
+        statement_date: summary_cda.statement_date
       limit: '500'
       column_limit: '50'
       query_timezone: Europe/London
@@ -123,7 +125,7 @@
       hidden_series: []
 
 
-    - name: cda_trade_system_conform
+    - name: cda_trade_types_conform
       title: Conform
       left: 18
       top: 30
@@ -135,9 +137,8 @@
       measures: [summary_cda.sum_passed, summary_cda.sum_failed]
       filters:
         summary_cda.rule_type: '2'
-        summary_cda.statement_date: 2017/03/16
       listen:
-        system: summary_cda.system
+        statement_date: summary_cda.statement_date
       limit: '500'
       column_limit: '50'
       query_timezone: Europe/London
@@ -173,7 +174,7 @@
       hidden_series: []
 
 
-    - name: cda_trade_system_valid
+    - name: cda_trade_types_valid
       title: Valid
       left: 36
       top: 30
@@ -185,9 +186,8 @@
       measures: [summary_cda.sum_passed, summary_cda.sum_failed]
       filters:
         summary_cda.rule_type: '3'
-        summary_cda.statement_date: 2017/03/16
       listen:
-        system: summary_cda.system
+        statement_date: summary_cda.statement_date
       limit: '500'
       column_limit: '50'
       query_timezone: Europe/London
@@ -223,7 +223,7 @@
       hidden_series: []
 
 
-    - name: cda_trade_system_variant
+    - name: cda_trade_types_variant
       title: Variant
       left: 54
       top: 30
@@ -235,9 +235,8 @@
       measures: [summary_cda.sum_passed, summary_cda.sum_failed]
       filters:
         summary_cda.rule_type: '10'
-        summary_cda.statement_date: 2017/03/16
       listen:
-        system: summary_cda.system
+        statement_date: summary_cda.statement_date
       limit: '500'
       column_limit: '50'
       query_timezone: Europe/London
@@ -274,7 +273,7 @@
 
 
 
-    - name: cda_trade_system_records
+    - name: cda_trade_types_records
       title: Records Processed
       left: 0
       top: 40
@@ -284,8 +283,6 @@
       model: cda_trade
       explore: load_jobs
       measures: [load_jobs.sum_records]
-      listen:
-        system: load_jobs.system
       limit: '500'
       column_limit: '50'
       query_timezone: Europe/London
@@ -316,7 +313,7 @@
         load_jobs.sum_records: "#5e8ab4"
 
 
-    - name: cda_trade_system_files
+    - name: cda_trade_types_files
       title: Last 10 Files
       left: 24
       top: 40
@@ -327,8 +324,6 @@
       explore: files
       dimensions: [files.file_name, files.load_time_stamp]
       measures: [files.sum_records]
-      listen:
-        system: files.system
       sorts: [files.load_time_stamp desc]
       limit: '10'
       column_limit: '50'
