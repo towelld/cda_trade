@@ -7,7 +7,7 @@
   embed_style:
     background_color: "#ffffff"
     show_title: false
-    title_color: "#ffffff"
+    title_color: "#646569"
     show_filters_bar: true
     tile_background_color: "#ffffff"
     tile_text_color: "#646569"
@@ -17,8 +17,8 @@
 
     - name: cda_trade_overview_pass_fail
       title: Overview
-      left: 1
-      top: 1
+      left: 0
+      top: 0
       height: 30
       width: 75
       type: looker_bar
