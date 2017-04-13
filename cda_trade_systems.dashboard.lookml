@@ -1,4 +1,4 @@
-- dashboard: systenms
+- dashboard: systems
   title: Trade Systems
   layout: static
   width: 2250
