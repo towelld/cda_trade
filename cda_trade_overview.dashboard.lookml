@@ -88,7 +88,7 @@
       explore: summary_cda
       measures: [summary_cda.sum_passed, summary_cda.sum_failed]
       filters:
-        summary_cda.rule_type: '1'
+        summary_cda.rule_type: 1
         summary_cda.statement_date: 2017/03/16
       limit: '500'
       column_limit: '50'
@@ -136,7 +136,7 @@
       explore: summary_cda
       measures: [summary_cda.sum_passed, summary_cda.sum_failed]
       filters:
-        summary_cda.rule_type: '2'
+        summary_cda.rule_type: 2
         summary_cda.statement_date: 2017/03/16
       limit: '500'
       column_limit: '50'
@@ -184,7 +184,7 @@
       explore: summary_cda
       measures: [summary_cda.sum_passed, summary_cda.sum_failed]
       filters:
-        summary_cda.rule_type: '3'
+        summary_cda.rule_type: 3
         summary_cda.statement_date: 2017/03/16
       limit: '500'
       column_limit: '50'
@@ -232,7 +232,7 @@
       explore: summary_cda
       measures: [summary_cda.sum_passed, summary_cda.sum_failed]
       filters:
-        summary_cda.rule_type: '10'
+        summary_cda.rule_type: 10
         summary_cda.statement_date: 2017/03/16
       limit: '500'
       column_limit: '50'
