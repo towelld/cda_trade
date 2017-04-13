@@ -200,7 +200,7 @@
 
     - name: cda_trade_trend_conform
       title: Conform
-      left: 36
+      left: 18
       top: 33
       height: 5
       width: 18
@@ -281,7 +281,7 @@
 
     - name: cda_trade_summary_conform
       title: Conformity
-      left: 36
+      left: 18
       top: 0
       height: 35
       width: 18
@@ -351,7 +351,7 @@
 
     - name: cda_trade_trend_valid
       title:
-      left: 54
+      left: 36
       top: 33
       height: 5
       width: 18
@@ -431,7 +431,7 @@
 
     - name: cda_trade_summary_valid
       title: Validity
-      left: 54
+      left: 36
       top: 0
       height: 35
       width: 18
@@ -506,7 +506,7 @@
 
     - name: cda_trade_trend_variant
       title:
-      left: 72
+      left: 54
       top: 33
       height: 5
       width: 18
@@ -586,7 +586,7 @@
 
     - name: cda_trade_summary_variant
       title: Variation
-      left: 72
+      left: 54
       top: 0
       height: 35
       width: 18
