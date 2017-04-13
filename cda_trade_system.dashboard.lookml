@@ -23,7 +23,7 @@
 
 
     - name: cda_trade_overview_pass_fail
-      title: Systems
+      title: System
       left: 0
       top: 0
       height: 30

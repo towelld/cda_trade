@@ -13,7 +13,6 @@ view: summary_cda {
 
   dimension: rule_type {
     sql: ${TABLE}.rule_type;;
-    drill_fields: [trade_type,system]
   }
 
   dimension_group: statement {
@@ -33,7 +32,6 @@ view: summary_cda {
   dimension: system {
     type: string
     sql: ${TABLE}.system ;;
-    drill_fields: [trade_type,rule_type]
   }
 
   dimension: total {
@@ -44,7 +42,6 @@ view: summary_cda {
   dimension: trade_type {
     type: string
     sql: ${TABLE}.trade_type ;;
-    drill_fields: [system,rule_type]
   }
 
   measure: count {
