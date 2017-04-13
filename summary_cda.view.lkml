@@ -61,10 +61,6 @@ view: summary_cda {
       label: "All Systems"
       url: "/embed/dashboards/cda_trade::systems"
     }
-    link: {
-      label: "System"
-      url: "/embed/dashboards/cda_trade::system?system={{ system }}"
-    }
   }
 
   measure: sum_failed {
@@ -78,10 +74,6 @@ view: summary_cda {
     link: {
       label: "All Systems"
       url: "/embed/dashboards/cda_trade::systems"
-    }
-    link: {
-      label: "System"
-      url: "/embed/dashboards/cda_trade::system?system={{ system }}"
     }
   }
 
