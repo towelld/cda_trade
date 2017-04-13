@@ -29,7 +29,7 @@
       measures: [summary_cda.sum_passed, summary_cda.sum_failed]
       filters:
         summary_cda.statement_date: 2017/03/16
-      sorts: [summary_cda.sum_passed desc]
+      sorts: [summary_cda.system asc]
       limit: '500'
       column_limit: '50'
       query_timezone: Europe/London

@@ -66,7 +66,7 @@ view: summary_cda {
     }
     link: {
       label: "System"
-      url: "/embed/dashboards/cda_trade::system?system=BABEL"
+      url: "/embed/dashboards/cda_trade::system?system=view.system"
     }
   }
 
@@ -84,7 +84,7 @@ view: summary_cda {
     }
     link: {
       label: "System"
-      url: "/embed/dashboards/cda_trade::system?system=BABEL"
+      url: "/embed/dashboards/cda_trade::system?system=view.system"
     }
   }
 
