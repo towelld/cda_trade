@@ -55,6 +55,7 @@ view: summary_cda {
   measure: sum_passed {
     type: sum
     sql: ${passed};;
+    label: "Passed"
     link: {
       label: "Overview"
       url: "/embed/dashboards/cda_trade::overview"

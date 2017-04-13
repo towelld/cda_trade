@@ -39,7 +39,7 @@
       legend_position: center
       x_axis_gridlines: false
       y_axis_gridlines: true
-      show_view_names: true
+      show_view_names: false
       limit_displayed_rows: false
       y_axis_combined: true
       show_y_axis_labels: true
