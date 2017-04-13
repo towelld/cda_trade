@@ -12,7 +12,7 @@ view: summary_cda {
   }
 
   dimension: rule_type {
-    sql: ${TABLE}.rule_type;;
+    sql: ${TABLE}.rule_type ;;
   }
 
   dimension_group: statement {
