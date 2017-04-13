@@ -20,8 +20,8 @@
       title: Systems
       left: 1
       top: 1
-      height: 10
-      width: 60
+      height: 30
+      width: 75
       type: looker_bar
       model: cda_trade
       explore: summary_cda
@@ -55,7 +55,7 @@
       totals_color: "#808080"
       series_types: {}
       series_colors:
-        summary_cda.sum_passed: "#92c26e"
+        summary_cda.sum_passed: "#646569"
         summary_cda.sum_failed: "#df5555"
       hidden_series: []
       hidden_fields: []

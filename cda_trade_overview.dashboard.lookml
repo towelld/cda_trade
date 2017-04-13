@@ -19,8 +19,8 @@
       title: Overview
       left: 1
       top: 1
-      height: 10
-      width: 60
+      height: 30
+      width: 75
       type: looker_bar
       model: cda_trade
       explore: summary_cda
