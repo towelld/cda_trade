@@ -57,5 +57,8 @@
       series_colors:
         summary_cda.sum_passed: "#646569"
         summary_cda.sum_failed: "#df5555"
+      y_axis_value_format: "#.00%"
+      y_axis_min: ['0.95']
+      y_axis_max: ['1']
       hidden_series: []
       hidden_fields: []
