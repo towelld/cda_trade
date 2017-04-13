@@ -13,6 +13,12 @@
     tile_text_color: "#646569"
 
   filters:
+    - name: statement_date
+      type: field_filter
+      model: cda_trade
+      explore: summary_cda
+      field: summary_cda.statement_date
+      default_value: 2017/03/16
     - name: system
       type: field_filter
       model: cda_trade
