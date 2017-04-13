@@ -9,7 +9,6 @@ view: data_elements {
   dimension: feature_description {
     type: string
     sql: ${TABLE}.feature_description ;;
-    drill_fields: [rules*]
   }
 
   dimension: feature_name {
@@ -20,10 +19,6 @@ view: data_elements {
   measure: count {
     type: count
     drill_fields: [feature_name]
-  }
-
-  set: rules {
-    fields: [data_elements_rule_type.rule_type]
   }
 
 }
