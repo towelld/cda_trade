@@ -87,10 +87,10 @@
       series_labels:
         __FILE: cda_trade/cda_trade_history.dashboard.lookml
         __LINE_NUM: 83
-        records.sum_notional: Notional
-        records.count: Volume
+        records.sum_notional: Quantity
+        records.count: Trades
       y_axis_unpin: false
-      y_axis_labels: [Notional, Volume]
+      y_axis_labels: [Quantity, Trades]
       x_axis_datetime_label: ''
 
 
@@ -188,7 +188,7 @@
       show_single_value_title: true
       show_comparison: true
       comparison_type: change
-      comparison_reverse_colors: true
+      comparison_reverse_colors: false
       show_comparison_label: true
       stacking: ''
       show_value_labels: false
