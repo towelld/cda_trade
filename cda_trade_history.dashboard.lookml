@@ -88,7 +88,7 @@
     - name: price
       title: Price
       type: looker_line
-      left: 0
+      left: 9
       top: 0
       height: 6
       width: 9
