@@ -179,7 +179,7 @@
       dimensions: [records.date_time_created_time, records.closing_price, records.closing_price_last]
       listen:
         security_id: records.security_id
-      sorts: [records.date_time_created_time desc]
+      sorts: [records.security_id]
       limit: '1'
       column_limit: '50'
       query_timezone: Europe/London
@@ -228,7 +228,7 @@
         records.cust, records.pay_freq, records.trader,records.closing_price, records.curr_notional]
       listen:
         security_id: records.security_id
-      sorts: [records.date_time_created_time desc]
+      sorts: [records.security_id]
       limit: '500'
       column_limit: '50'
       query_timezone: Europe/London
