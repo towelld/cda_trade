@@ -1211,8 +1211,14 @@ view: records {
     sql: ${TABLE}.Daily_Accrual_Variant ;;
   }
 
-  dimension: date_time_created {
-    type: string
+  #dimension: date_time_created {
+  #  type: string
+  #  sql: ${TABLE}.DateTimeCreated ;;
+  #}
+  dimension_group: date_time_created {
+    type: time
+    timeframes: [date, week, month, time, hour]
+    convert_tz: no
     sql: ${TABLE}.DateTimeCreated ;;
   }
 
