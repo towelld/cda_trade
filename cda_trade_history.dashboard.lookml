@@ -88,10 +88,6 @@
     - name: price
       title: Price
       type: looker_line
-      left: 0
-      top: 6
-      height: 6
-      width: 18
       model: cda_trade
       explore: records
       dimensions: [records.date_time_created_minute]
@@ -109,20 +105,20 @@
       legend_position: center
       x_axis_gridlines: false
       y_axis_gridlines: true
-      show_view_names: true
+      show_view_names: false
       limit_displayed_rows: false
       y_axis_combined: false
       show_y_axis_labels: false
       show_y_axis_ticks: true
-      y_axis_tick_density: default
-      y_axis_tick_density_custom: 5
+      y_axis_tick_density: custom
+      y_axis_tick_density_custom: 22
       show_x_axis_label: false
       show_x_axis_ticks: false
       x_axis_scale: auto
       y_axis_scale_mode: linear
-      show_null_points: true
+      show_null_points: false
       point_style: circle_outline
-      interpolation: step
+      interpolation: linear
       show_totals_labels: false
       show_silhouette: false
       totals_color: "#808080"
@@ -135,19 +131,27 @@
       conditional_formatting_ignored_fields: []
       conditional_formatting_include_totals: false
       conditional_formatting_include_nulls: false
-      series_types: {}
+      series_types:
+        __FILE: cda_trade/cda_trade_history.dashboard.lookml
+        __LINE_NUM: 138
       hidden_series: [records.average_price]
       reference_lines: []
       series_colors:
         records.average_price: "#5e8ab4"
         records.sum_notional: "#fa8d29"
         records.count: "#646569"
-      series_labels: {}
+        __FILE: cda_trade/cda_trade_history.dashboard.lookml
+        __LINE_NUM: 142
+      series_labels:
+        __FILE: cda_trade/cda_trade_history.dashboard.lookml
+        __LINE_NUM: 145
       y_axis_unpin: true
       y_axis_labels: [Price]
       x_axis_datetime_label: ''
       focus_on_hover: false
       y_axis_value_format: '0.000000'
+      discontinuous_nulls: false
+      y_axis_reversed: false
 
     - name: price_movement
       title: Price Movement
