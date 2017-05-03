@@ -34,8 +34,8 @@
       explore: records
       dimensions: [records.security_id, records.date_time_created_minute]
       measures: [records.sum_notional, records.count]
-      listen:
-        security_id: records.security_id
+      filters:
+        records.security_id: ARKLE^_2012^_1X^_4A
       sorts: [records.date_time_created_minute]
       limit: '500'
       column_limit: '50'
@@ -46,7 +46,7 @@
       legend_position: center
       x_axis_gridlines: false
       y_axis_gridlines: true
-      show_view_names: true
+      show_view_names: false
       limit_displayed_rows: false
       y_axis_combined: false
       show_y_axis_labels: true
@@ -74,16 +74,26 @@
       conditional_formatting_include_nulls: false
       series_types:
         records.count: line
+        __FILE: cda_trade/cda_trade_history.dashboard.lookml
+        __LINE_NUM: 76
       hidden_series: [records.average_price]
       reference_lines: []
       series_colors:
         records.average_price: "#fa8d29"
         records.sum_notional: "#fa8d29"
         records.count: "#646569"
-      series_labels: {}
+        __FILE: cda_trade/cda_trade_history.dashboard.lookml
+        __LINE_NUM: 80
+      series_labels:
+        __FILE: cda_trade/cda_trade_history.dashboard.lookml
+        __LINE_NUM: 83
+        records.sum_notional: Notional
+        records.count: Volume
       y_axis_unpin: false
       y_axis_labels: [Notional, Volume]
       x_axis_datetime_label: ''
+
+
 
     - name: price
       title: Price
