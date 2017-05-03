@@ -875,7 +875,7 @@ view: records {
   dimension: curr_notional {
     type: number
     label: "Notional"
-    value_format: "0"
+    value_format: "#,##0"
     sql: ${TABLE}.Curr_Notional ;;
   }
 
