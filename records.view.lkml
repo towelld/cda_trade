@@ -618,6 +618,7 @@ view: records {
 
   dimension: closing_price {
     type: number
+    value_format: "0.000000"
     sql: ${TABLE}.Closing_Price ;;
   }
 
@@ -873,6 +874,8 @@ view: records {
 
   dimension: curr_notional {
     type: number
+    label: "Notional"
+    value_format: "0"
     sql: ${TABLE}.Curr_Notional ;;
   }
 
@@ -1013,6 +1016,7 @@ view: records {
 
   dimension: cust {
     type: string
+    label: "Customer"
     sql: ${TABLE}.Cust ;;
   }
 

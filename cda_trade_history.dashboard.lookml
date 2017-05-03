@@ -224,8 +224,8 @@
       model: cda_trade
       explore: records
       dimensions: [records.security_id, records.trade_type, records.trade_id, records.basis,
-        records.book, records.buy_sell, records.ccy, records.company, records.curr_notional,
-        records.cust, records.pay_freq, records.trader]
+        records.book, records.buy_sell, records.ccy, records.company,
+        records.cust, records.pay_freq, records.trader,records.closing_price, records.curr_notional]
       listen:
         security_id: records.security_id
       sorts: [records.security_id]
@@ -243,4 +243,3 @@
       conditional_formatting_ignored_fields: []
       conditional_formatting_include_totals: false
       conditional_formatting_include_nulls: false
-
