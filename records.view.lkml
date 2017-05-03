@@ -3518,9 +3518,12 @@ view: records {
     type: count
     drill_fields: [product_name]
   }
-
   measure: sum_notional {
     type: sum
     sql: ${orig_notional} ;;
+  }
+  measure: average_price {
+    type: average
+    sql: ${closing_price} ;;
   }
 }
