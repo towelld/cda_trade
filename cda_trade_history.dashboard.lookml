@@ -29,7 +29,7 @@
       left: 0
       top: 0
       height: 6
-      width: 18
+      width: 9
       model: cda_trade
       explore: records
       dimensions: [records.security_id, records.date_time_created_minute]
@@ -89,9 +89,9 @@
       title: Price
       type: looker_line
       left: 0
-      top: 6
+      top: 0
       height: 6
-      width: 18
+      width: 9
       model: cda_trade
       explore: records
       dimensions: [records.date_time_created_minute]
@@ -161,7 +161,7 @@
       title: Price Movement
       left: 18
       top: 0
-      height: 12
+      height: 6
       width: 6
       type: single_value
       model: cda_trade
