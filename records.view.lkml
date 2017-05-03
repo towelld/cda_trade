@@ -3518,4 +3518,9 @@ view: records {
     type: count
     drill_fields: [product_name]
   }
+
+  measure: sum_notional {
+    type: sum
+    sql: ${orig_notional} ;;
+  }
 }
