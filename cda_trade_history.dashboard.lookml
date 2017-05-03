@@ -169,11 +169,11 @@
 
     - name: price_movement
       title: Price Movement
+      type: single_value
       left: 18
       top: 0
       height: 6
       width: 6
-      type: single_value
       model: cda_trade
       explore: records
       dimensions: [records.date_time_created_minute, records.closing_price, records.closing_price_last]
@@ -212,3 +212,35 @@
       series_types: {}
       hidden_fields: [records.date_time_created_minute]
       comparison_label: "(Previous)"
+
+
+    - name: trades
+      title: Trades
+      type: table
+      left: 0
+      top: 6
+      height: 6
+      width: 24
+      model: cda_trade
+      explore: records
+      dimensions: [records.security_id, records.trade_type, records.trade_id, records.basis,
+        records.book, records.buy_sell, records.ccy, records.company, records.curr_notional,
+        records.cust, records.pay_freq, records.trader]
+      listen:
+        security_id: records.security_id
+      sorts: [records.security_id]
+      limit: '500'
+      column_limit: '50'
+      query_timezone: Europe/London
+      show_view_names: true
+      show_row_numbers: true
+      truncate_column_names: false
+      hide_totals: false
+      hide_row_totals: false
+      table_theme: gray
+      limit_displayed_rows: false
+      enable_conditional_formatting: false
+      conditional_formatting_ignored_fields: []
+      conditional_formatting_include_totals: false
+      conditional_formatting_include_nulls: false
+
