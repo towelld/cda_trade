@@ -1221,6 +1221,10 @@ view: records {
     convert_tz: no
     sql: ${TABLE}.DateTimeCreated ;;
   }
+  dimension: maximum_date_time_created {
+    type: string
+    sql:  max(DateTimeCreated) ;;
+  }
 
   dimension: deal_id {
     type: string
