@@ -168,7 +168,7 @@
       y_axis_reversed: false
 
     - name: price_movement
-      title: Price Movement
+      title: Latest Price
       type: single_value
       left: 18
       top: 0
@@ -176,10 +176,10 @@
       width: 6
       model: cda_trade
       explore: records
-      dimensions: [records.date_time_created_minute, records.closing_price, records.closing_price_last]
+      dimensions: [records.date_time_created_time, records.closing_price, records.closing_price_last]
       listen:
         security_id: records.security_id
-      sorts: [records.date_time_created_minute desc]
+      sorts: [records.date_time_created_time desc]
       limit: '1'
       column_limit: '50'
       query_timezone: Europe/London
@@ -210,7 +210,7 @@
       show_null_points: true
       point_style: circle
       series_types: {}
-      hidden_fields: [records.date_time_created_minute]
+      hidden_fields: [records.date_time_created_time]
       comparison_label: "(Previous)"
 
 
@@ -228,7 +228,7 @@
         records.cust, records.pay_freq, records.trader,records.closing_price, records.curr_notional]
       listen:
         security_id: records.security_id
-      sorts: [records.security_id]
+      sorts: [records.date_time_created_time desc]
       limit: '500'
       column_limit: '50'
       query_timezone: Europe/London
