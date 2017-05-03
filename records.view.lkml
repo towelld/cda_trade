@@ -1217,7 +1217,7 @@ view: records {
   #}
   dimension_group: date_time_created {
     type: time
-    timeframes: [date, week, month, time, hour]
+    timeframes: [date, week, month, time, hour, minute]
     convert_tz: no
     sql: ${TABLE}.DateTimeCreated ;;
   }
