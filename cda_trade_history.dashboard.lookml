@@ -1,8 +1,8 @@
 - dashboard: history
   title: Trading History
   layout: static
-  width: 2160
-  tile_size: 30
+  width: 2400
+  tile_size: 100
   auto_run: true
   embed_style:
     background_color: "#ffffff"
