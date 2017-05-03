@@ -88,6 +88,10 @@
     - name: price
       title: Price
       type: looker_line
+      left: 0
+      top: 6
+      height: 6
+      width: 18
       model: cda_trade
       explore: records
       dimensions: [records.date_time_created_minute]
