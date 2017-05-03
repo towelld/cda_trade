@@ -20,7 +20,6 @@
       field: records.security_id
       default_value: ARKLE^_2012^_1X^_4A
 
-
   elements:
 
     - name: volume
@@ -34,8 +33,8 @@
       explore: records
       dimensions: [records.security_id, records.date_time_created_minute]
       measures: [records.sum_notional, records.count]
-      filters:
-        records.security_id: ARKLE^_2012^_1X^_4A
+      listen:
+        security_id: records.security_id
       sorts: [records.date_time_created_minute]
       limit: '500'
       column_limit: '50'
