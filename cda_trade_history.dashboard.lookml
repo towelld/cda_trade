@@ -27,11 +27,11 @@
       type: looker_area
       left: 0
       top: 0
-      height: 6
-      width: 9
+      height: 3
+      width: 18
       model: cda_trade
       explore: records
-      dimensions: [records.security_id, records.date_time_created_minute]
+      dimensions: [records.security_id, records.date_time_created_second]
       measures: [records.sum_notional, records.count]
       listen:
         security_id: records.security_id
@@ -97,15 +97,15 @@
     - name: price
       title: Price
       type: looker_line
-      left: 9
-      top: 0
-      height: 6
-      width: 9
+      left: 0
+      top: 3
+      height: 3
+      width: 18
       model: cda_trade
       explore: records
-      dimensions: [records.date_time_created_minute]
-      fill_fields: [records.date_time_created_minute]
-      measures: [records.average_price]
+      dimensions: [records.date_time_created_second]
+      fill_fields: [records.date_time_created_second]
+      measures: [records.closing_price]
       listen:
         security_id: records.security_id
       sorts: [records.date_time_created_second]
