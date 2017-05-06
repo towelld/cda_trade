@@ -175,10 +175,10 @@
       width: 6
       model: cda_trade
       explore: records
-      dimensions: [records.date_time_created_second, records.closing_price, records.closing_price_last]
+      dimensions: [records.date_time_created_millisecond, records.closing_price, records.closing_price_last]
       listen:
         security_id: records.security_id
-      sorts: [records.date_time_created_second desc, records.closing_price desc]
+      sorts: [records.date_time_created_millisecond desc]
       limit: '1'
       column_limit: '50'
       query_timezone: Europe/London
@@ -209,7 +209,7 @@
       show_null_points: true
       point_style: circle
       series_types: {}
-      hidden_fields: [records.date_time_created_second]
+      hidden_fields: [records.date_time_created_millisecond]
       comparison_label: "(Previous)"
 
 
