@@ -117,6 +117,8 @@ explore: persisted_states {}
 
 explore: purge_job {}
 
+explore: price_history {}
+
 explore: record_history {
   join: files {
     type: left_outer
