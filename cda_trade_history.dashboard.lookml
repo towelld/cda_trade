@@ -203,7 +203,7 @@
       explore: records
       dimensions: [records.date_time_created_second,records.security_id, records.trade_type, records.trade_id, records.basis,
         records.book, records.buy_sell, records.ccy, records.company,
-        records.cust, records.pay_freq, records.trader,records.closing_price, records.curr_notional]
+        records.cust, records.pay_freq, records.trader,records.closing_price]
       listen:
         security_id: records.security_id
       sorts: [records.date_time_created_second desc, records.closing_price desc]
