@@ -103,10 +103,10 @@
       width: 18
       model: cda_trade
       explore: price_history
-      dimensions: [price_history.security_id, price_history.closing_price, price_history.date_time_created_time]
+      dimensions: [price_history.security_id, price_history.closing_price, price_history.date_time_created_minute]
       listen:
         security_id: price_history.security_id
-      sorts: [price_history.date_time_created_time]
+      sorts: [price_history.date_time_created_minute]
       limit: '500'
       column_limit: '50'
       query_timezone: Europe/London
