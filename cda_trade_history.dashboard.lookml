@@ -104,8 +104,8 @@
       model: cda_trade
       explore: price_history
       dimensions: [price_history.security_id, price_history.closing_price, price_history.date_time_created_minute]
-      listen:
-        security_id: price_history.security_id
+      filters:
+        price_history.security_id: ARKLE^_2012^_1X^_4A
       sorts: [price_history.date_time_created_minute]
       limit: '500'
       column_limit: '50'
@@ -114,7 +114,7 @@
       show_value_labels: false
       label_density: 25
       legend_position: center
-      x_axis_gridlines: false
+      x_axis_gridlines: true
       y_axis_gridlines: true
       show_view_names: true
       limit_displayed_rows: false
@@ -122,14 +122,15 @@
       show_y_axis_labels: false
       show_y_axis_ticks: false
       y_axis_tick_density: default
-      y_axis_tick_density_custom: 5
+      y_axis_tick_density_custom: 2
       show_x_axis_label: false
       show_x_axis_ticks: true
       x_axis_scale: auto
       y_axis_scale_mode: linear
-      show_null_points: true
+      show_null_points: false
       point_style: circle_outline
       interpolation: linear
+      font_size: '12'
       show_row_numbers: true
       truncate_column_names: false
       hide_totals: false
@@ -144,6 +145,16 @@
       hide_legend: false
       x_axis_reversed: false
       y_axis_unpin: true
+      series_colors:
+        price_history.closing_price: "#5e8ab4"
+      limit_displayed_rows_values:
+        show_hide: hide
+        first_last: first
+        num_rows: 0
+      focus_on_hover: false
+      discontinuous_nulls: false
+
+
 
     - name: price_movement
       title: Latest Price
