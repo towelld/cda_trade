@@ -102,13 +102,13 @@
       height: 3
       width: 18
       model: cda_trade
-      explore: records
-      dimensions: [records.date_time_created_second]
-      fill_fields: [records.date_time_created_second]
-      measures: [records.closing_price]
+      explore: price_history
+      dimensions: [price_history.date_time_created_second]
+      fill_fields: [price_history.date_time_created_second]
+      measures: [price_history.closing_price]
       listen:
-        security_id: records.security_id
-      sorts: [records.date_time_created_second]
+        security_id: price_history.security_id
+      sorts: [price_history.date_time_created_second]
       limit: '500'
       column_limit: '50'
       query_timezone: Europe/London
@@ -147,7 +147,6 @@
       series_types:
         __FILE: cda_trade/cda_trade_history.dashboard.lookml
         __LINE_NUM: 138
-      hidden_series: [records.average_price]
       reference_lines: []
       series_colors:
         records.average_price: "#5e8ab4"
@@ -174,11 +173,11 @@
       height: 6
       width: 6
       model: cda_trade
-      explore: records
-      dimensions: [records.date_time_created_millisecond, records.closing_price, records.closing_price_last]
+      explore: price_history
+      dimensions: [price_history.date_time_created_millisecond, price_history.closing_price, price_history.closing_price_last]
       listen:
-        security_id: records.security_id
-      sorts: [records.date_time_created_millisecond desc]
+        security_id: price_history.security_id
+      sorts: [price_history.date_time_created_millisecond desc]
       limit: '1'
       column_limit: '50'
       query_timezone: Europe/London
@@ -209,7 +208,7 @@
       show_null_points: true
       point_style: circle
       series_types: {}
-      hidden_fields: [records.date_time_created_millisecond]
+      hidden_fields: [price_history.date_time_created_millisecond]
       comparison_label: "(Previous)"
 
 
