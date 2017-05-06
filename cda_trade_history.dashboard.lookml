@@ -103,12 +103,10 @@
       width: 18
       model: cda_trade
       explore: price_history
-      dimensions: [price_history.date_time_created_second]
-      fill_fields: [price_history.date_time_created_second]
-      measures: [price_history.closing_price]
+      dimensions: [price_history.security_id, price_history.closing_price, price_history.date_time_created_time]
       listen:
         security_id: price_history.security_id
-      sorts: [price_history.date_time_created_second]
+      sorts: [price_history.date_time_created_time]
       limit: '500'
       column_limit: '50'
       query_timezone: Europe/London
@@ -118,23 +116,20 @@
       legend_position: center
       x_axis_gridlines: false
       y_axis_gridlines: true
-      show_view_names: false
+      show_view_names: true
       limit_displayed_rows: false
-      y_axis_combined: false
+      y_axis_combined: true
       show_y_axis_labels: false
-      show_y_axis_ticks: true
-      y_axis_tick_density: custom
-      y_axis_tick_density_custom: 22
+      show_y_axis_ticks: false
+      y_axis_tick_density: default
+      y_axis_tick_density_custom: 5
       show_x_axis_label: false
-      show_x_axis_ticks: false
+      show_x_axis_ticks: true
       x_axis_scale: auto
       y_axis_scale_mode: linear
-      show_null_points: false
+      show_null_points: true
       point_style: circle_outline
       interpolation: linear
-      show_totals_labels: false
-      show_silhouette: false
-      totals_color: "#808080"
       show_row_numbers: true
       truncate_column_names: false
       hide_totals: false
@@ -144,26 +139,11 @@
       conditional_formatting_ignored_fields: []
       conditional_formatting_include_totals: false
       conditional_formatting_include_nulls: false
-      series_types:
-        __FILE: cda_trade/cda_trade_history.dashboard.lookml
-        __LINE_NUM: 138
-      reference_lines: []
-      series_colors:
-        records.average_price: "#5e8ab4"
-        records.sum_notional: "#fa8d29"
-        records.count: "#646569"
-        __FILE: cda_trade/cda_trade_history.dashboard.lookml
-        __LINE_NUM: 142
-      series_labels:
-        __FILE: cda_trade/cda_trade_history.dashboard.lookml
-        __LINE_NUM: 145
+      series_types: {}
+      hidden_fields: [price_history.security_id]
+      hide_legend: false
+      x_axis_reversed: false
       y_axis_unpin: true
-      y_axis_labels: [Price]
-      x_axis_datetime_label: ''
-      focus_on_hover: false
-      y_axis_value_format: '0.000000'
-      discontinuous_nulls: false
-      y_axis_reversed: false
 
     - name: price_movement
       title: Latest Price
