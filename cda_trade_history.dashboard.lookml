@@ -31,7 +31,7 @@
       width: 9
       model: cda_trade
       explore: records
-      dimensions: [records.security_id, records.date_time_created_second]
+      dimensions: [records.security_id, records.date_time_created_minute]
       measures: [records.sum_notional, records.count]
       listen:
         security_id: records.security_id
@@ -103,8 +103,8 @@
       width: 9
       model: cda_trade
       explore: records
-      dimensions: [records.date_time_created_second]
-      fill_fields: [records.date_time_created_second]
+      dimensions: [records.date_time_created_minute]
+      fill_fields: [records.date_time_created_minute]
       measures: [records.average_price]
       listen:
         security_id: records.security_id
@@ -222,7 +222,7 @@
       width: 24
       model: cda_trade
       explore: records
-      dimensions: [records.security_id, records.trade_type, records.trade_id, records.basis,
+      dimensions: [records.date_time_created_second,records.security_id, records.trade_type, records.trade_id, records.basis,
         records.book, records.buy_sell, records.ccy, records.company,
         records.cust, records.pay_freq, records.trader,records.closing_price, records.curr_notional]
       listen:
