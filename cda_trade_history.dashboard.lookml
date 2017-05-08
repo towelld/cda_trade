@@ -32,9 +32,9 @@
       model: cda_trade
       explore: records
       dimensions: [records.security_id, records.date_time_created_second]
-      measures: [records.sum_notional, records.count]
-      listen:
-        security_id: records.security_id
+      measures: [records.count]
+      filters:
+        records.security_id: ARKLE^_2012^_1X^_4A
       sorts: [records.date_time_created_second]
       limit: '500'
       column_limit: '50'
@@ -74,7 +74,7 @@
       series_types:
         records.count: line
         __FILE: cda_trade/cda_trade_history.dashboard.lookml
-        __LINE_NUM: 76
+        __LINE_NUM: 75
       hidden_series: [records.average_price]
       reference_lines: []
       series_colors:
@@ -82,15 +82,16 @@
         records.sum_notional: "#fa8d29"
         records.count: "#646569"
         __FILE: cda_trade/cda_trade_history.dashboard.lookml
-        __LINE_NUM: 80
+        __LINE_NUM: 81
       series_labels:
         __FILE: cda_trade/cda_trade_history.dashboard.lookml
-        __LINE_NUM: 83
+        __LINE_NUM: 87
         records.sum_notional: Quantity
         records.count: Trades
       y_axis_unpin: false
-      y_axis_labels: [Quantity, Trades]
+      y_axis_labels: [Trades]
       x_axis_datetime_label: ''
+
 
 
 
@@ -266,9 +267,7 @@
       width: 24
       model: cda_trade
       explore: records
-      dimensions: [records.date_time_created_millisecond,records.security_id, records.trade_type, records.trade_id, records.basis,
-        records.book, records.buy_sell, records.ccy, records.company,
-        records.cust, records.pay_freq, records.trader,records.closing_price]
+      dimensions: [records.date_time_created_millisecond,records.system,records.security_id, records.trade_id, records.buy_sell, records.ccy, records.trader,records.closing_price]
       listen:
         security_id: records.security_id
       sorts: [records.date_time_created_millisecond desc, records.closing_price desc]
