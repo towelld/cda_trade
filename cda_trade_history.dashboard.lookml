@@ -19,6 +19,11 @@
       explore: records
       field: records.security_id
       default_value: ARKLE^_2012^_1X^_4A
+    - name: source
+      type: field_filter
+      model: cda_trade
+      explore: records
+      field: records.system
 
   elements:
 
@@ -33,8 +38,9 @@
       explore: records
       dimensions: [records.security_id, records.date_time_created_second]
       measures: [records.count]
-      filters:
-        records.security_id: ARKLE^_2012^_1X^_4A
+      listen:
+        security_id: records.security_id
+        source: records.system
       sorts: [records.date_time_created_second]
       limit: '500'
       column_limit: '50'
@@ -105,8 +111,8 @@
       model: cda_trade
       explore: price_history
       dimensions: [price_history.security_id, price_history.closing_price, price_history.date_time_created_minute]
-      filters:
-        price_history.security_id: ARKLE^_2012^_1X^_4A
+      listen:
+        security_id: price_history.security_id
       sorts: [price_history.date_time_created_minute]
       limit: '500'
       column_limit: '50'
@@ -167,8 +173,8 @@
       model: cda_trade
       explore: price_history
       measures: [price_history.average_price]
-      filters:
-        price_history.security_id: ARKLE^_2012^_1X^_4A
+      listen:
+        security_id: price_history.security_id
       sorts: [price_history.average_price desc]
       limit: '1'
       column_limit: '50'
@@ -217,8 +223,8 @@
       model: cda_trade
       explore: price_history
       dimensions: [price_history.date_time_created_millisecond, price_history.closing_price]
-      filters:
-        price_history.security_id: ARKLE^_2012^_1X^_4A
+      listen:
+        security_id: price_history.security_id
       sorts: [price_history.date_time_created_millisecond desc]
       limit: '1'
       column_limit: '50'
@@ -270,6 +276,7 @@
       dimensions: [records.date_time_created_millisecond,records.system,records.security_id, records.trade_id, records.buy_sell, records.ccy, records.trader,records.closing_price]
       listen:
         security_id: records.security_id
+        source: records.system
       sorts: [records.date_time_created_millisecond desc, records.closing_price desc]
       limit: '500'
       column_limit: '50'
