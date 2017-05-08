@@ -38,6 +38,11 @@ view: price_history {
     sql: ${TABLE}.security_id ;;
   }
 
+  dimension: system {
+    type: string
+    sql: ${TABLE}.system ;;
+  }
+
   measure: count {
     type: count
     drill_fields: []
