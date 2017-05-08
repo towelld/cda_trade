@@ -42,4 +42,9 @@ view: price_history {
     type: count
     drill_fields: []
   }
+  measure: average_price {
+    type: average
+    sql:${TABLE}.closing_price ;;
+    drill_fields: []
+  }
 }
