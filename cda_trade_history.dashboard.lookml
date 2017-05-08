@@ -156,26 +156,26 @@
 
 
 
-    - name: price_movement
-      title: Latest Price
+    - name: average_price
+      title: Average Price
       type: single_value
       left: 18
       top: 0
-      height: 6
+      height: 3
       width: 6
       model: cda_trade
       explore: price_history
-      dimensions: [price_history.date_time_created_millisecond, price_history.closing_price, price_history.closing_price_last]
-      listen:
-        security_id: price_history.security_id
-      sorts: [price_history.date_time_created_millisecond desc]
+      measures: [price_history.average_price]
+      filters:
+        price_history.security_id: ARKLE^_2012^_1X^_4A
+      sorts: [price_history.average_price desc]
       limit: '1'
       column_limit: '50'
       query_timezone: Europe/London
-      custom_color_enabled: true
+      custom_color_enabled: false
       custom_color: "#646569"
       show_single_value_title: true
-      show_comparison: true
+      show_comparison: false
       comparison_type: change
       comparison_reverse_colors: false
       show_comparison_label: true
@@ -198,9 +198,63 @@
       y_axis_scale_mode: linear
       show_null_points: true
       point_style: circle
-      series_types: {}
+      series_types:
+        __FILE: cda_trade/cda_trade_history.dashboard.lookml
+        __LINE_NUM: 201
+      hidden_fields: []
+      comparison_label: "(Previous)"
+      single_value_title: Average Price
+
+
+    - name: latest_price
+      title: Latest Price
+      left: 18
+      top: 3
+      height: 3
+      width: 6
+      type: single_value
+      model: cda_trade
+      explore: price_history
+      dimensions: [price_history.date_time_created_millisecond, price_history.closing_price]
+      filters:
+        price_history.security_id: ARKLE^_2012^_1X^_4A
+      sorts: [price_history.date_time_created_millisecond desc]
+      limit: '1'
+      column_limit: '50'
+      query_timezone: Europe/London
+      custom_color_enabled: true
+      custom_color: "#646569"
+      show_single_value_title: true
+      show_comparison: false
+      comparison_type: change
+      comparison_reverse_colors: false
+      show_comparison_label: true
+      stacking: ''
+      show_value_labels: false
+      label_density: 25
+      legend_position: center
+      x_axis_gridlines: false
+      y_axis_gridlines: true
+      show_view_names: true
+      limit_displayed_rows: false
+      y_axis_combined: true
+      show_y_axis_labels: true
+      show_y_axis_ticks: true
+      y_axis_tick_density: default
+      y_axis_tick_density_custom: 5
+      show_x_axis_label: true
+      show_x_axis_ticks: true
+      x_axis_scale: auto
+      y_axis_scale_mode: linear
+      show_null_points: true
+      point_style: circle
+      series_types:
+        __FILE: cda_trade/cda_trade_history.dashboard.lookml
+        __LINE_NUM: 201
       hidden_fields: [price_history.date_time_created_millisecond]
       comparison_label: "(Previous)"
+      single_value_title: Latest Price
+
 
 
     - name: trades
