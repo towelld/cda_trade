@@ -266,12 +266,12 @@
       width: 24
       model: cda_trade
       explore: records
-      dimensions: [records.date_time_created_second,records.security_id, records.trade_type, records.trade_id, records.basis,
+      dimensions: [records.date_time_created_millisecond,records.security_id, records.trade_type, records.trade_id, records.basis,
         records.book, records.buy_sell, records.ccy, records.company,
         records.cust, records.pay_freq, records.trader,records.closing_price]
       listen:
         security_id: records.security_id
-      sorts: [records.date_time_created_second desc, records.closing_price desc]
+      sorts: [records.date_time_created_millisecond desc, records.closing_price desc]
       limit: '500'
       column_limit: '50'
       query_timezone: Europe/London
