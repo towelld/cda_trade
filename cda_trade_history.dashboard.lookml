@@ -38,9 +38,9 @@
       explore: records
       dimensions: [records.security_id, records.date_time_created_minute]
       measures: [records.count]
-      filters:
-        records.security_id: ARKLE^_2012^_1X^_4A
-        records.system: "-HSBC"
+      listen:
+        security_id: records.security_id
+        source: records.system
       sorts: [records.date_time_created_minute]
       limit: '500'
       column_limit: '50'
