@@ -54,12 +54,12 @@
       show_view_names: false
       limit_displayed_rows: false
       y_axis_combined: false
-      show_y_axis_labels: true
+      show_y_axis_labels: false
       show_y_axis_ticks: true
       y_axis_tick_density: default
       y_axis_tick_density_custom: 5
       show_x_axis_label: false
-      show_x_axis_ticks: false
+      show_x_axis_ticks: true
       x_axis_scale: auto
       y_axis_scale_mode: linear
       show_null_points: true
@@ -98,6 +98,8 @@
       y_axis_labels: [Trades]
       x_axis_datetime_label: ''
       hidden_fields: [records.security_id]
+
+
 
     - name: price
       title: Price
