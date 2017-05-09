@@ -40,8 +40,19 @@ view: price_history {
 
   dimension: system {
     type: string
-    sql: ${TABLE}.system ;;
-  }
+    view_label: "Source"
+    sql: case ${TABLE}.System when 'SUMMIT' then 'HSBC'
+                              when 'GMI' then 'Macquarie'
+                              when 'MUREX' then 'SCB'
+                              when 'CRIVER' then 'LBG'
+                              when 'GALA' then 'Gresham'
+                              when 'HORIZON' then 'JPM'
+                              when 'CALYPSO' then 'Barclays'
+                              when 'TMS' then 'Credit Suisse'
+                              when 'EZE' then 'UBS'
+                              when 'BABEL' then 'Citi'
+          end ;;
+}
 
   measure: count {
     type: count
