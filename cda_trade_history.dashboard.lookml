@@ -38,9 +38,9 @@
       explore: records
       dimensions: [records.security_id, records.date_time_created_minute]
       measures: [records.count]
-      listen:
-        security_id: records.security_id
-        source: records.system
+      filters:
+        records.security_id: ARKLE^_2012^_1X^_4A
+        records.system: "-HSBC"
       sorts: [records.date_time_created_minute]
       limit: '500'
       column_limit: '50'
@@ -59,7 +59,7 @@
       y_axis_tick_density: default
       y_axis_tick_density_custom: 5
       show_x_axis_label: false
-      show_x_axis_ticks: false
+      show_x_axis_ticks: true
       x_axis_scale: auto
       y_axis_scale_mode: linear
       show_null_points: true
@@ -80,7 +80,7 @@
       series_types:
         records.count: line
         __FILE: cda_trade/cda_trade_history.dashboard.lookml
-        __LINE_NUM: 75
+        __LINE_NUM: 81
       hidden_series: [records.average_price]
       reference_lines: []
       series_colors:
@@ -88,18 +88,16 @@
         records.sum_notional: "#fa8d29"
         records.count: "#646569"
         __FILE: cda_trade/cda_trade_history.dashboard.lookml
-        __LINE_NUM: 81
+        __LINE_NUM: 87
       series_labels:
         __FILE: cda_trade/cda_trade_history.dashboard.lookml
-        __LINE_NUM: 87
+        __LINE_NUM: 93
         records.sum_notional: Quantity
         records.count: Trades
       y_axis_unpin: false
       y_axis_labels: [Trades]
       x_axis_datetime_label: ''
-
-
-
+      hidden_fields: [records.security_id]
 
     - name: price
       title: Price
