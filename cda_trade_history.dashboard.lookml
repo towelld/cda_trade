@@ -49,7 +49,7 @@
       show_value_labels: false
       label_density: 25
       legend_position: center
-      x_axis_gridlines: false
+      x_axis_gridlines: true
       y_axis_gridlines: true
       show_view_names: false
       limit_displayed_rows: false
@@ -59,7 +59,7 @@
       y_axis_tick_density: default
       y_axis_tick_density_custom: 5
       show_x_axis_label: false
-      show_x_axis_ticks: true
+      show_x_axis_ticks: false
       x_axis_scale: auto
       y_axis_scale_mode: linear
       show_null_points: true
@@ -231,7 +231,7 @@
       column_limit: '50'
       query_timezone: Europe/London
       custom_color_enabled: true
-      custom_color: "#646569"
+      custom_color: "#5e8ab4"
       show_single_value_title: true
       show_comparison: false
       comparison_type: change
