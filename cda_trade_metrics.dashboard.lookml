@@ -5,9 +5,9 @@
     - elements: [cda_trade_records_chart]
       height: 300
     - elements: [cda_trade_records_detail]
-      height: 150
+      height: 500
     - elements: [cda_trade_rule_count]
-      height: 3000
+      height: 1000
   embed_style:
     background_color: "#ffffff"
     show_title: true
