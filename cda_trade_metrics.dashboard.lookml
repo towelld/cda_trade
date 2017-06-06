@@ -16,6 +16,15 @@
     tile_background_color: "#ffffff"
     tile_text_color: "#646569"
 
+  filters:
+  - name: file_name
+    label: 'File Name'
+    type: string_filter
+    model: cda_trade
+    explore: files
+    field: files.file_name = "%20170316%"
+
+
   elements:
 
   - name: cda_trade_records_chart
@@ -26,6 +35,8 @@
     dimensions: [files.file_name]
     pivots: [files.file_name]
     measures: [files.sum_records]
+    listen:
+      file_name: files.file_name
     sorts: [files.sum_records desc 0, files.file_name]
     limit: '500'
     column_limit: '50'
@@ -63,6 +74,8 @@
     model: cda_trade
     explore: files
     dimensions: [files.file_name, files.records_loaded, files.file_time_stamp, files.load_time_stamp]
+    listen:
+      file_name: files.file_name
     sorts: [files.file_name]
     limit: '500'
     column_limit: '50'
