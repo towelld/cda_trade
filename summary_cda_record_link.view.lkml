@@ -1,10 +1,5 @@
-view: comment_record_link {
-  sql_table_name: DemoTradequality.CommentRecordLink ;;
-
-  dimension: comment_pk {
-    type: string
-    sql: ${TABLE}.CommentPk ;;
-  }
+view: summary_cda_record_link {
+  sql_table_name: DemoTradequality.SummaryCDARecordLink ;;
 
   dimension: pk {
     type: string
@@ -14,6 +9,11 @@ view: comment_record_link {
   dimension: record_pk {
     type: string
     sql: ${TABLE}.RecordPk ;;
+  }
+
+  dimension: summary_pk {
+    type: string
+    sql: ${TABLE}.SummaryPk ;;
   }
 
   measure: count {
