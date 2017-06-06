@@ -5,7 +5,7 @@
     - elements: [cda_trade_records_chart]
       height: 300
     - elements: [cda_trade_records_detail]
-      height: 500
+      height: 300
     - elements: [cda_trade_rule_count]
       height: 1000
   embed_style:
@@ -54,10 +54,6 @@
     show_totals_labels: false
     show_silhouette: false
     totals_color: "#808080"
-    series_colors:
-      trade_20170218151929.txt - Files Sum Records: "#fa8d29"
-      INT_20170218153900.txt - Files Sum Records: "#646569"
-      MICS_20170218153900.txt - Files Sum Records: "#646569"
 
   - name: cda_trade_records_detail
     title: Records Loaded Detail
