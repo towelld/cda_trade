@@ -1,14 +1,15 @@
 view: v_cdatolerances {
-  sql_table_name: DemoTradequality.vCDATolerances ;;
-
-  dimension: amber {
-    type: string
-    sql: ${TABLE}.amber ;;
-  }
+  sql_table_name: demoTradequality.vCDATolerances ;;
 
   dimension: element_id {
     type: number
     sql: ${TABLE}.element_id ;;
+  }
+
+  dimension: amber {
+    type: string
+    sql: ${TABLE}.amber ;;
+    html: <font color="#EAA153">{{ rendered_value }}</font> ;;
   }
 
   dimension: family_description {
@@ -29,6 +30,7 @@ view: v_cdatolerances {
   dimension: green {
     type: string
     sql: ${TABLE}.green ;;
+    html: <font color="#92c263">{{ rendered_value }}</font> ;;
   }
 
   dimension: rag_comments {
@@ -53,6 +55,7 @@ view: v_cdatolerances {
   dimension: red {
     type: string
     sql: ${TABLE}.red ;;
+    html: <font color="#df5555">{{ rendered_value }}</font> ;;
   }
 
   dimension: rule_type {
