@@ -71,14 +71,6 @@
     show_totals_labels: false
     show_silhouette: false
     totals_color: '#808080'
-    series_colors:
-      Complete - Data Elements Rule Types Count: '#fa8d29'
-      Conform - Data Elements Rule Types Count: '#646569'
-      Consistent - Data Elements Rule Types Count: '#5e8ab4'
-      Lookup - Data Elements Rule Types Count: '#0c9e9e'
-      Unique - Data Elements Rule Types Count: '#b34c59'
-      Valid - Data Elements Rule Types Count: '#edc559'
-
 
   - name: cda_trade_business_rules
     title: Business Rules
