@@ -114,6 +114,12 @@ view: summary_cda {
     value_format_name: percent_2
     drill_fields: [records*]
   }
+  measure: percent100 {
+    type: number
+    sql: 1 ;;
+    value_format_name: percent_2
+    drill_fields: [records*]
+  }
   measure: failed {
     type: number
     view_label: "Failed"
