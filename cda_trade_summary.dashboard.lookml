@@ -52,7 +52,7 @@
         trade_type: summary_cda.trade_type
       filters:
         summary_cda.rule_type_id: '1'
-      sorts: [summary_cda.sort_order]
+      sorts: [summary_cda.element_id]
       limit: '500'
       column_limit: '50'
       query_timezone: Europe/London
@@ -104,7 +104,7 @@
         statement_date: summary_cda.statement_date
         system: summary_cda.system
         trade_type: summary_cda.trade_type
-      sorts: [summary_cda.sort_order]
+      sorts: [summary_cda.element_id]
       limit: '500'
       column_limit: '50'
       query_timezone: Europe/London
@@ -156,7 +156,7 @@
         statement_date: summary_cda.statement_date
         system: summary_cda.system
         trade_type: summary_cda.trade_type
-      sorts: [summary_cda.sort_order]
+      sorts: [summary_cda.element_id]
       limit: '500'
       column_limit: '50'
       query_timezone: Europe/London
@@ -208,7 +208,7 @@
         statement_date: summary_cda.statement_date
         system: summary_cda.system
         trade_type: summary_cda.trade_type
-      sorts: [summary_cda.sort_order]
+      sorts: [summary_cda.element_id]
       limit: '500'
       column_limit: '50'
       query_timezone: Europe/London
@@ -260,7 +260,7 @@
         statement_date: summary_cda.statement_date
         system: summary_cda.system
         trade_type: summary_cda.trade_type
-      sorts: [summary_cda.sort_order]
+      sorts: [summary_cda.element_id]
       limit: '500'
       column_limit: '50'
       query_timezone: Europe/London
@@ -312,7 +312,7 @@
         statement_date: summary_cda.statement_date
         system: summary_cda.system
         trade_type: summary_cda.trade_type
-      sorts: [summary_cda.sort_order]
+      sorts: [summary_cda.element_id]
       limit: '500'
       column_limit: '50'
       query_timezone: Europe/London
@@ -364,7 +364,7 @@
         statement_date: summary_cda.statement_date
         system: summary_cda.system
         trade_type: summary_cda.trade_type
-      sorts: [summary_cda.sort_order]
+      sorts: [summary_cda.element_id]
       limit: '500'
       column_limit: '50'
       query_timezone: Europe/London
