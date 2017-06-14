@@ -39,7 +39,7 @@
       title: Completeness
       left: 0
       top: 0
-      height: 150
+      height: 100
       width: 19
       type: looker_bar
       model: cda_trade
