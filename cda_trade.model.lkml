@@ -74,11 +74,11 @@ explore: summary_cda {
   persist_for: "5 minutes"
   join: summary_cda_record_link {
     sql_on: ${summary_cda_record_link.summary_pk} = ${summary_cda.pk} ;;
-    relationship: many_to_many
+    relationship: many_to_one
   }
   join: records {
     sql_on: ${records.pk} = ${summary_cda_record_link.record_pk} ;;
-    relationship: many_to_many
+    relationship: one_to_many
   }
   join: data_elements {
     sql_on: ${data_elements.element_id} = ${summary_cda.element_id} ;;
