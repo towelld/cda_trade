@@ -3535,15 +3535,6 @@ view: records {
     sql: ${TABLE}.Yield ;;
   }
 
-  dimension: system_display {
-    view_label: "System"
-    label: "System"
-    type: string
-    sql: case when ${TABLE}.system_complete = 0 or ${TABLE}.system_conform = 0 or ${TABLE}.system_valid = 0 or ${TABLE}.system_unique = 0 then 'http://localhost:9999/images/clareti/icon_cross.png' else 'http://localhost:9999/images/clareti/icon_tick.png' end ;;
-    html: <img src={{rendered_value}}/> {{records.system._value}};;
-  }
-
-
   dimension: trade_type_display {
     view_label: "Trade Type"
     label: "Trade Type"
