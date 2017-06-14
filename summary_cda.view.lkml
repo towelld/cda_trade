@@ -128,7 +128,7 @@ view: summary_cda {
     drill_fields: [records*]
   }
   set: records {
-    fields: [records.accrual_last_day]
+    fields: [records.system_display,records.trade_type_display,records.cust_display,records.security_id_display,records.trade_date_display,records.closing_price_display,records.ccy_display,records.trade_id_display,records.buy_sell_display,records.orig_notional_display]
   }
 
 }
