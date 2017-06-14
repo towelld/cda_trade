@@ -24,6 +24,7 @@ view: summary_cda {
   dimension: pk {
     type: string
     sql: ${TABLE}.Pk ;;
+    primary_key: yes
   }
 
   dimension: rule_type_count {
