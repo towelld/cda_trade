@@ -44,7 +44,7 @@
       type: looker_bar
       model: cda_trade
       explore: summary_cda
-      dimensions: [data_elements.feature_description, summary_cda.sort_order, summary_cda_tolerance.rag_lower,summary_cda_tolerance.rag_upper]
+      dimensions: [data_elements.feature_description, summary_cda.sort_order, summary_cda_tolerance.rag_lower,summary_cda_tolerance.rag_upper,summary_cda.element_id]
       measures: [summary_cda.red, summary_cda.amber, summary_cda.green, summary_cda.total100]
       listen:
         statement_date: summary_cda.statement_date
@@ -79,7 +79,7 @@
       show_silhouette: false
       totals_color: "#808080"
       series_types: {}
-      hidden_fields: [summary_cda.sort_order, summary_cda_tolerance.rag_lower, summary_cda_tolerance.rag_upper]
+      hidden_fields: [summary_cda.sort_order, summary_cda_tolerance.rag_lower, summary_cda_tolerance.rag_upper,summary_cda.element_id]
       series_colors:
         summary_cda.red: "#df5555"
         summary_cda.amber: "#eaa153"
@@ -96,7 +96,7 @@
       type: looker_bar
       model: cda_trade
       explore: summary_cda
-      dimensions: [data_elements.feature_description, summary_cda.sort_order, summary_cda_tolerance.rag_lower,summary_cda_tolerance.rag_upper]
+      dimensions: [data_elements.feature_description, summary_cda.sort_order, summary_cda_tolerance.rag_lower,summary_cda_tolerance.rag_upper,summary_cda.element_id]
       measures: [summary_cda.red, summary_cda.amber, summary_cda.green, summary_cda.total100]
       filters:
         summary_cda.rule_type_id: '6'
@@ -131,7 +131,7 @@
       show_silhouette: false
       totals_color: "#808080"
       series_types: {}
-      hidden_fields: [summary_cda.sort_order, summary_cda_tolerance.rag_lower, summary_cda_tolerance.rag_upper]
+      hidden_fields: [summary_cda.sort_order, summary_cda_tolerance.rag_lower, summary_cda_tolerance.rag_upper,summary_cda.element_id]
       series_colors:
         summary_cda.red: "#df5555"
         summary_cda.amber: "#eaa153"
@@ -148,7 +148,7 @@
       type: looker_bar
       model: cda_trade
       explore: summary_cda
-      dimensions: [data_elements.feature_description, summary_cda.sort_order, summary_cda_tolerance.rag_lower,summary_cda_tolerance.rag_upper]
+      dimensions: [data_elements.feature_description, summary_cda.sort_order, summary_cda_tolerance.rag_lower,summary_cda_tolerance.rag_upper,summary_cda.element_id]
       measures: [summary_cda.red, summary_cda.amber, summary_cda.green, summary_cda.total100]
       filters:
         summary_cda.rule_type_id: '10'
@@ -183,7 +183,7 @@
       show_silhouette: false
       totals_color: "#808080"
       series_types: {}
-      hidden_fields: [summary_cda.sort_order, summary_cda_tolerance.rag_lower, summary_cda_tolerance.rag_upper]
+      hidden_fields: [summary_cda.sort_order, summary_cda_tolerance.rag_lower, summary_cda_tolerance.rag_upper,summary_cda.element_id]
       series_colors:
         summary_cda.red: "#df5555"
         summary_cda.amber: "#eaa153"
@@ -200,7 +200,7 @@
       type: looker_bar
       model: cda_trade
       explore: summary_cda
-      dimensions: [data_elements.feature_description, summary_cda.sort_order, summary_cda_tolerance.rag_lower,summary_cda_tolerance.rag_upper]
+      dimensions: [data_elements.feature_description, summary_cda.sort_order, summary_cda_tolerance.rag_lower,summary_cda_tolerance.rag_upper,summary_cda.element_id]
       measures: [summary_cda.red, summary_cda.amber, summary_cda.green, summary_cda.total100]
       filters:
         summary_cda.rule_type_id: '2'
@@ -235,7 +235,7 @@
       show_silhouette: false
       totals_color: "#808080"
       series_types: {}
-      hidden_fields: [summary_cda.sort_order, summary_cda_tolerance.rag_lower, summary_cda_tolerance.rag_upper]
+      hidden_fields: [summary_cda.sort_order, summary_cda_tolerance.rag_lower, summary_cda_tolerance.rag_upper,summary_cda.element_id]
       series_colors:
         summary_cda.red: "#df5555"
         summary_cda.amber: "#eaa153"
@@ -252,7 +252,7 @@
       type: looker_bar
       model: cda_trade
       explore: summary_cda
-      dimensions: [data_elements.feature_description, summary_cda.sort_order, summary_cda_tolerance.rag_lower,summary_cda_tolerance.rag_upper]
+      dimensions: [data_elements.feature_description, summary_cda.sort_order, summary_cda_tolerance.rag_lower,summary_cda_tolerance.rag_upper,summary_cda.element_id]
       measures: [summary_cda.red, summary_cda.amber, summary_cda.green, summary_cda.total100]
       filters:
         summary_cda.rule_type_id: '3'
@@ -287,7 +287,7 @@
       show_silhouette: false
       totals_color: "#808080"
       series_types: {}
-      hidden_fields: [summary_cda.sort_order, summary_cda_tolerance.rag_lower, summary_cda_tolerance.rag_upper]
+      hidden_fields: [summary_cda.sort_order, summary_cda_tolerance.rag_lower, summary_cda_tolerance.rag_upper,summary_cda.element_id]
       series_colors:
         summary_cda.red: "#df5555"
         summary_cda.amber: "#eaa153"
@@ -304,7 +304,7 @@
       type: looker_bar
       model: cda_trade
       explore: summary_cda
-      dimensions: [data_elements.feature_description, summary_cda.sort_order, summary_cda_tolerance.rag_lower,summary_cda_tolerance.rag_upper]
+      dimensions: [data_elements.feature_description, summary_cda.sort_order, summary_cda_tolerance.rag_lower,summary_cda_tolerance.rag_upper,summary_cda.element_id]
       measures: [summary_cda.red, summary_cda.amber, summary_cda.green, summary_cda.total100]
       filters:
         summary_cda.rule_type_id: '4'
@@ -339,7 +339,7 @@
       show_silhouette: false
       totals_color: "#808080"
       series_types: {}
-      hidden_fields: [summary_cda.sort_order, summary_cda_tolerance.rag_lower, summary_cda_tolerance.rag_upper]
+      hidden_fields: [summary_cda.sort_order, summary_cda_tolerance.rag_lower, summary_cda_tolerance.rag_upper,summary_cda.element_id]
       series_colors:
         summary_cda.red: "#df5555"
         summary_cda.amber: "#eaa153"
@@ -356,7 +356,7 @@
       type: looker_bar
       model: cda_trade
       explore: summary_cda
-      dimensions: [data_elements.feature_description, summary_cda.sort_order, summary_cda_tolerance.rag_lower,summary_cda_tolerance.rag_upper]
+      dimensions: [data_elements.feature_description, summary_cda.sort_order, summary_cda_tolerance.rag_lower,summary_cda_tolerance.rag_upper,summary_cda.element_id]
       measures: [summary_cda.red, summary_cda.amber, summary_cda.green, summary_cda.total100]
       filters:
         summary_cda.rule_type_id: '5'
@@ -391,7 +391,7 @@
       show_silhouette: false
       totals_color: "#808080"
       series_types: {}
-      hidden_fields: [summary_cda.sort_order, summary_cda_tolerance.rag_lower, summary_cda_tolerance.rag_upper]
+      hidden_fields: [summary_cda.sort_order, summary_cda_tolerance.rag_lower, summary_cda_tolerance.rag_upper,summary_cda.element_id]
       series_colors:
         summary_cda.red: "#df5555"
         summary_cda.amber: "#eaa153"
