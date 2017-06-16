@@ -94,7 +94,7 @@
     title: Trend
     left: 0
     top: 10
-    height: 5
+    height: 7
     width: 30
     type: looker_area
     model: cda_trade
