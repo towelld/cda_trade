@@ -104,8 +104,9 @@
     filters:
       summary_cda.statement_date: 2016/11/08 to 2017/03/16
       summary_cda.passed: NOT NULL
-      summary_cda.system: ''
-      summary_cda.trade_type: ''
+    listen:
+      system: summary_cda.system
+      trade_type: summary_cda.trade_type
     sorts: [summary_cda.statement_date]
     limit: '500'
     column_limit: '50'
