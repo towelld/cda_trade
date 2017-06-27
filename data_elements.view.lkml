@@ -15,11 +15,11 @@ view: data_elements {
     }
     link: {
       label: "Business Rules"
-      url: "http://localhost:9999/embed/dashboards/cda_trade::cda_trade_tolerances?rule_type=&feature_description={{ value }}"
+      url: "http://localhost:9999/embed/dashboards/cda_trade::cda_trade_business_rules?rule_type=&feature_description={{ value }}"
     }
     link: {
       label: "Data Elements"
-      url: "http://localhost:9999/embed/dashboards/cda_trade::cda_trade_tolerances?feature_description={{ value }}"
+      url: "http://localhost:9999/embed/dashboards/cda_trade::cda_trade_data_elements?feature_description={{ value }}"
     }
   }
 
