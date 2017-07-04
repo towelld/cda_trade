@@ -1,4 +1,4 @@
-connection: "ctc"
+connection: "ctc1611demo"
 
 # include all the views
 include: "*.view"
