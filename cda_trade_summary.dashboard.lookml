@@ -19,7 +19,7 @@
     model: cda_trade
     explore: summary_cda
     field: summary_cda.statement_date
-    default_value: "2017-03-16"
+    default_value: "2016-11-08"
   - name: system
     label: 'System'
     type: field_filter
