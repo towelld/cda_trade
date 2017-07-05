@@ -140,6 +140,6 @@
     discontinuous_nulls: false
     series_colors:
       summary_cda.percent100: "#0c9e9e"
-      summary_cda.passed: "#92c263"
-      summary_cda.failed: "#df5555"
+      summary_cda.passed: green
+      summary_cda.failed: darkred
     y_axis_min: ['0.95']
