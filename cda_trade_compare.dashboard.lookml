@@ -109,9 +109,9 @@
     explore: summary_cda
     measures: [summary_cda.passed, summary_cda.failed]
     listen:
-      statement_date_1: summary_cda.statement_date
-      system_1: summary_cda.system
-      trade_type_1: summary_cda.trade_type
+      statement_date_2: summary_cda.statement_date
+      system_2: summary_cda.system
+      trade_type_2: summary_cda.trade_type
     limit: '500'
     column_limit: '50'
     query_timezone: America/Los_Angeles
