@@ -140,7 +140,7 @@
       hide_legend: true
 
     - name: cda_trade_summary_variant
-      title: Variance
+      title: Accuracy
       left: 29
       top: 0
       height: 50
