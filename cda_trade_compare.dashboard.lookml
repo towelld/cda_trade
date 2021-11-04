@@ -19,7 +19,7 @@
     model: cda_trade
     explore: summary_cda
     field: summary_cda.statement_date
-    default_value: "2016-11-08"
+    default_value: "2016-11-09"
   - name: system_1
     label: 'Source 1 - System'
     type: field_filter
@@ -38,7 +38,7 @@
     model: cda_trade
     explore: summary_cda
     field: summary_cda.statement_date
-    default_value: "2016-11-08"
+    default_value: "2016-11-09"
   - name: system_2
     label: 'Source 2 - System'
     type: field_filter
