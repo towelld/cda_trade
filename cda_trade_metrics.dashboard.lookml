@@ -27,7 +27,7 @@
     pivots: [files.file_name]
     measures: [files.sum_records]
     filters:
-      files.file_name: "%20170316%"
+      files.file_name: "%20161118%"
     sorts: [files.sum_records desc 0, files.file_name]
     limit: '500'
     column_limit: '50'
@@ -62,7 +62,7 @@
     explore: files
     dimensions: [files.file_name, files.records_loaded, files.file_time_stamp, files.load_time_stamp]
     filters:
-      files.file_name: "%20170316%"
+      files.file_name: "%20161118%"
     sorts: [files.file_name]
     limit: '500'
     column_limit: '50'

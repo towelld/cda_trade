@@ -102,7 +102,7 @@
     dimensions: [summary_cda.statement_date]
     measures: [summary_cda.passed, summary_cda.failed]
     filters:
-      summary_cda.statement_date: 2016/11/08 to 2017/03/16
+      summary_cda.statement_date: 2016/11/08 to 2016/11/18
       summary_cda.passed: NOT NULL
     listen:
       system: summary_cda.system
