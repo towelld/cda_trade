@@ -23,7 +23,7 @@
 
   - name: cda_trade_tolerances
     title: Tolerances
-    type: table
+    type: looker_grid
     model: cda_trade
     explore: v_cdatolerances
     dimensions: [v_cdatolerances.sort_order, v_cdatolerances.family_name, v_cdatolerances.family_description,

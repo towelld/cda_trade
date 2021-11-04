@@ -23,7 +23,7 @@
 
   - name: cda_trade_data_elements
     title: Data Elements
-    type: table
+    type: looker_grid
     model: cda_trade
     explore: data_elements
     dimensions: [data_elements_detail.data_element_name, data_elements_detail.data_family,
