@@ -82,7 +82,7 @@
     hide_legend: true
     series_colors:
       summary_cda.passed: "#92c26e"
-      summary_cda.failed: "#df5555"
+      summary_cda.failed: "#de5454"
     charts_across: 3
     series_labels:
       summary_cda.passed: Passed
@@ -140,6 +140,6 @@
     discontinuous_nulls: false
     series_colors:
       summary_cda.percent100: "#0c9e9e"
-      summary_cda.passed: green
-      summary_cda.failed: darkred
+      summary_cda.passed: "#92c26e"
+      summary_cda.failed: "#de5454"
     y_axis_min: ['0.95']
