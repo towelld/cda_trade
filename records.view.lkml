@@ -3539,7 +3539,7 @@ view: records {
     view_label: "Trade Type"
     label: "Trade Type"
     type: string
-    sql: case when ${TABLE}.trade_type_complete = 0 or ${TABLE}.trade_type_conform = 0 or ${TABLE}.trade_type_valid = 0 or ${TABLE}.trade_type_unique = 0 then 'http://localhost:9999/images/clareti/icon_cross.png' else 'http://localhost:9999/images/clareti/icon_tick.png' end ;;
+    sql: case when ${TABLE}.trade_type_complete = 0 or ${TABLE}.trade_type_conform = 0 or ${TABLE}.trade_type_valid = 0 or ${TABLE}.trade_type_unique = 0 then 'https://localhost:9999/images/clareti/icon_cross.png' else 'https://localhost:9999/images/clareti/icon_tick.png' end ;;
     html: <img src={{rendered_value}}/> {{records.trade_type._value}};;
   }
 
@@ -3547,7 +3547,7 @@ view: records {
     view_label: "Customer"
     label: "Customer"
     type: string
-    sql: case when ${TABLE}.cust_complete = 0 or ${TABLE}.cust_conform = 0 or ${TABLE}.cust_valid = 0 or ${TABLE}.cust_unique = 0 then 'http://localhost:9999/images/clareti/icon_cross.png' else 'http://localhost:9999/images/clareti/icon_tick.png' end ;;
+    sql: case when ${TABLE}.cust_complete = 0 or ${TABLE}.cust_conform = 0 or ${TABLE}.cust_valid = 0 or ${TABLE}.cust_unique = 0 then 'https://localhost:9999/images/clareti/icon_cross.png' else 'https://localhost:9999/images/clareti/icon_tick.png' end ;;
     html: <img src={{rendered_value}}/> {{records.cust._value}};;
   }
 
@@ -3555,7 +3555,7 @@ view: records {
     view_label: "Security ID"
     label: "Security_ID"
     type: string
-    sql: case when ${TABLE}.security_id_complete = 0 or ${TABLE}.security_id_conform = 0 or ${TABLE}.security_id_valid = 0 or ${TABLE}.security_id_unique = 0 then 'http://localhost:9999/images/clareti/icon_cross.png' else 'http://localhost:9999/images/clareti/icon_tick.png' end ;;
+    sql: case when ${TABLE}.security_id_complete = 0 or ${TABLE}.security_id_conform = 0 or ${TABLE}.security_id_valid = 0 or ${TABLE}.security_id_unique = 0 then 'https://localhost:9999/images/clareti/icon_cross.png' else 'https://localhost:9999/images/clareti/icon_tick.png' end ;;
     html: <img src={{rendered_value}}/> {{records.security_id._value}};;
   }
 
@@ -3563,7 +3563,7 @@ view: records {
     view_label: "Trade Date"
     label: "Trade Date"
     type: string
-    sql: case when ${TABLE}.trade_date_complete = 0 or ${TABLE}.trade_date_conform = 0 or ${TABLE}.trade_date_valid = 0 or ${TABLE}.trade_date_unique = 0 then 'http://localhost:9999/images/clareti/icon_cross.png' else 'http://localhost:9999/images/clareti/icon_tick.png' end ;;
+    sql: case when ${TABLE}.trade_date_complete = 0 or ${TABLE}.trade_date_conform = 0 or ${TABLE}.trade_date_valid = 0 or ${TABLE}.trade_date_unique = 0 then 'https://localhost:9999/images/clareti/icon_cross.png' else 'https://localhost:9999/images/clareti/icon_tick.png' end ;;
     html: <img src={{rendered_value}}/> {{records.trade_date._value}};;
   }
 
@@ -3571,7 +3571,7 @@ view: records {
     view_label: "Closing Price"
     label: "Closing Price"
     type: string
-    sql: case when ${TABLE}.closing_price_complete = 0 or ${TABLE}.closing_price_conform = 0 or ${TABLE}.closing_price_valid = 0 or ${TABLE}.closing_price_unique = 0 then 'http://localhost:9999/images/clareti/icon_cross.png' else 'http://localhost:9999/images/clareti/icon_tick.png' end ;;
+    sql: case when ${TABLE}.closing_price_complete = 0 or ${TABLE}.closing_price_conform = 0 or ${TABLE}.closing_price_valid = 0 or ${TABLE}.closing_price_unique = 0 then 'https://localhost:9999/images/clareti/icon_cross.png' else 'https://localhost:9999/images/clareti/icon_tick.png' end ;;
     html: <img src={{rendered_value}}/> {{records.closing_price._value}};;
   }
 
@@ -3579,7 +3579,7 @@ view: records {
     view_label: "Ccy"
     label: "Ccy"
     type: string
-    sql: case when ${TABLE}.ccy_complete = 0 or ${TABLE}.ccy_conform = 0 or ${TABLE}.ccy_valid = 0 or ${TABLE}.ccy_unique = 0 then 'http://localhost:9999/images/clareti/icon_cross.png' else 'http://localhost:9999/images/clareti/icon_tick.png' end ;;
+    sql: case when ${TABLE}.ccy_complete = 0 or ${TABLE}.ccy_conform = 0 or ${TABLE}.ccy_valid = 0 or ${TABLE}.ccy_unique = 0 then 'https://localhost:9999/images/clareti/icon_cross.png' else 'https://localhost:9999/images/clareti/icon_tick.png' end ;;
     html: <img src={{rendered_value}}/> {{records.ccy._value}};;
   }
 
@@ -3587,7 +3587,7 @@ view: records {
     view_label: "Trade ID"
     label: "Trade ID"
     type: string
-    sql: case when ${TABLE}.trade_id_complete = 0 or ${TABLE}.trade_id_conform = 0 or ${TABLE}.trade_id_valid = 0 or ${TABLE}.trade_id_unique = 0 then 'http://localhost:9999/images/clareti/icon_cross.png' else 'http://localhost:9999/images/clareti/icon_tick.png' end ;;
+    sql: case when ${TABLE}.trade_id_complete = 0 or ${TABLE}.trade_id_conform = 0 or ${TABLE}.trade_id_valid = 0 or ${TABLE}.trade_id_unique = 0 then 'https://localhost:9999/images/clareti/icon_cross.png' else 'https://localhost:9999/images/clareti/icon_tick.png' end ;;
     html: <img src={{rendered_value}}/> {{records.trade_id._value}};;
   }
 
@@ -3595,7 +3595,7 @@ view: records {
     view_label: "Buy/Sell"
     label: "Buy/Sell"
     type: string
-    sql: case when ${TABLE}.buy_sell_complete = 0 or ${TABLE}.buy_sell_conform = 0 or ${TABLE}.buy_sell_valid = 0 or ${TABLE}.buy_sell_unique = 0 then 'http://localhost:9999/images/clareti/icon_cross.png' else 'http://localhost:9999/images/clareti/icon_tick.png' end ;;
+    sql: case when ${TABLE}.buy_sell_complete = 0 or ${TABLE}.buy_sell_conform = 0 or ${TABLE}.buy_sell_valid = 0 or ${TABLE}.buy_sell_unique = 0 then 'https://localhost:9999/images/clareti/icon_cross.png' else 'https://localhost:9999/images/clareti/icon_tick.png' end ;;
     html: <img src={{rendered_value}}/> {{records.buy_sell._value}};;
   }
 
@@ -3603,7 +3603,7 @@ view: records {
     view_label: "Original Notional"
     label: "Original Notional"
     type: string
-    sql: case when ${TABLE}.orig_notional_complete = 0 or ${TABLE}.orig_notional_conform = 0 or ${TABLE}.orig_notional_valid = 0 or ${TABLE}.orig_notional_unique = 0 then 'http://localhost:9999/images/clareti/icon_cross.png' else 'http://localhost:9999/images/clareti/icon_tick.png' end ;;
+    sql: case when ${TABLE}.orig_notional_complete = 0 or ${TABLE}.orig_notional_conform = 0 or ${TABLE}.orig_notional_valid = 0 or ${TABLE}.orig_notional_unique = 0 then 'https://localhost:9999/images/clareti/icon_cross.png' else 'https://localhost:9999/images/clareti/icon_tick.png' end ;;
     html: <img src={{rendered_value}}/> {{records.orig_notional._value}};;
   }
 
